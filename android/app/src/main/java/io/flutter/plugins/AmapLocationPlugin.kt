@@ -4,12 +4,11 @@ import android.content.Context
 import android.util.Log
 import com.amap.api.location.AMapLocationClient
 import com.amap.api.location.AMapLocationClientOption
-import io.flutter.app.FlutterApplication
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.PluginRegistry
 
-class AmapLocationPlugin(val context: Context): MethodChannel.MethodCallHandler {
+class AmapLocationPlugin(context: Context): MethodChannel.MethodCallHandler {
     companion object {
         /** Channel名称  **/
         const val CHANNEL = "app2m.com/location"
