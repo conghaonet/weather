@@ -1,0 +1,9 @@
+{
+  "app_name": "天气预报",
+  "app_title": "天气预报",
+  "location": "定位",
+  "city": "城市",
+  "start_game": "开始",
+  "permission_goto_settings": "设置",
+  "permission_prompt_location": "需要定位权限，以提高用户体验"
+}
