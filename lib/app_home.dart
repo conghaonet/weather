@@ -67,8 +67,19 @@ class HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
+    _location.invokeMethod('stopLocation');
   }
 
+  _requestLocation(BuildContext context) async {
+    String prompt = Translations.of(context).getString(Strings.permissionPromptLocation);
+    SnackBarAction action = AppSnackBarAction.getDefaultPermissionAction(context);
+    PermissionGroup deniedPermission = await PermissionUtil.requestPermissions(context, [PermissionGroup.location], prompt, action: action);
+    if(deniedPermission != PermissionGroup.location) {
+      String strJson = await _location.invokeMethod('getLocation');
+      print('_location ====> '+strJson);
+    }
+
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,9 +93,7 @@ class HomePageState extends State<HomePage> {
             children: <Widget>[
               MaterialButton(
                 onPressed: () {
-                  String prompt = Translations.of(context).getString(Strings.permissionPromptLocation);
-                  SnackBarAction action = AppSnackBarAction.getDefaultPermissionAction(context);
-                  PermissionUtil.requestPermissions(context, [PermissionGroup.location], prompt, action: action);
+                  _requestLocation(context);
                 },
                 child: Text('验证定位权限'),
               ),
