@@ -75,8 +75,9 @@ class HomePageState extends State<HomePage> {
     SnackBarAction action = AppSnackBarAction.getDefaultPermissionAction(context);
     PermissionGroup deniedPermission = await PermissionUtil.requestPermissions(context, [PermissionGroup.location], prompt, action: action);
     if(deniedPermission != PermissionGroup.location) {
-      String strJson = await _location.invokeMethod('getLocation');
-      print('_location ====> '+strJson);
+//      String strJson = await _location.invokeMethod('getLocation');
+      String result = await _location.invokeMethod('getLocation');
+      print('_location result ====> '+result.toString());
     }
 
   }

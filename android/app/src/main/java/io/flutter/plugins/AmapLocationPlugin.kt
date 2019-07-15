@@ -41,8 +41,8 @@ class AmapLocationPlugin(context: Context): MethodChannel.MethodCallHandler {
                 result?.error(location.errorCode.toString(), location.errorInfo, null)
             } else {
                 //字段是首字母小写，其余单词首字母大写
-                val gson = Gson()
-                val strJson = gson.toJson(location)
+                val locationData = AmapLocationData(location)
+                val strJson = Gson().toJson(locationData)
                 result?.success(strJson)
             }
         }
