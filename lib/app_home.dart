@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'dart:convert';
 
+import 'data/amap_location.dart';
 import 'translations.dart';
 import 'application.dart';
 import 'strings.dart';
@@ -75,9 +77,10 @@ class HomePageState extends State<HomePage> {
     SnackBarAction action = AppSnackBarAction.getDefaultPermissionAction(context);
     PermissionGroup deniedPermission = await PermissionUtil.requestPermissions(context, [PermissionGroup.location], prompt, action: action);
     if(deniedPermission != PermissionGroup.location) {
-//      String strJson = await _location.invokeMethod('getLocation');
       String result = await _location.invokeMethod('getLocation');
-      print('_location result ====> '+result.toString());
+      Map locationMap = jsonDecode(result);
+      var amapLocation = AmapLocation.fromJson(locationMap);
+      print('jsonEncode(amapLocation) ====> ' + jsonEncode(amapLocation));
     }
 
   }
