@@ -36,6 +36,11 @@ data class AmapLocationData(
         val errorCode: Int = location.errorCode, //错误码
         val errorInfo: String = location.errorInfo, //错误信息
         val floor: String = location.floor, //室内定位的楼层信息
+        /**
+         * 获取卫星信号强度，仅在卫星定位时有效,值为：
+         * #GPS_ACCURACY_BAD，#GPS_ACCURACY_GOOD，#GPS_ACCURACY_UNKNOWN
+         */
+        val gpsAccuracyStatus: Int = location.gpsAccuracyStatus,
         val latitude: Double = location.latitude, //纬度
         val locationDetail: String = location.locationDetail, //定位信息描述
 //        val locationQualityReport: AMapLocationQualityReport = location.locationQualityReport, //定位质量

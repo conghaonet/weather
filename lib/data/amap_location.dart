@@ -8,10 +8,46 @@ part 'amap_location.g.dart';
 @JsonSerializable()
 
 class AmapLocation{
+  static const int LOCATION_SUCCESS = 0;
+  static const int ERROR_CODE_INVALID_PARAMETER = 1;
+  static const int ERROR_CODE_FAILURE_WIFI_INFO = 2;
+  static const int ERROR_CODE_FAILURE_LOCATION_PARAMETER = 3;
+  static const int ERROR_CODE_FAILURE_CONNECTION = 4;
+  static const int ERROR_CODE_FAILURE_PARSER = 5;
+  static const int ERROR_CODE_FAILURE_LOCATION = 6;
+  static const int ERROR_CODE_FAILURE_AUTH = 7;
+  static const int ERROR_CODE_UNKNOWN = 8;
+  static const int ERROR_CODE_FAILURE_INIT = 9;
+  static const int ERROR_CODE_SERVICE_FAIL = 10;
+  static const int ERROR_CODE_FAILURE_CELL = 11;
+  static const int ERROR_CODE_FAILURE_LOCATION_PERMISSION = 12;
+  static const int ERROR_CODE_FAILURE_NOWIFIANDAP = 13;
+  static const int ERROR_CODE_FAILURE_NOENOUGHSATELLITES = 14;
+  static const int ERROR_CODE_FAILURE_SIMULATION_LOCATION = 15;
+  static const int ERROR_CODE_AIRPLANEMODE_WIFIOFF = 18;
+  static const int ERROR_CODE_NOCGI_WIFIOFF = 19;
+
+  static const int LOCATION_TYPE_GPS = 1;
+  static const int LOCATION_TYPE_SAME_REQ = 2;
+  static const int LOCATION_TYPE_FAST = 3;
+  static const int LOCATION_TYPE_FIX_CACHE = 4;
+  static const int LOCATION_TYPE_WIFI = 5;
+  static const int LOCATION_TYPE_CELL = 6;
+  static const int LOCATION_TYPE_AMAP = 7;
+  static const int LOCATION_TYPE_OFFLINE = 8;
+  static const int LOCATION_TYPE_LAST_LOCATION_CACHE = 9;
+
+  static const String COORD_TYPE_WGS84 = "WGS84";
+  static const String COORD_TYPE_GCJ02 = "GCJ02";
+
+  static const int GPS_ACCURACY_GOOD = 1;
+  static const int GPS_ACCURACY_BAD = 0;
+  static const int GPS_ACCURACY_UNKNOWN = -1;
+
   AmapLocation(this.accuracy, this.adCode, this.address, this.altitude, this.aoiName, this.bearing, this.buildingId, this.city, this.cityCode,
-      this.conScenario, this.coordType, this.country, this.description, this.district, this.errorCode, this.errorInfo, this.floor, this.latitude,
-      this.locationDetail, this.locationType, this.longitude, this.poiName, this.provider, this.province, this.satellites, this.speed, this.street,
-      this.streetNum, this.trustedLevel);
+      this.conScenario, this.coordType, this.country, this.description, this.district, this.errorCode, this.errorInfo, this.floor,
+      this.gpsAccuracyStatus, this.latitude, this.locationDetail, this.locationType, this.longitude, this.poiName, this.provider, this.province,
+      this.satellites, this.speed, this.street, this.streetNum, this.trustedLevel);
   /// 获取定位精度 单位:米
   double accuracy;
   /// 获取区域编码
@@ -49,6 +85,9 @@ class AmapLocation{
   String errorInfo;
   /// 室内定位的楼层信息
   String floor;
+  /// 获取卫星信号强度，仅在卫星定位时有效,值为：
+  /// [GPS_ACCURACY_BAD]，[GPS_ACCURACY_GOOD]，[GPS_ACCURACY_UNKNOWN]
+  int gpsAccuracyStatus;
   /// 纬度
   double latitude;
   /// 定位信息描述

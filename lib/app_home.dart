@@ -10,6 +10,7 @@ import 'application.dart';
 import 'strings.dart';
 import 'utils/permission_util.dart';
 import 'utils/snack_bar_util.dart';
+import 'utils/util.dart';
 
 class WeatherApp extends StatefulWidget {
   @override
@@ -81,6 +82,7 @@ class HomePageState extends State<HomePage> {
       Map locationMap = jsonDecode(result);
       var amapLocation = AmapLocation.fromJson(locationMap);
       print('jsonEncode(amapLocation) ====> ' + jsonEncode(amapLocation));
+      Util.showToast(jsonEncode(amapLocation));
     }
 
   }
