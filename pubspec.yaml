@@ -55,6 +55,7 @@ flutter:
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
   assets:
+    - assets/
     - locale/i18n_en.json
     - locale/i18n_zh.json
     - images/

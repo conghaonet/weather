@@ -1,0 +1,10550 @@
+[
+	{
+		"provinceCode": "101010100",
+		"provinceName": "北京",
+		"cities": [
+			{
+				"cityCode": "101010100",
+				"cityName": "北京"
+			},
+			{
+				"cityCode": "101010200",
+				"cityName": "海淀"
+			},
+			{
+				"cityCode": "101010300",
+				"cityName": "朝阳"
+			},
+			{
+				"cityCode": "101010400",
+				"cityName": "顺义"
+			},
+			{
+				"cityCode": "101010500",
+				"cityName": "怀柔"
+			},
+			{
+				"cityCode": "101010600",
+				"cityName": "通州"
+			},
+			{
+				"cityCode": "101010700",
+				"cityName": "昌平"
+			},
+			{
+				"cityCode": "101010800",
+				"cityName": "延庆"
+			},
+			{
+				"cityCode": "101010900",
+				"cityName": "丰台"
+			},
+			{
+				"cityCode": "101011000",
+				"cityName": "石景山"
+			},
+			{
+				"cityCode": "101011100",
+				"cityName": "大兴"
+			},
+			{
+				"cityCode": "101011200",
+				"cityName": "房山"
+			},
+			{
+				"cityCode": "101011300",
+				"cityName": "密云"
+			},
+			{
+				"cityCode": "101011400",
+				"cityName": "门头沟"
+			},
+			{
+				"cityCode": "101011500",
+				"cityName": "平谷"
+			},
+			{
+				"cityCode": "101011600",
+				"cityName": "八达岭"
+			},
+			{
+				"cityCode": "101011700",
+				"cityName": "佛爷顶"
+			},
+			{
+				"cityCode": "101011800",
+				"cityName": "汤河口"
+			},
+			{
+				"cityCode": "101011900",
+				"cityName": "密云上甸子"
+			},
+			{
+				"cityCode": "101012000",
+				"cityName": "斋堂"
+			},
+			{
+				"cityCode": "101012100",
+				"cityName": "霞云岭"
+			}
+		]
+	},
+	{
+		"provinceCode": "101020100",
+		"provinceName": "上海",
+		"cities": [
+			{
+				"cityCode": "101020100",
+				"cityName": "上海"
+			},
+			{
+				"cityCode": "101020200",
+				"cityName": "闵行"
+			},
+			{
+				"cityCode": "101020300",
+				"cityName": "宝山"
+			},
+			{
+				"cityCode": "101020400",
+				"cityName": "川沙"
+			},
+			{
+				"cityCode": "101020500",
+				"cityName": "嘉定"
+			},
+			{
+				"cityCode": "101020600",
+				"cityName": "南汇"
+			},
+			{
+				"cityCode": "101020700",
+				"cityName": "金山"
+			},
+			{
+				"cityCode": "101020800",
+				"cityName": "青浦"
+			},
+			{
+				"cityCode": "101020900",
+				"cityName": "松江"
+			},
+			{
+				"cityCode": "101021000",
+				"cityName": "奉贤"
+			},
+			{
+				"cityCode": "101021100",
+				"cityName": "崇明"
+			},
+			{
+				"cityCode": "101021101",
+				"cityName": "陈家镇"
+			},
+			{
+				"cityCode": "101021102",
+				"cityName": "引水船"
+			},
+			{
+				"cityCode": "101021200",
+				"cityName": "徐家汇"
+			},
+			{
+				"cityCode": "101021300",
+				"cityName": "浦东"
+			}
+		]
+	},
+	{
+		"provinceCode": "101030100",
+		"provinceName": "天津",
+		"cities": [
+			{
+				"cityCode": "101030100",
+				"cityName": "天津"
+			},
+			{
+				"cityCode": "101030200",
+				"cityName": "武清"
+			},
+			{
+				"cityCode": "101030300",
+				"cityName": "宝坻"
+			},
+			{
+				"cityCode": "101030400",
+				"cityName": "东丽"
+			},
+			{
+				"cityCode": "101030500",
+				"cityName": "西青"
+			},
+			{
+				"cityCode": "101030600",
+				"cityName": "北辰"
+			},
+			{
+				"cityCode": "101030700",
+				"cityName": "宁河"
+			},
+			{
+				"cityCode": "101030800",
+				"cityName": "汉沽"
+			},
+			{
+				"cityCode": "101030900",
+				"cityName": "静海"
+			},
+			{
+				"cityCode": "101031000",
+				"cityName": "津南"
+			},
+			{
+				"cityCode": "101031100",
+				"cityName": "塘沽"
+			},
+			{
+				"cityCode": "101031200",
+				"cityName": "大港"
+			},
+			{
+				"cityCode": "101031300",
+				"cityName": "平台"
+			},
+			{
+				"cityCode": "101031400",
+				"cityName": "蓟县"
+			}
+		]
+	},
+	{
+		"provinceCode": "101040100",
+		"provinceName": "重庆",
+		"cities": [
+			{
+				"cityCode": "101040100",
+				"cityName": "重庆"
+			},
+			{
+				"cityCode": "101040200",
+				"cityName": "永川"
+			},
+			{
+				"cityCode": "101040300",
+				"cityName": "合川"
+			},
+			{
+				"cityCode": "101040400",
+				"cityName": "南川"
+			},
+			{
+				"cityCode": "101040500",
+				"cityName": "江津"
+			},
+			{
+				"cityCode": "101040600",
+				"cityName": "万盛"
+			},
+			{
+				"cityCode": "101040700",
+				"cityName": "渝北"
+			},
+			{
+				"cityCode": "101040800",
+				"cityName": "北碚"
+			},
+			{
+				"cityCode": "101040900",
+				"cityName": "巴南"
+			},
+			{
+				"cityCode": "101041000",
+				"cityName": "长寿"
+			},
+			{
+				"cityCode": "101041100",
+				"cityName": "黔江"
+			},
+			{
+				"cityCode": "101041200",
+				"cityName": "万州天城"
+			},
+			{
+				"cityCode": "101041300",
+				"cityName": "万州龙宝"
+			},
+			{
+				"cityCode": "101041400",
+				"cityName": "涪陵"
+			},
+			{
+				"cityCode": "101041500",
+				"cityName": "开县"
+			},
+			{
+				"cityCode": "101041600",
+				"cityName": "城口"
+			},
+			{
+				"cityCode": "101041700",
+				"cityName": "云阳"
+			},
+			{
+				"cityCode": "101041800",
+				"cityName": "巫溪"
+			},
+			{
+				"cityCode": "101041900",
+				"cityName": "奉节"
+			},
+			{
+				"cityCode": "101042000",
+				"cityName": "巫山"
+			},
+			{
+				"cityCode": "101042100",
+				"cityName": "潼南"
+			},
+			{
+				"cityCode": "101042200",
+				"cityName": "垫江"
+			},
+			{
+				"cityCode": "101042300",
+				"cityName": "梁平"
+			},
+			{
+				"cityCode": "101042400",
+				"cityName": "忠县"
+			},
+			{
+				"cityCode": "101042500",
+				"cityName": "石柱"
+			},
+			{
+				"cityCode": "101042600",
+				"cityName": "大足"
+			},
+			{
+				"cityCode": "101042700",
+				"cityName": "荣昌"
+			},
+			{
+				"cityCode": "101042800",
+				"cityName": "铜梁"
+			},
+			{
+				"cityCode": "101042900",
+				"cityName": "璧山"
+			},
+			{
+				"cityCode": "101043000",
+				"cityName": "丰都"
+			},
+			{
+				"cityCode": "101043100",
+				"cityName": "武隆"
+			},
+			{
+				"cityCode": "101043200",
+				"cityName": "彭水"
+			},
+			{
+				"cityCode": "101043300",
+				"cityName": "綦江"
+			},
+			{
+				"cityCode": "101043400",
+				"cityName": "酉阳"
+			},
+			{
+				"cityCode": "101043500",
+				"cityName": "金佛山"
+			},
+			{
+				"cityCode": "101043600",
+				"cityName": "秀山"
+			},
+			{
+				"cityCode": "101043700",
+				"cityName": "沙坪坝"
+			}
+		]
+	},
+	{
+		"provinceCode": "101050101",
+		"provinceName": "哈尔滨",
+		"cities": [
+			{
+				"cityCode": "101050101",
+				"cityName": "哈尔滨"
+			},
+			{
+				"cityCode": "101050102",
+				"cityName": "双城"
+			},
+			{
+				"cityCode": "101050103",
+				"cityName": "呼兰"
+			},
+			{
+				"cityCode": "101050104",
+				"cityName": "阿城"
+			},
+			{
+				"cityCode": "101050105",
+				"cityName": "宾县"
+			},
+			{
+				"cityCode": "101050106",
+				"cityName": "依兰"
+			},
+			{
+				"cityCode": "101050107",
+				"cityName": "巴彦"
+			},
+			{
+				"cityCode": "101050108",
+				"cityName": "通河"
+			},
+			{
+				"cityCode": "101050109",
+				"cityName": "方正"
+			},
+			{
+				"cityCode": "101050110",
+				"cityName": "延寿"
+			},
+			{
+				"cityCode": "101050111",
+				"cityName": "尚志"
+			},
+			{
+				"cityCode": "101050112",
+				"cityName": "五常"
+			},
+			{
+				"cityCode": "101050113",
+				"cityName": "木兰"
+			},
+			{
+				"cityCode": "101050201",
+				"cityName": "齐齐哈尔"
+			},
+			{
+				"cityCode": "101050202",
+				"cityName": "讷河"
+			},
+			{
+				"cityCode": "101050203",
+				"cityName": "龙江"
+			},
+			{
+				"cityCode": "101050204",
+				"cityName": "甘南"
+			},
+			{
+				"cityCode": "101050205",
+				"cityName": "富裕"
+			},
+			{
+				"cityCode": "101050206",
+				"cityName": "依安"
+			},
+			{
+				"cityCode": "101050207",
+				"cityName": "拜泉"
+			},
+			{
+				"cityCode": "101050208",
+				"cityName": "克山"
+			},
+			{
+				"cityCode": "101050209",
+				"cityName": "克东"
+			},
+			{
+				"cityCode": "101050210",
+				"cityName": "泰来"
+			},
+			{
+				"cityCode": "101050301",
+				"cityName": "牡丹江"
+			},
+			{
+				"cityCode": "101050302",
+				"cityName": "海林"
+			},
+			{
+				"cityCode": "101050303",
+				"cityName": "穆棱"
+			},
+			{
+				"cityCode": "101050304",
+				"cityName": "林口"
+			},
+			{
+				"cityCode": "101050305",
+				"cityName": "绥芬河"
+			},
+			{
+				"cityCode": "101050306",
+				"cityName": "宁安"
+			},
+			{
+				"cityCode": "101050307",
+				"cityName": "东宁"
+			},
+			{
+				"cityCode": "101050401",
+				"cityName": "佳木斯"
+			},
+			{
+				"cityCode": "101050402",
+				"cityName": "汤原"
+			},
+			{
+				"cityCode": "101050403",
+				"cityName": "抚远"
+			},
+			{
+				"cityCode": "101050404",
+				"cityName": "桦川"
+			},
+			{
+				"cityCode": "101050405",
+				"cityName": "桦南"
+			},
+			{
+				"cityCode": "101050406",
+				"cityName": "同江"
+			},
+			{
+				"cityCode": "101050407",
+				"cityName": "富锦"
+			},
+			{
+				"cityCode": "101050501",
+				"cityName": "绥化"
+			},
+			{
+				"cityCode": "101050502",
+				"cityName": "肇东"
+			},
+			{
+				"cityCode": "101050503",
+				"cityName": "安达"
+			},
+			{
+				"cityCode": "101050504",
+				"cityName": "海伦"
+			},
+			{
+				"cityCode": "101050505",
+				"cityName": "明水"
+			},
+			{
+				"cityCode": "101050506",
+				"cityName": "望奎"
+			},
+			{
+				"cityCode": "101050507",
+				"cityName": "兰西"
+			},
+			{
+				"cityCode": "101050508",
+				"cityName": "青冈"
+			},
+			{
+				"cityCode": "101050509",
+				"cityName": "庆安"
+			},
+			{
+				"cityCode": "101050510",
+				"cityName": "绥棱"
+			},
+			{
+				"cityCode": "101050601",
+				"cityName": "黑河"
+			},
+			{
+				"cityCode": "101050602",
+				"cityName": "嫩江"
+			},
+			{
+				"cityCode": "101050603",
+				"cityName": "孙吴"
+			},
+			{
+				"cityCode": "101050604",
+				"cityName": "逊克"
+			},
+			{
+				"cityCode": "101050605",
+				"cityName": "五大连池"
+			},
+			{
+				"cityCode": "101050606",
+				"cityName": "北安"
+			},
+			{
+				"cityCode": "101050701",
+				"cityName": "大兴安岭"
+			},
+			{
+				"cityCode": "101050702",
+				"cityName": "塔河"
+			},
+			{
+				"cityCode": "101050703",
+				"cityName": "漠河"
+			},
+			{
+				"cityCode": "101050704",
+				"cityName": "呼玛"
+			},
+			{
+				"cityCode": "101050705",
+				"cityName": "呼中"
+			},
+			{
+				"cityCode": "101050706",
+				"cityName": "新林"
+			},
+			{
+				"cityCode": "101050707",
+				"cityName": "阿木尔"
+			},
+			{
+				"cityCode": "101050708",
+				"cityName": "加格达奇"
+			},
+			{
+				"cityCode": "101050801",
+				"cityName": "伊春"
+			},
+			{
+				"cityCode": "101050802",
+				"cityName": "乌伊岭"
+			},
+			{
+				"cityCode": "101050803",
+				"cityName": "五营"
+			},
+			{
+				"cityCode": "101050804",
+				"cityName": "铁力"
+			},
+			{
+				"cityCode": "101050805",
+				"cityName": "嘉荫"
+			},
+			{
+				"cityCode": "101050901",
+				"cityName": "大庆"
+			},
+			{
+				"cityCode": "101050902",
+				"cityName": "林甸"
+			},
+			{
+				"cityCode": "101050903",
+				"cityName": "肇州"
+			},
+			{
+				"cityCode": "101050904",
+				"cityName": "肇源"
+			},
+			{
+				"cityCode": "101050905",
+				"cityName": "杜蒙"
+			},
+			{
+				"cityCode": "101051002",
+				"cityName": "七台河"
+			},
+			{
+				"cityCode": "101051003",
+				"cityName": "勃利"
+			},
+			{
+				"cityCode": "101051101",
+				"cityName": "鸡西"
+			},
+			{
+				"cityCode": "101051102",
+				"cityName": "虎林"
+			},
+			{
+				"cityCode": "101051103",
+				"cityName": "密山"
+			},
+			{
+				"cityCode": "101051104",
+				"cityName": "鸡东"
+			},
+			{
+				"cityCode": "101051201",
+				"cityName": "鹤岗"
+			},
+			{
+				"cityCode": "101051202",
+				"cityName": "绥滨"
+			},
+			{
+				"cityCode": "101051203",
+				"cityName": "萝北"
+			},
+			{
+				"cityCode": "101051301",
+				"cityName": "双鸭山"
+			},
+			{
+				"cityCode": "101051302",
+				"cityName": "集贤"
+			},
+			{
+				"cityCode": "101051303",
+				"cityName": "宝清"
+			},
+			{
+				"cityCode": "101051304",
+				"cityName": "饶河"
+			}
+		]
+	},
+	{
+		"provinceCode": "101060101",
+		"provinceName": "长春",
+		"cities": [
+			{
+				"cityCode": "101060101",
+				"cityName": "长春"
+			},
+			{
+				"cityCode": "101060102",
+				"cityName": "农安"
+			},
+			{
+				"cityCode": "101060103",
+				"cityName": "德惠"
+			},
+			{
+				"cityCode": "101060104",
+				"cityName": "九台"
+			},
+			{
+				"cityCode": "101060105",
+				"cityName": "榆树"
+			},
+			{
+				"cityCode": "101060106",
+				"cityName": "双阳"
+			},
+			{
+				"cityCode": "101060201",
+				"cityName": "吉林"
+			},
+			{
+				"cityCode": "101060202",
+				"cityName": "舒兰"
+			},
+			{
+				"cityCode": "101060203",
+				"cityName": "永吉"
+			},
+			{
+				"cityCode": "101060204",
+				"cityName": "蛟河"
+			},
+			{
+				"cityCode": "101060205",
+				"cityName": "磐石"
+			},
+			{
+				"cityCode": "101060206",
+				"cityName": "桦甸"
+			},
+			{
+				"cityCode": "101060207",
+				"cityName": "烟筒山"
+			},
+			{
+				"cityCode": "101060301",
+				"cityName": "延吉"
+			},
+			{
+				"cityCode": "101060302",
+				"cityName": "敦化"
+			},
+			{
+				"cityCode": "101060303",
+				"cityName": "安图"
+			},
+			{
+				"cityCode": "101060304",
+				"cityName": "汪清"
+			},
+			{
+				"cityCode": "101060305",
+				"cityName": "和龙"
+			},
+			{
+				"cityCode": "101060306",
+				"cityName": "天池"
+			},
+			{
+				"cityCode": "101060307",
+				"cityName": "龙井"
+			},
+			{
+				"cityCode": "101060308",
+				"cityName": "珲春"
+			},
+			{
+				"cityCode": "101060309",
+				"cityName": "图们"
+			},
+			{
+				"cityCode": "101060310",
+				"cityName": "松江"
+			},
+			{
+				"cityCode": "101060311",
+				"cityName": "罗子沟"
+			},
+			{
+				"cityCode": "101060312",
+				"cityName": "延边"
+			},
+			{
+				"cityCode": "101060401",
+				"cityName": "四平"
+			},
+			{
+				"cityCode": "101060402",
+				"cityName": "双辽"
+			},
+			{
+				"cityCode": "101060403",
+				"cityName": "梨树"
+			},
+			{
+				"cityCode": "101060404",
+				"cityName": "公主岭"
+			},
+			{
+				"cityCode": "101060405",
+				"cityName": "伊通"
+			},
+			{
+				"cityCode": "101060406",
+				"cityName": "孤家子"
+			},
+			{
+				"cityCode": "101060501",
+				"cityName": "通化"
+			},
+			{
+				"cityCode": "101060502",
+				"cityName": "梅河口"
+			},
+			{
+				"cityCode": "101060503",
+				"cityName": "柳河"
+			},
+			{
+				"cityCode": "101060504",
+				"cityName": "辉南"
+			},
+			{
+				"cityCode": "101060505",
+				"cityName": "集安"
+			},
+			{
+				"cityCode": "101060506",
+				"cityName": "通化县"
+			},
+			{
+				"cityCode": "101060601",
+				"cityName": "白城"
+			},
+			{
+				"cityCode": "101060602",
+				"cityName": "洮南"
+			},
+			{
+				"cityCode": "101060603",
+				"cityName": "大安"
+			},
+			{
+				"cityCode": "101060604",
+				"cityName": "镇赉"
+			},
+			{
+				"cityCode": "101060605",
+				"cityName": "通榆"
+			},
+			{
+				"cityCode": "101060701",
+				"cityName": "辽源"
+			},
+			{
+				"cityCode": "101060702",
+				"cityName": "东丰"
+			},
+			{
+				"cityCode": "101060801",
+				"cityName": "松原"
+			},
+			{
+				"cityCode": "101060802",
+				"cityName": "乾安"
+			},
+			{
+				"cityCode": "101060803",
+				"cityName": "前郭"
+			},
+			{
+				"cityCode": "101060804",
+				"cityName": "长岭"
+			},
+			{
+				"cityCode": "101060805",
+				"cityName": "扶余"
+			},
+			{
+				"cityCode": "101060901",
+				"cityName": "白山"
+			},
+			{
+				"cityCode": "101060902",
+				"cityName": "靖宇"
+			},
+			{
+				"cityCode": "101060903",
+				"cityName": "临江"
+			},
+			{
+				"cityCode": "101060904",
+				"cityName": "东岗"
+			},
+			{
+				"cityCode": "101060905",
+				"cityName": "长白"
+			}
+		]
+	},
+	{
+		"provinceCode": "101070101",
+		"provinceName": "沈阳",
+		"cities": [
+			{
+				"cityCode": "101070101",
+				"cityName": "沈阳"
+			},
+			{
+				"cityCode": "101070102",
+				"cityName": "苏家屯"
+			},
+			{
+				"cityCode": "101070103",
+				"cityName": "辽中"
+			},
+			{
+				"cityCode": "101070104",
+				"cityName": "康平"
+			},
+			{
+				"cityCode": "101070105",
+				"cityName": "法库"
+			},
+			{
+				"cityCode": "101070106",
+				"cityName": "新民"
+			},
+			{
+				"cityCode": "101070107",
+				"cityName": "于洪"
+			},
+			{
+				"cityCode": "101070108",
+				"cityName": "新城子"
+			},
+			{
+				"cityCode": "101070201",
+				"cityName": "大连"
+			},
+			{
+				"cityCode": "101070202",
+				"cityName": "瓦房店"
+			},
+			{
+				"cityCode": "101070203",
+				"cityName": "金州"
+			},
+			{
+				"cityCode": "101070204",
+				"cityName": "普兰店"
+			},
+			{
+				"cityCode": "101070205",
+				"cityName": "旅顺"
+			},
+			{
+				"cityCode": "101070206",
+				"cityName": "长海"
+			},
+			{
+				"cityCode": "101070207",
+				"cityName": "庄河"
+			},
+			{
+				"cityCode": "101070208",
+				"cityName": "皮口"
+			},
+			{
+				"cityCode": "101070209",
+				"cityName": "海洋岛"
+			},
+			{
+				"cityCode": "101070301",
+				"cityName": "鞍山"
+			},
+			{
+				"cityCode": "101070302",
+				"cityName": "台安"
+			},
+			{
+				"cityCode": "101070303",
+				"cityName": "岫岩"
+			},
+			{
+				"cityCode": "101070304",
+				"cityName": "海城"
+			},
+			{
+				"cityCode": "101070401",
+				"cityName": "抚顺"
+			},
+			{
+				"cityCode": "101070403",
+				"cityName": "清原"
+			},
+			{
+				"cityCode": "101070404",
+				"cityName": "章党"
+			},
+			{
+				"cityCode": "101070501",
+				"cityName": "本溪"
+			},
+			{
+				"cityCode": "101070502",
+				"cityName": "本溪县"
+			},
+			{
+				"cityCode": "101070503",
+				"cityName": "草河口"
+			},
+			{
+				"cityCode": "101070504",
+				"cityName": "桓仁"
+			},
+			{
+				"cityCode": "101070601",
+				"cityName": "丹东"
+			},
+			{
+				"cityCode": "101070602",
+				"cityName": "凤城"
+			},
+			{
+				"cityCode": "101070603",
+				"cityName": "宽甸"
+			},
+			{
+				"cityCode": "101070604",
+				"cityName": "东港"
+			},
+			{
+				"cityCode": "101070605",
+				"cityName": "东沟"
+			},
+			{
+				"cityCode": "101070701",
+				"cityName": "锦州"
+			},
+			{
+				"cityCode": "101070702",
+				"cityName": "凌海"
+			},
+			{
+				"cityCode": "101070703",
+				"cityName": "北宁"
+			},
+			{
+				"cityCode": "101070704",
+				"cityName": "义县"
+			},
+			{
+				"cityCode": "101070705",
+				"cityName": "黑山"
+			},
+			{
+				"cityCode": "101070706",
+				"cityName": "北镇"
+			},
+			{
+				"cityCode": "101070801",
+				"cityName": "营口"
+			},
+			{
+				"cityCode": "101070802",
+				"cityName": "大石桥"
+			},
+			{
+				"cityCode": "101070803",
+				"cityName": "盖州"
+			},
+			{
+				"cityCode": "101070901",
+				"cityName": "阜新"
+			},
+			{
+				"cityCode": "101070902",
+				"cityName": "彰武"
+			},
+			{
+				"cityCode": "101071001",
+				"cityName": "辽阳"
+			},
+			{
+				"cityCode": "101071002",
+				"cityName": "辽阳县"
+			},
+			{
+				"cityCode": "101071003",
+				"cityName": "灯塔"
+			},
+			{
+				"cityCode": "101071101",
+				"cityName": "铁岭"
+			},
+			{
+				"cityCode": "101071102",
+				"cityName": "开原"
+			},
+			{
+				"cityCode": "101071103",
+				"cityName": "昌图"
+			},
+			{
+				"cityCode": "101071104",
+				"cityName": "西丰"
+			},
+			{
+				"cityCode": "101071201",
+				"cityName": "朝阳"
+			},
+			{
+				"cityCode": "101071202",
+				"cityName": "建平"
+			},
+			{
+				"cityCode": "101071203",
+				"cityName": "凌源"
+			},
+			{
+				"cityCode": "101071204",
+				"cityName": "喀左"
+			},
+			{
+				"cityCode": "101071205",
+				"cityName": "北票"
+			},
+			{
+				"cityCode": "101071206",
+				"cityName": "羊山"
+			},
+			{
+				"cityCode": "101071207",
+				"cityName": "建平县"
+			},
+			{
+				"cityCode": "101071301",
+				"cityName": "盘锦"
+			},
+			{
+				"cityCode": "101071302",
+				"cityName": "大洼"
+			},
+			{
+				"cityCode": "101071303",
+				"cityName": "盘山"
+			},
+			{
+				"cityCode": "101071401",
+				"cityName": "葫芦岛"
+			},
+			{
+				"cityCode": "101071402",
+				"cityName": "建昌"
+			},
+			{
+				"cityCode": "101071403",
+				"cityName": "绥中"
+			},
+			{
+				"cityCode": "101071404",
+				"cityName": "兴城"
+			}
+		]
+	},
+	{
+		"provinceCode": "101080101",
+		"provinceName": "呼和浩特",
+		"cities": [
+			{
+				"cityCode": "101080101",
+				"cityName": "呼和浩特"
+			},
+			{
+				"cityCode": "101080102",
+				"cityName": "土默特左旗"
+			},
+			{
+				"cityCode": "101080103",
+				"cityName": "托克托"
+			},
+			{
+				"cityCode": "101080104",
+				"cityName": "和林格尔"
+			},
+			{
+				"cityCode": "101080105",
+				"cityName": "清水河"
+			},
+			{
+				"cityCode": "101080106",
+				"cityName": "呼和浩特市郊区"
+			},
+			{
+				"cityCode": "101080107",
+				"cityName": "武川"
+			},
+			{
+				"cityCode": "101080201",
+				"cityName": "包头"
+			},
+			{
+				"cityCode": "101080202",
+				"cityName": "白云鄂博"
+			},
+			{
+				"cityCode": "101080203",
+				"cityName": "满都拉"
+			},
+			{
+				"cityCode": "101080204",
+				"cityName": "土默特右旗"
+			},
+			{
+				"cityCode": "101080205",
+				"cityName": "固阳"
+			},
+			{
+				"cityCode": "101080206",
+				"cityName": "达尔罕茂明安联合旗"
+			},
+			{
+				"cityCode": "101080207",
+				"cityName": "石拐"
+			},
+			{
+				"cityCode": "101080301",
+				"cityName": "乌海"
+			},
+			{
+				"cityCode": "101080401",
+				"cityName": "集宁"
+			},
+			{
+				"cityCode": "101080402",
+				"cityName": "卓资"
+			},
+			{
+				"cityCode": "101080403",
+				"cityName": "化德"
+			},
+			{
+				"cityCode": "101080404",
+				"cityName": "商都"
+			},
+			{
+				"cityCode": "101080405",
+				"cityName": "希拉穆仁"
+			},
+			{
+				"cityCode": "101080406",
+				"cityName": "兴和"
+			},
+			{
+				"cityCode": "101080407",
+				"cityName": "凉城"
+			},
+			{
+				"cityCode": "101080408",
+				"cityName": "察哈尔右翼前旗"
+			},
+			{
+				"cityCode": "101080409",
+				"cityName": "察哈尔右翼中旗"
+			},
+			{
+				"cityCode": "101080410",
+				"cityName": "察哈尔右翼后旗"
+			},
+			{
+				"cityCode": "101080411",
+				"cityName": "四子王旗"
+			},
+			{
+				"cityCode": "101080412",
+				"cityName": "丰镇"
+			},
+			{
+				"cityCode": "101080501",
+				"cityName": "通辽"
+			},
+			{
+				"cityCode": "101080502",
+				"cityName": "舍伯吐"
+			},
+			{
+				"cityCode": "101080503",
+				"cityName": "科尔沁左翼中旗"
+			},
+			{
+				"cityCode": "101080504",
+				"cityName": "科尔沁左翼后旗"
+			},
+			{
+				"cityCode": "101080505",
+				"cityName": "青龙山"
+			},
+			{
+				"cityCode": "101080506",
+				"cityName": "开鲁"
+			},
+			{
+				"cityCode": "101080507",
+				"cityName": "库伦旗"
+			},
+			{
+				"cityCode": "101080508",
+				"cityName": "奈曼旗"
+			},
+			{
+				"cityCode": "101080509",
+				"cityName": "扎鲁特旗"
+			},
+			{
+				"cityCode": "101080510",
+				"cityName": "高力板"
+			},
+			{
+				"cityCode": "101080511",
+				"cityName": "巴雅尔吐胡硕"
+			},
+			{
+				"cityCode": "101080512",
+				"cityName": "通辽钱家店"
+			},
+			{
+				"cityCode": "101080601",
+				"cityName": "赤峰"
+			},
+			{
+				"cityCode": "101080602",
+				"cityName": "赤峰郊区站"
+			},
+			{
+				"cityCode": "101080603",
+				"cityName": "阿鲁科尔沁旗"
+			},
+			{
+				"cityCode": "101080604",
+				"cityName": "浩尔吐"
+			},
+			{
+				"cityCode": "101080605",
+				"cityName": "巴林左旗"
+			},
+			{
+				"cityCode": "101080606",
+				"cityName": "巴林右旗"
+			},
+			{
+				"cityCode": "101080607",
+				"cityName": "林西"
+			},
+			{
+				"cityCode": "101080608",
+				"cityName": "克什克腾旗"
+			},
+			{
+				"cityCode": "101080609",
+				"cityName": "翁牛特旗"
+			},
+			{
+				"cityCode": "101080610",
+				"cityName": "岗子"
+			},
+			{
+				"cityCode": "101080611",
+				"cityName": "喀喇沁旗"
+			},
+			{
+				"cityCode": "101080612",
+				"cityName": "八里罕"
+			},
+			{
+				"cityCode": "101080613",
+				"cityName": "宁城"
+			},
+			{
+				"cityCode": "101080614",
+				"cityName": "敖汉旗"
+			},
+			{
+				"cityCode": "101080615",
+				"cityName": "宝过图"
+			},
+			{
+				"cityCode": "101080701",
+				"cityName": "鄂尔多斯"
+			},
+			{
+				"cityCode": "101080703",
+				"cityName": "达拉特旗"
+			},
+			{
+				"cityCode": "101080704",
+				"cityName": "准格尔旗"
+			},
+			{
+				"cityCode": "101080705",
+				"cityName": "鄂托克前旗"
+			},
+			{
+				"cityCode": "101080706",
+				"cityName": "河南"
+			},
+			{
+				"cityCode": "101080707",
+				"cityName": "伊克乌素"
+			},
+			{
+				"cityCode": "101080708",
+				"cityName": "鄂托克旗"
+			},
+			{
+				"cityCode": "101080709",
+				"cityName": "杭锦旗"
+			},
+			{
+				"cityCode": "101080710",
+				"cityName": "乌审旗"
+			},
+			{
+				"cityCode": "101080711",
+				"cityName": "伊金霍洛旗"
+			},
+			{
+				"cityCode": "101080712",
+				"cityName": "乌审召"
+			},
+			{
+				"cityCode": "101080713",
+				"cityName": "东胜"
+			},
+			{
+				"cityCode": "101080801",
+				"cityName": "临河"
+			},
+			{
+				"cityCode": "101080802",
+				"cityName": "五原"
+			},
+			{
+				"cityCode": "101080803",
+				"cityName": "磴口"
+			},
+			{
+				"cityCode": "101080804",
+				"cityName": "乌拉特前旗"
+			},
+			{
+				"cityCode": "101080805",
+				"cityName": "大佘太"
+			},
+			{
+				"cityCode": "101080806",
+				"cityName": "乌拉特中旗"
+			},
+			{
+				"cityCode": "101080807",
+				"cityName": "乌拉特后旗"
+			},
+			{
+				"cityCode": "101080808",
+				"cityName": "海力素"
+			},
+			{
+				"cityCode": "101080809",
+				"cityName": "那仁宝力格"
+			},
+			{
+				"cityCode": "101080810",
+				"cityName": "杭锦后旗"
+			},
+			{
+				"cityCode": "101080811",
+				"cityName": "巴盟农试站"
+			},
+			{
+				"cityCode": "101080901",
+				"cityName": "锡林浩特"
+			},
+			{
+				"cityCode": "101080902",
+				"cityName": "朝克乌拉"
+			},
+			{
+				"cityCode": "101080903",
+				"cityName": "二连浩特"
+			},
+			{
+				"cityCode": "101080904",
+				"cityName": "阿巴嘎旗"
+			},
+			{
+				"cityCode": "101080905",
+				"cityName": "伊和郭勒"
+			},
+			{
+				"cityCode": "101080906",
+				"cityName": "苏尼特左旗"
+			},
+			{
+				"cityCode": "101080907",
+				"cityName": "苏尼特右旗"
+			},
+			{
+				"cityCode": "101080908",
+				"cityName": "朱日和"
+			},
+			{
+				"cityCode": "101080909",
+				"cityName": "东乌珠穆沁旗"
+			},
+			{
+				"cityCode": "101080910",
+				"cityName": "西乌珠穆沁旗"
+			},
+			{
+				"cityCode": "101080911",
+				"cityName": "太仆寺旗"
+			},
+			{
+				"cityCode": "101080912",
+				"cityName": "镶黄旗"
+			},
+			{
+				"cityCode": "101080913",
+				"cityName": "正镶白旗"
+			},
+			{
+				"cityCode": "101080914",
+				"cityName": "正兰旗"
+			},
+			{
+				"cityCode": "101080915",
+				"cityName": "多伦"
+			},
+			{
+				"cityCode": "101080916",
+				"cityName": "博克图"
+			},
+			{
+				"cityCode": "101080917",
+				"cityName": "乌拉盖"
+			},
+			{
+				"cityCode": "101080918",
+				"cityName": "白日乌拉"
+			},
+			{
+				"cityCode": "101080919",
+				"cityName": "那日图"
+			},
+			{
+				"cityCode": "101081000",
+				"cityName": "呼伦贝尔"
+			},
+			{
+				"cityCode": "101081001",
+				"cityName": "海拉尔"
+			},
+			{
+				"cityCode": "101081002",
+				"cityName": "小二沟"
+			},
+			{
+				"cityCode": "101081003",
+				"cityName": "阿荣旗"
+			},
+			{
+				"cityCode": "101081004",
+				"cityName": "莫力达瓦旗"
+			},
+			{
+				"cityCode": "101081005",
+				"cityName": "鄂伦春旗"
+			},
+			{
+				"cityCode": "101081006",
+				"cityName": "鄂温克旗"
+			},
+			{
+				"cityCode": "101081007",
+				"cityName": "陈巴尔虎旗"
+			},
+			{
+				"cityCode": "101081008",
+				"cityName": "新巴尔虎左旗"
+			},
+			{
+				"cityCode": "101081009",
+				"cityName": "新巴尔虎右旗"
+			},
+			{
+				"cityCode": "101081010",
+				"cityName": "满洲里"
+			},
+			{
+				"cityCode": "101081011",
+				"cityName": "牙克石"
+			},
+			{
+				"cityCode": "101081012",
+				"cityName": "扎兰屯"
+			},
+			{
+				"cityCode": "101081014",
+				"cityName": "额尔古纳"
+			},
+			{
+				"cityCode": "101081015",
+				"cityName": "根河"
+			},
+			{
+				"cityCode": "101081016",
+				"cityName": "图里河"
+			},
+			{
+				"cityCode": "101081101",
+				"cityName": "乌兰浩特"
+			},
+			{
+				"cityCode": "101081102",
+				"cityName": "阿尔山"
+			},
+			{
+				"cityCode": "101081103",
+				"cityName": "科尔沁右翼中旗"
+			},
+			{
+				"cityCode": "101081104",
+				"cityName": "胡尔勒"
+			},
+			{
+				"cityCode": "101081105",
+				"cityName": "扎赉特旗"
+			},
+			{
+				"cityCode": "101081106",
+				"cityName": "索伦"
+			},
+			{
+				"cityCode": "101081107",
+				"cityName": "突泉"
+			},
+			{
+				"cityCode": "101081108",
+				"cityName": "霍林郭勒"
+			},
+			{
+				"cityCode": "101081201",
+				"cityName": "阿拉善左旗"
+			},
+			{
+				"cityCode": "101081202",
+				"cityName": "阿拉善右旗"
+			},
+			{
+				"cityCode": "101081203",
+				"cityName": "额济纳旗"
+			},
+			{
+				"cityCode": "101081204",
+				"cityName": "拐子湖"
+			},
+			{
+				"cityCode": "101081205",
+				"cityName": "吉兰太"
+			},
+			{
+				"cityCode": "101081206",
+				"cityName": "锡林高勒"
+			},
+			{
+				"cityCode": "101081207",
+				"cityName": "头道湖"
+			},
+			{
+				"cityCode": "101081208",
+				"cityName": "中泉子"
+			},
+			{
+				"cityCode": "101081209",
+				"cityName": "巴彦诺尔贡"
+			},
+			{
+				"cityCode": "101081210",
+				"cityName": "雅布赖"
+			},
+			{
+				"cityCode": "101081211",
+				"cityName": "乌斯太"
+			},
+			{
+				"cityCode": "101081212",
+				"cityName": "孪井滩"
+			}
+		]
+	},
+	{
+		"provinceCode": "101090101",
+		"provinceName": "石家庄",
+		"cities": [
+			{
+				"cityCode": "101090101",
+				"cityName": "石家庄"
+			},
+			{
+				"cityCode": "101090102",
+				"cityName": "井陉"
+			},
+			{
+				"cityCode": "101090103",
+				"cityName": "正定"
+			},
+			{
+				"cityCode": "101090104",
+				"cityName": "栾城"
+			},
+			{
+				"cityCode": "101090105",
+				"cityName": "行唐"
+			},
+			{
+				"cityCode": "101090106",
+				"cityName": "灵寿"
+			},
+			{
+				"cityCode": "101090107",
+				"cityName": "高邑"
+			},
+			{
+				"cityCode": "101090108",
+				"cityName": "深泽"
+			},
+			{
+				"cityCode": "101090109",
+				"cityName": "赞皇"
+			},
+			{
+				"cityCode": "101090110",
+				"cityName": "无极"
+			},
+			{
+				"cityCode": "101090111",
+				"cityName": "平山"
+			},
+			{
+				"cityCode": "101090112",
+				"cityName": "元氏"
+			},
+			{
+				"cityCode": "101090113",
+				"cityName": "赵县"
+			},
+			{
+				"cityCode": "101090114",
+				"cityName": "辛集"
+			},
+			{
+				"cityCode": "101090115",
+				"cityName": "藁城"
+			},
+			{
+				"cityCode": "101090116",
+				"cityName": "晋洲"
+			},
+			{
+				"cityCode": "101090117",
+				"cityName": "新乐"
+			},
+			{
+				"cityCode": "101090201",
+				"cityName": "保定"
+			},
+			{
+				"cityCode": "101090202",
+				"cityName": "满城"
+			},
+			{
+				"cityCode": "101090203",
+				"cityName": "阜平"
+			},
+			{
+				"cityCode": "101090204",
+				"cityName": "徐水"
+			},
+			{
+				"cityCode": "101090205",
+				"cityName": "唐县"
+			},
+			{
+				"cityCode": "101090206",
+				"cityName": "高阳"
+			},
+			{
+				"cityCode": "101090207",
+				"cityName": "容城"
+			},
+			{
+				"cityCode": "101090208",
+				"cityName": "紫荆关"
+			},
+			{
+				"cityCode": "101090209",
+				"cityName": "涞源"
+			},
+			{
+				"cityCode": "101090210",
+				"cityName": "望都"
+			},
+			{
+				"cityCode": "101090211",
+				"cityName": "安新"
+			},
+			{
+				"cityCode": "101090212",
+				"cityName": "易县"
+			},
+			{
+				"cityCode": "101090213",
+				"cityName": "涞水"
+			},
+			{
+				"cityCode": "101090214",
+				"cityName": "曲阳"
+			},
+			{
+				"cityCode": "101090215",
+				"cityName": "蠡县"
+			},
+			{
+				"cityCode": "101090216",
+				"cityName": "顺平"
+			},
+			{
+				"cityCode": "101090217",
+				"cityName": "雄县"
+			},
+			{
+				"cityCode": "101090218",
+				"cityName": "涿州"
+			},
+			{
+				"cityCode": "101090219",
+				"cityName": "定州"
+			},
+			{
+				"cityCode": "101090220",
+				"cityName": "安国"
+			},
+			{
+				"cityCode": "101090221",
+				"cityName": "高碑店"
+			},
+			{
+				"cityCode": "101090301",
+				"cityName": "张家口"
+			},
+			{
+				"cityCode": "101090302",
+				"cityName": "宣化"
+			},
+			{
+				"cityCode": "101090303",
+				"cityName": "张北"
+			},
+			{
+				"cityCode": "101090304",
+				"cityName": "康保"
+			},
+			{
+				"cityCode": "101090305",
+				"cityName": "沽源"
+			},
+			{
+				"cityCode": "101090306",
+				"cityName": "尚义"
+			},
+			{
+				"cityCode": "101090307",
+				"cityName": "蔚县"
+			},
+			{
+				"cityCode": "101090308",
+				"cityName": "阳原"
+			},
+			{
+				"cityCode": "101090309",
+				"cityName": "怀安"
+			},
+			{
+				"cityCode": "101090310",
+				"cityName": "万全"
+			},
+			{
+				"cityCode": "101090311",
+				"cityName": "怀来"
+			},
+			{
+				"cityCode": "101090312",
+				"cityName": "涿鹿"
+			},
+			{
+				"cityCode": "101090313",
+				"cityName": "赤城"
+			},
+			{
+				"cityCode": "101090314",
+				"cityName": "崇礼"
+			},
+			{
+				"cityCode": "101090402",
+				"cityName": "承德"
+			},
+			{
+				"cityCode": "101090403",
+				"cityName": "承德县"
+			},
+			{
+				"cityCode": "101090404",
+				"cityName": "兴隆"
+			},
+			{
+				"cityCode": "101090405",
+				"cityName": "平泉"
+			},
+			{
+				"cityCode": "101090406",
+				"cityName": "滦平"
+			},
+			{
+				"cityCode": "101090407",
+				"cityName": "隆化"
+			},
+			{
+				"cityCode": "101090408",
+				"cityName": "丰宁"
+			},
+			{
+				"cityCode": "101090409",
+				"cityName": "宽城"
+			},
+			{
+				"cityCode": "101090410",
+				"cityName": "围场"
+			},
+			{
+				"cityCode": "101090411",
+				"cityName": "塞罕坎"
+			},
+			{
+				"cityCode": "101090501",
+				"cityName": "唐山"
+			},
+			{
+				"cityCode": "101090502",
+				"cityName": "丰南"
+			},
+			{
+				"cityCode": "101090503",
+				"cityName": "丰润"
+			},
+			{
+				"cityCode": "101090504",
+				"cityName": "滦县"
+			},
+			{
+				"cityCode": "101090505",
+				"cityName": "滦南"
+			},
+			{
+				"cityCode": "101090506",
+				"cityName": "乐亭"
+			},
+			{
+				"cityCode": "101090507",
+				"cityName": "迁西"
+			},
+			{
+				"cityCode": "101090508",
+				"cityName": "玉田"
+			},
+			{
+				"cityCode": "101090509",
+				"cityName": "唐海"
+			},
+			{
+				"cityCode": "101090510",
+				"cityName": "遵化"
+			},
+			{
+				"cityCode": "101090511",
+				"cityName": "迁安"
+			},
+			{
+				"cityCode": "101090601",
+				"cityName": "廊坊"
+			},
+			{
+				"cityCode": "101090602",
+				"cityName": "固安"
+			},
+			{
+				"cityCode": "101090603",
+				"cityName": "永清"
+			},
+			{
+				"cityCode": "101090604",
+				"cityName": "香河"
+			},
+			{
+				"cityCode": "101090605",
+				"cityName": "大城"
+			},
+			{
+				"cityCode": "101090606",
+				"cityName": "文安"
+			},
+			{
+				"cityCode": "101090607",
+				"cityName": "大厂"
+			},
+			{
+				"cityCode": "101090608",
+				"cityName": "霸州"
+			},
+			{
+				"cityCode": "101090609",
+				"cityName": "三河"
+			},
+			{
+				"cityCode": "101090701",
+				"cityName": "沧州"
+			},
+			{
+				"cityCode": "101090702",
+				"cityName": "青县"
+			},
+			{
+				"cityCode": "101090703",
+				"cityName": "东光"
+			},
+			{
+				"cityCode": "101090704",
+				"cityName": "海兴"
+			},
+			{
+				"cityCode": "101090705",
+				"cityName": "盐山"
+			},
+			{
+				"cityCode": "101090706",
+				"cityName": "肃宁"
+			},
+			{
+				"cityCode": "101090707",
+				"cityName": "南皮"
+			},
+			{
+				"cityCode": "101090708",
+				"cityName": "吴桥"
+			},
+			{
+				"cityCode": "101090709",
+				"cityName": "献县"
+			},
+			{
+				"cityCode": "101090710",
+				"cityName": "孟村"
+			},
+			{
+				"cityCode": "101090711",
+				"cityName": "泊头"
+			},
+			{
+				"cityCode": "101090712",
+				"cityName": "任丘"
+			},
+			{
+				"cityCode": "101090713",
+				"cityName": "黄骅"
+			},
+			{
+				"cityCode": "101090714",
+				"cityName": "河间"
+			},
+			{
+				"cityCode": "101090715",
+				"cityName": "曹妃甸"
+			},
+			{
+				"cityCode": "101090801",
+				"cityName": "衡水"
+			},
+			{
+				"cityCode": "101090802",
+				"cityName": "枣强"
+			},
+			{
+				"cityCode": "101090803",
+				"cityName": "武邑"
+			},
+			{
+				"cityCode": "101090804",
+				"cityName": "武强"
+			},
+			{
+				"cityCode": "101090805",
+				"cityName": "饶阳"
+			},
+			{
+				"cityCode": "101090806",
+				"cityName": "安平"
+			},
+			{
+				"cityCode": "101090807",
+				"cityName": "故城"
+			},
+			{
+				"cityCode": "101090808",
+				"cityName": "景县"
+			},
+			{
+				"cityCode": "101090809",
+				"cityName": "阜城"
+			},
+			{
+				"cityCode": "101090810",
+				"cityName": "冀州"
+			},
+			{
+				"cityCode": "101090811",
+				"cityName": "深州"
+			},
+			{
+				"cityCode": "101090901",
+				"cityName": "邢台"
+			},
+			{
+				"cityCode": "101090902",
+				"cityName": "临城"
+			},
+			{
+				"cityCode": "101090903",
+				"cityName": "邢台县浆水"
+			},
+			{
+				"cityCode": "101090904",
+				"cityName": "内邱"
+			},
+			{
+				"cityCode": "101090905",
+				"cityName": "柏乡"
+			},
+			{
+				"cityCode": "101090906",
+				"cityName": "隆尧"
+			},
+			{
+				"cityCode": "101090907",
+				"cityName": "南和"
+			},
+			{
+				"cityCode": "101090908",
+				"cityName": "宁晋"
+			},
+			{
+				"cityCode": "101090909",
+				"cityName": "巨鹿"
+			},
+			{
+				"cityCode": "101090910",
+				"cityName": "新河"
+			},
+			{
+				"cityCode": "101090911",
+				"cityName": "广宗"
+			},
+			{
+				"cityCode": "101090912",
+				"cityName": "平乡"
+			},
+			{
+				"cityCode": "101090913",
+				"cityName": "威县"
+			},
+			{
+				"cityCode": "101090914",
+				"cityName": "清河"
+			},
+			{
+				"cityCode": "101090915",
+				"cityName": "临西"
+			},
+			{
+				"cityCode": "101090916",
+				"cityName": "南宫"
+			},
+			{
+				"cityCode": "101090917",
+				"cityName": "沙河"
+			},
+			{
+				"cityCode": "101090918",
+				"cityName": "任县"
+			},
+			{
+				"cityCode": "101091001",
+				"cityName": "邯郸"
+			},
+			{
+				"cityCode": "101091002",
+				"cityName": "峰峰"
+			},
+			{
+				"cityCode": "101091003",
+				"cityName": "临漳"
+			},
+			{
+				"cityCode": "101091004",
+				"cityName": "成安"
+			},
+			{
+				"cityCode": "101091005",
+				"cityName": "大名"
+			},
+			{
+				"cityCode": "101091006",
+				"cityName": "涉县"
+			},
+			{
+				"cityCode": "101091007",
+				"cityName": "磁县"
+			},
+			{
+				"cityCode": "101091008",
+				"cityName": "肥乡"
+			},
+			{
+				"cityCode": "101091009",
+				"cityName": "永年"
+			},
+			{
+				"cityCode": "101091010",
+				"cityName": "邱县"
+			},
+			{
+				"cityCode": "101091011",
+				"cityName": "鸡泽"
+			},
+			{
+				"cityCode": "101091012",
+				"cityName": "广平"
+			},
+			{
+				"cityCode": "101091013",
+				"cityName": "馆陶"
+			},
+			{
+				"cityCode": "101091014",
+				"cityName": "魏县"
+			},
+			{
+				"cityCode": "101091015",
+				"cityName": "曲周"
+			},
+			{
+				"cityCode": "101091016",
+				"cityName": "武安"
+			},
+			{
+				"cityCode": "101091101",
+				"cityName": "秦皇岛"
+			},
+			{
+				"cityCode": "101091102",
+				"cityName": "青龙"
+			},
+			{
+				"cityCode": "101091103",
+				"cityName": "昌黎"
+			},
+			{
+				"cityCode": "101091104",
+				"cityName": "抚宁"
+			},
+			{
+				"cityCode": "101091105",
+				"cityName": "卢龙"
+			},
+			{
+				"cityCode": "101091106",
+				"cityName": "北戴河"
+			}
+		]
+	},
+	{
+		"provinceCode": "101100101",
+		"provinceName": "太原",
+		"cities": [
+			{
+				"cityCode": "101100101",
+				"cityName": "太原"
+			},
+			{
+				"cityCode": "101100102",
+				"cityName": "清徐"
+			},
+			{
+				"cityCode": "101100103",
+				"cityName": "阳曲"
+			},
+			{
+				"cityCode": "101100104",
+				"cityName": "娄烦"
+			},
+			{
+				"cityCode": "101100105",
+				"cityName": "太原古交区"
+			},
+			{
+				"cityCode": "101100106",
+				"cityName": "太原北郊"
+			},
+			{
+				"cityCode": "101100107",
+				"cityName": "太原南郊"
+			},
+			{
+				"cityCode": "101100201",
+				"cityName": "大同"
+			},
+			{
+				"cityCode": "101100202",
+				"cityName": "阳高"
+			},
+			{
+				"cityCode": "101100203",
+				"cityName": "大同县"
+			},
+			{
+				"cityCode": "101100204",
+				"cityName": "天镇"
+			},
+			{
+				"cityCode": "101100205",
+				"cityName": "广灵"
+			},
+			{
+				"cityCode": "101100206",
+				"cityName": "灵邱"
+			},
+			{
+				"cityCode": "101100207",
+				"cityName": "浑源"
+			},
+			{
+				"cityCode": "101100208",
+				"cityName": "左云"
+			},
+			{
+				"cityCode": "101100301",
+				"cityName": "阳泉"
+			},
+			{
+				"cityCode": "101100302",
+				"cityName": "盂县"
+			},
+			{
+				"cityCode": "101100303",
+				"cityName": "平定"
+			},
+			{
+				"cityCode": "101100401",
+				"cityName": "晋中"
+			},
+			{
+				"cityCode": "101100402",
+				"cityName": "榆次"
+			},
+			{
+				"cityCode": "101100403",
+				"cityName": "榆社"
+			},
+			{
+				"cityCode": "101100404",
+				"cityName": "左权"
+			},
+			{
+				"cityCode": "101100405",
+				"cityName": "和顺"
+			},
+			{
+				"cityCode": "101100406",
+				"cityName": "昔阳"
+			},
+			{
+				"cityCode": "101100407",
+				"cityName": "寿阳"
+			},
+			{
+				"cityCode": "101100408",
+				"cityName": "太谷"
+			},
+			{
+				"cityCode": "101100409",
+				"cityName": "祁县"
+			},
+			{
+				"cityCode": "101100410",
+				"cityName": "平遥"
+			},
+			{
+				"cityCode": "101100411",
+				"cityName": "灵石"
+			},
+			{
+				"cityCode": "101100412",
+				"cityName": "介休"
+			},
+			{
+				"cityCode": "101100501",
+				"cityName": "长治"
+			},
+			{
+				"cityCode": "101100502",
+				"cityName": "黎城"
+			},
+			{
+				"cityCode": "101100503",
+				"cityName": "屯留"
+			},
+			{
+				"cityCode": "101100504",
+				"cityName": "潞城"
+			},
+			{
+				"cityCode": "101100505",
+				"cityName": "襄垣"
+			},
+			{
+				"cityCode": "101100506",
+				"cityName": "平顺"
+			},
+			{
+				"cityCode": "101100507",
+				"cityName": "武乡"
+			},
+			{
+				"cityCode": "101100508",
+				"cityName": "沁县"
+			},
+			{
+				"cityCode": "101100509",
+				"cityName": "长子"
+			},
+			{
+				"cityCode": "101100510",
+				"cityName": "沁源"
+			},
+			{
+				"cityCode": "101100511",
+				"cityName": "壶关"
+			},
+			{
+				"cityCode": "101100601",
+				"cityName": "晋城"
+			},
+			{
+				"cityCode": "101100602",
+				"cityName": "沁水"
+			},
+			{
+				"cityCode": "101100603",
+				"cityName": "阳城"
+			},
+			{
+				"cityCode": "101100604",
+				"cityName": "陵川"
+			},
+			{
+				"cityCode": "101100605",
+				"cityName": "高平"
+			},
+			{
+				"cityCode": "101100701",
+				"cityName": "临汾"
+			},
+			{
+				"cityCode": "101100702",
+				"cityName": "曲沃"
+			},
+			{
+				"cityCode": "101100703",
+				"cityName": "永和"
+			},
+			{
+				"cityCode": "101100704",
+				"cityName": "隰县"
+			},
+			{
+				"cityCode": "101100705",
+				"cityName": "大宁"
+			},
+			{
+				"cityCode": "101100706",
+				"cityName": "吉县"
+			},
+			{
+				"cityCode": "101100707",
+				"cityName": "襄汾"
+			},
+			{
+				"cityCode": "101100708",
+				"cityName": "蒲县"
+			},
+			{
+				"cityCode": "101100709",
+				"cityName": "汾西"
+			},
+			{
+				"cityCode": "101100710",
+				"cityName": "洪洞"
+			},
+			{
+				"cityCode": "101100711",
+				"cityName": "霍州"
+			},
+			{
+				"cityCode": "101100712",
+				"cityName": "乡宁"
+			},
+			{
+				"cityCode": "101100713",
+				"cityName": "翼城"
+			},
+			{
+				"cityCode": "101100714",
+				"cityName": "侯马"
+			},
+			{
+				"cityCode": "101100715",
+				"cityName": "浮山"
+			},
+			{
+				"cityCode": "101100716",
+				"cityName": "安泽"
+			},
+			{
+				"cityCode": "101100717",
+				"cityName": "古县"
+			},
+			{
+				"cityCode": "101100801",
+				"cityName": "运城"
+			},
+			{
+				"cityCode": "101100802",
+				"cityName": "临猗"
+			},
+			{
+				"cityCode": "101100803",
+				"cityName": "稷山"
+			},
+			{
+				"cityCode": "101100804",
+				"cityName": "万荣"
+			},
+			{
+				"cityCode": "101100805",
+				"cityName": "河津"
+			},
+			{
+				"cityCode": "101100806",
+				"cityName": "新绛"
+			},
+			{
+				"cityCode": "101100807",
+				"cityName": "绛县"
+			},
+			{
+				"cityCode": "101100808",
+				"cityName": "闻喜"
+			},
+			{
+				"cityCode": "101100809",
+				"cityName": "垣曲"
+			},
+			{
+				"cityCode": "101100810",
+				"cityName": "永济"
+			},
+			{
+				"cityCode": "101100811",
+				"cityName": "芮城"
+			},
+			{
+				"cityCode": "101100812",
+				"cityName": "夏县"
+			},
+			{
+				"cityCode": "101100813",
+				"cityName": "平陆"
+			},
+			{
+				"cityCode": "101100901",
+				"cityName": "朔州"
+			},
+			{
+				"cityCode": "101100902",
+				"cityName": "平鲁"
+			},
+			{
+				"cityCode": "101100903",
+				"cityName": "山阴"
+			},
+			{
+				"cityCode": "101100904",
+				"cityName": "右玉"
+			},
+			{
+				"cityCode": "101100905",
+				"cityName": "应县"
+			},
+			{
+				"cityCode": "101100906",
+				"cityName": "怀仁"
+			},
+			{
+				"cityCode": "101101001",
+				"cityName": "忻州"
+			},
+			{
+				"cityCode": "101101002",
+				"cityName": "定襄"
+			},
+			{
+				"cityCode": "101101003",
+				"cityName": "五台县豆村"
+			},
+			{
+				"cityCode": "101101004",
+				"cityName": "河曲"
+			},
+			{
+				"cityCode": "101101005",
+				"cityName": "偏关"
+			},
+			{
+				"cityCode": "101101006",
+				"cityName": "神池"
+			},
+			{
+				"cityCode": "101101007",
+				"cityName": "宁武"
+			},
+			{
+				"cityCode": "101101008",
+				"cityName": "代县"
+			},
+			{
+				"cityCode": "101101009",
+				"cityName": "繁峙"
+			},
+			{
+				"cityCode": "101101010",
+				"cityName": "五台山"
+			},
+			{
+				"cityCode": "101101011",
+				"cityName": "保德"
+			},
+			{
+				"cityCode": "101101012",
+				"cityName": "静乐"
+			},
+			{
+				"cityCode": "101101013",
+				"cityName": "岢岚"
+			},
+			{
+				"cityCode": "101101014",
+				"cityName": "五寨"
+			},
+			{
+				"cityCode": "101101015",
+				"cityName": "原平"
+			},
+			{
+				"cityCode": "101101100",
+				"cityName": "吕梁"
+			},
+			{
+				"cityCode": "101101101",
+				"cityName": "离石"
+			},
+			{
+				"cityCode": "101101102",
+				"cityName": "临县"
+			},
+			{
+				"cityCode": "101101103",
+				"cityName": "兴县"
+			},
+			{
+				"cityCode": "101101104",
+				"cityName": "岚县"
+			},
+			{
+				"cityCode": "101101105",
+				"cityName": "柳林"
+			},
+			{
+				"cityCode": "101101106",
+				"cityName": "石楼"
+			},
+			{
+				"cityCode": "101101107",
+				"cityName": "方山"
+			},
+			{
+				"cityCode": "101101108",
+				"cityName": "交口"
+			},
+			{
+				"cityCode": "101101109",
+				"cityName": "中阳"
+			},
+			{
+				"cityCode": "101101110",
+				"cityName": "孝义"
+			},
+			{
+				"cityCode": "101101111",
+				"cityName": "汾阳"
+			},
+			{
+				"cityCode": "101101112",
+				"cityName": "文水"
+			},
+			{
+				"cityCode": "101101113",
+				"cityName": "交城"
+			}
+		]
+	},
+	{
+		"provinceCode": "101110101",
+		"provinceName": "西安",
+		"cities": [
+			{
+				"cityCode": "101110101",
+				"cityName": "西安"
+			},
+			{
+				"cityCode": "101110102",
+				"cityName": "长安"
+			},
+			{
+				"cityCode": "101110103",
+				"cityName": "临潼"
+			},
+			{
+				"cityCode": "101110104",
+				"cityName": "蓝田"
+			},
+			{
+				"cityCode": "101110105",
+				"cityName": "周至"
+			},
+			{
+				"cityCode": "101110106",
+				"cityName": "户县"
+			},
+			{
+				"cityCode": "101110107",
+				"cityName": "高陵"
+			},
+			{
+				"cityCode": "101110108",
+				"cityName": "杨凌"
+			},
+			{
+				"cityCode": "101110200",
+				"cityName": "咸阳"
+			},
+			{
+				"cityCode": "101110201",
+				"cityName": "三原"
+			},
+			{
+				"cityCode": "101110202",
+				"cityName": "礼泉"
+			},
+			{
+				"cityCode": "101110203",
+				"cityName": "永寿"
+			},
+			{
+				"cityCode": "101110204",
+				"cityName": "淳化"
+			},
+			{
+				"cityCode": "101110205",
+				"cityName": "泾阳"
+			},
+			{
+				"cityCode": "101110206",
+				"cityName": "武功"
+			},
+			{
+				"cityCode": "101110207",
+				"cityName": "乾县"
+			},
+			{
+				"cityCode": "101110208",
+				"cityName": "彬县"
+			},
+			{
+				"cityCode": "101110209",
+				"cityName": "长武"
+			},
+			{
+				"cityCode": "101110210",
+				"cityName": "旬邑"
+			},
+			{
+				"cityCode": "101110211",
+				"cityName": "兴平"
+			},
+			{
+				"cityCode": "101110300",
+				"cityName": "延安"
+			},
+			{
+				"cityCode": "101110301",
+				"cityName": "延长"
+			},
+			{
+				"cityCode": "101110302",
+				"cityName": "延川"
+			},
+			{
+				"cityCode": "101110303",
+				"cityName": "子长"
+			},
+			{
+				"cityCode": "101110304",
+				"cityName": "宜川"
+			},
+			{
+				"cityCode": "101110305",
+				"cityName": "富县"
+			},
+			{
+				"cityCode": "101110306",
+				"cityName": "志丹"
+			},
+			{
+				"cityCode": "101110307",
+				"cityName": "安塞"
+			},
+			{
+				"cityCode": "101110308",
+				"cityName": "甘泉"
+			},
+			{
+				"cityCode": "101110309",
+				"cityName": "洛川"
+			},
+			{
+				"cityCode": "101110310",
+				"cityName": "黄陵"
+			},
+			{
+				"cityCode": "101110311",
+				"cityName": "黄龙"
+			},
+			{
+				"cityCode": "101110312",
+				"cityName": "吴起"
+			},
+			{
+				"cityCode": "101110401",
+				"cityName": "榆林"
+			},
+			{
+				"cityCode": "101110402",
+				"cityName": "府谷"
+			},
+			{
+				"cityCode": "101110403",
+				"cityName": "神木"
+			},
+			{
+				"cityCode": "101110404",
+				"cityName": "佳县"
+			},
+			{
+				"cityCode": "101110405",
+				"cityName": "定边"
+			},
+			{
+				"cityCode": "101110406",
+				"cityName": "靖边"
+			},
+			{
+				"cityCode": "101110407",
+				"cityName": "横山"
+			},
+			{
+				"cityCode": "101110408",
+				"cityName": "米脂"
+			},
+			{
+				"cityCode": "101110409",
+				"cityName": "子洲"
+			},
+			{
+				"cityCode": "101110410",
+				"cityName": "绥德"
+			},
+			{
+				"cityCode": "101110411",
+				"cityName": "吴堡"
+			},
+			{
+				"cityCode": "101110412",
+				"cityName": "清涧"
+			},
+			{
+				"cityCode": "101110501",
+				"cityName": "渭南"
+			},
+			{
+				"cityCode": "101110502",
+				"cityName": "华县"
+			},
+			{
+				"cityCode": "101110503",
+				"cityName": "潼关"
+			},
+			{
+				"cityCode": "101110504",
+				"cityName": "大荔"
+			},
+			{
+				"cityCode": "101110505",
+				"cityName": "白水"
+			},
+			{
+				"cityCode": "101110506",
+				"cityName": "富平"
+			},
+			{
+				"cityCode": "101110507",
+				"cityName": "蒲城"
+			},
+			{
+				"cityCode": "101110508",
+				"cityName": "澄城"
+			},
+			{
+				"cityCode": "101110509",
+				"cityName": "合阳"
+			},
+			{
+				"cityCode": "101110510",
+				"cityName": "韩城"
+			},
+			{
+				"cityCode": "101110511",
+				"cityName": "华阴"
+			},
+			{
+				"cityCode": "101110512",
+				"cityName": "华山"
+			},
+			{
+				"cityCode": "101110601",
+				"cityName": "商洛"
+			},
+			{
+				"cityCode": "101110602",
+				"cityName": "洛南"
+			},
+			{
+				"cityCode": "101110603",
+				"cityName": "柞水"
+			},
+			{
+				"cityCode": "101110605",
+				"cityName": "镇安"
+			},
+			{
+				"cityCode": "101110606",
+				"cityName": "丹凤"
+			},
+			{
+				"cityCode": "101110607",
+				"cityName": "商南"
+			},
+			{
+				"cityCode": "101110608",
+				"cityName": "山阳"
+			},
+			{
+				"cityCode": "101110701",
+				"cityName": "安康"
+			},
+			{
+				"cityCode": "101110702",
+				"cityName": "紫阳"
+			},
+			{
+				"cityCode": "101110703",
+				"cityName": "石泉"
+			},
+			{
+				"cityCode": "101110704",
+				"cityName": "汉阴"
+			},
+			{
+				"cityCode": "101110705",
+				"cityName": "旬阳"
+			},
+			{
+				"cityCode": "101110706",
+				"cityName": "岚皋"
+			},
+			{
+				"cityCode": "101110707",
+				"cityName": "平利"
+			},
+			{
+				"cityCode": "101110708",
+				"cityName": "白河"
+			},
+			{
+				"cityCode": "101110709",
+				"cityName": "镇坪"
+			},
+			{
+				"cityCode": "101110710",
+				"cityName": "宁陕"
+			},
+			{
+				"cityCode": "101110801",
+				"cityName": "汉中"
+			},
+			{
+				"cityCode": "101110802",
+				"cityName": "略阳"
+			},
+			{
+				"cityCode": "101110803",
+				"cityName": "勉县"
+			},
+			{
+				"cityCode": "101110804",
+				"cityName": "留坝"
+			},
+			{
+				"cityCode": "101110805",
+				"cityName": "洋县"
+			},
+			{
+				"cityCode": "101110806",
+				"cityName": "城固"
+			},
+			{
+				"cityCode": "101110807",
+				"cityName": "西乡"
+			},
+			{
+				"cityCode": "101110808",
+				"cityName": "佛坪"
+			},
+			{
+				"cityCode": "101110809",
+				"cityName": "宁强"
+			},
+			{
+				"cityCode": "101110810",
+				"cityName": "南郑"
+			},
+			{
+				"cityCode": "101110811",
+				"cityName": "镇巴"
+			},
+			{
+				"cityCode": "101110901",
+				"cityName": "宝鸡"
+			},
+			{
+				"cityCode": "101110902",
+				"cityName": "宝鸡县"
+			},
+			{
+				"cityCode": "101110903",
+				"cityName": "千阳"
+			},
+			{
+				"cityCode": "101110904",
+				"cityName": "麟游"
+			},
+			{
+				"cityCode": "101110905",
+				"cityName": "岐山"
+			},
+			{
+				"cityCode": "101110906",
+				"cityName": "凤翔"
+			},
+			{
+				"cityCode": "101110907",
+				"cityName": "扶风"
+			},
+			{
+				"cityCode": "101110908",
+				"cityName": "眉县"
+			},
+			{
+				"cityCode": "101110909",
+				"cityName": "太白"
+			},
+			{
+				"cityCode": "101110910",
+				"cityName": "凤县"
+			},
+			{
+				"cityCode": "101110911",
+				"cityName": "陇县"
+			},
+			{
+				"cityCode": "101111001",
+				"cityName": "铜川"
+			},
+			{
+				"cityCode": "101111002",
+				"cityName": "耀县"
+			},
+			{
+				"cityCode": "101111003",
+				"cityName": "宜君"
+			}
+		]
+	},
+	{
+		"provinceCode": "101120101",
+		"provinceName": "济南",
+		"cities": [
+			{
+				"cityCode": "101120101",
+				"cityName": "济南"
+			},
+			{
+				"cityCode": "101120102",
+				"cityName": "长清"
+			},
+			{
+				"cityCode": "101120103",
+				"cityName": "商河"
+			},
+			{
+				"cityCode": "101120104",
+				"cityName": "章丘"
+			},
+			{
+				"cityCode": "101120105",
+				"cityName": "平阴"
+			},
+			{
+				"cityCode": "101120106",
+				"cityName": "济阳"
+			},
+			{
+				"cityCode": "101120201",
+				"cityName": "青岛"
+			},
+			{
+				"cityCode": "101120202",
+				"cityName": "崂山"
+			},
+			{
+				"cityCode": "101120203",
+				"cityName": "潮连岛"
+			},
+			{
+				"cityCode": "101120204",
+				"cityName": "即墨"
+			},
+			{
+				"cityCode": "101120205",
+				"cityName": "胶州"
+			},
+			{
+				"cityCode": "101120206",
+				"cityName": "胶南"
+			},
+			{
+				"cityCode": "101120207",
+				"cityName": "莱西"
+			},
+			{
+				"cityCode": "101120208",
+				"cityName": "平度"
+			},
+			{
+				"cityCode": "101120301",
+				"cityName": "淄博"
+			},
+			{
+				"cityCode": "101120302",
+				"cityName": "淄川"
+			},
+			{
+				"cityCode": "101120303",
+				"cityName": "博山"
+			},
+			{
+				"cityCode": "101120304",
+				"cityName": "高青"
+			},
+			{
+				"cityCode": "101120305",
+				"cityName": "周村"
+			},
+			{
+				"cityCode": "101120306",
+				"cityName": "沂源"
+			},
+			{
+				"cityCode": "101120307",
+				"cityName": "桓台"
+			},
+			{
+				"cityCode": "101120308",
+				"cityName": "临淄"
+			},
+			{
+				"cityCode": "101120401",
+				"cityName": "德州"
+			},
+			{
+				"cityCode": "101120402",
+				"cityName": "武城"
+			},
+			{
+				"cityCode": "101120403",
+				"cityName": "临邑"
+			},
+			{
+				"cityCode": "101120404",
+				"cityName": "陵县"
+			},
+			{
+				"cityCode": "101120405",
+				"cityName": "齐河"
+			},
+			{
+				"cityCode": "101120406",
+				"cityName": "乐陵"
+			},
+			{
+				"cityCode": "101120407",
+				"cityName": "庆云"
+			},
+			{
+				"cityCode": "101120408",
+				"cityName": "平原"
+			},
+			{
+				"cityCode": "101120409",
+				"cityName": "宁津"
+			},
+			{
+				"cityCode": "101120410",
+				"cityName": "夏津"
+			},
+			{
+				"cityCode": "101120411",
+				"cityName": "禹城"
+			},
+			{
+				"cityCode": "101120501",
+				"cityName": "烟台"
+			},
+			{
+				"cityCode": "101120502",
+				"cityName": "莱州"
+			},
+			{
+				"cityCode": "101120503",
+				"cityName": "长岛"
+			},
+			{
+				"cityCode": "101120504",
+				"cityName": "蓬莱"
+			},
+			{
+				"cityCode": "101120505",
+				"cityName": "龙口"
+			},
+			{
+				"cityCode": "101120506",
+				"cityName": "招远"
+			},
+			{
+				"cityCode": "101120507",
+				"cityName": "栖霞"
+			},
+			{
+				"cityCode": "101120508",
+				"cityName": "福山"
+			},
+			{
+				"cityCode": "101120509",
+				"cityName": "牟平"
+			},
+			{
+				"cityCode": "101120510",
+				"cityName": "莱阳"
+			},
+			{
+				"cityCode": "101120511",
+				"cityName": "海阳"
+			},
+			{
+				"cityCode": "101120512",
+				"cityName": "千里岩"
+			},
+			{
+				"cityCode": "101120601",
+				"cityName": "潍坊"
+			},
+			{
+				"cityCode": "101120602",
+				"cityName": "青州"
+			},
+			{
+				"cityCode": "101120603",
+				"cityName": "寿光"
+			},
+			{
+				"cityCode": "101120604",
+				"cityName": "临朐"
+			},
+			{
+				"cityCode": "101120605",
+				"cityName": "昌乐"
+			},
+			{
+				"cityCode": "101120606",
+				"cityName": "昌邑"
+			},
+			{
+				"cityCode": "101120607",
+				"cityName": "安丘"
+			},
+			{
+				"cityCode": "101120608",
+				"cityName": "高密"
+			},
+			{
+				"cityCode": "101120609",
+				"cityName": "诸城"
+			},
+			{
+				"cityCode": "101120701",
+				"cityName": "济宁"
+			},
+			{
+				"cityCode": "101120702",
+				"cityName": "嘉祥"
+			},
+			{
+				"cityCode": "101120703",
+				"cityName": "微山"
+			},
+			{
+				"cityCode": "101120704",
+				"cityName": "鱼台"
+			},
+			{
+				"cityCode": "101120705",
+				"cityName": "兖州"
+			},
+			{
+				"cityCode": "101120706",
+				"cityName": "金乡"
+			},
+			{
+				"cityCode": "101120707",
+				"cityName": "汶上"
+			},
+			{
+				"cityCode": "101120708",
+				"cityName": "泗水"
+			},
+			{
+				"cityCode": "101120709",
+				"cityName": "梁山"
+			},
+			{
+				"cityCode": "101120710",
+				"cityName": "曲阜"
+			},
+			{
+				"cityCode": "101120711",
+				"cityName": "邹城"
+			},
+			{
+				"cityCode": "101120801",
+				"cityName": "泰安"
+			},
+			{
+				"cityCode": "101120802",
+				"cityName": "新泰"
+			},
+			{
+				"cityCode": "101120803",
+				"cityName": "泰山"
+			},
+			{
+				"cityCode": "101120804",
+				"cityName": "肥城"
+			},
+			{
+				"cityCode": "101120805",
+				"cityName": "东平"
+			},
+			{
+				"cityCode": "101120806",
+				"cityName": "宁阳"
+			},
+			{
+				"cityCode": "101120901",
+				"cityName": "临沂"
+			},
+			{
+				"cityCode": "101120902",
+				"cityName": "莒南"
+			},
+			{
+				"cityCode": "101120903",
+				"cityName": "沂南"
+			},
+			{
+				"cityCode": "101120904",
+				"cityName": "苍山"
+			},
+			{
+				"cityCode": "101120905",
+				"cityName": "临沭"
+			},
+			{
+				"cityCode": "101120906",
+				"cityName": "郯城"
+			},
+			{
+				"cityCode": "101120907",
+				"cityName": "蒙阴"
+			},
+			{
+				"cityCode": "101120908",
+				"cityName": "平邑"
+			},
+			{
+				"cityCode": "101120909",
+				"cityName": "费县"
+			},
+			{
+				"cityCode": "101120910",
+				"cityName": "沂水"
+			},
+			{
+				"cityCode": "101120911",
+				"cityName": "马站"
+			},
+			{
+				"cityCode": "101121001",
+				"cityName": "菏泽"
+			},
+			{
+				"cityCode": "101121002",
+				"cityName": "鄄城"
+			},
+			{
+				"cityCode": "101121003",
+				"cityName": "郓城"
+			},
+			{
+				"cityCode": "101121004",
+				"cityName": "东明"
+			},
+			{
+				"cityCode": "101121005",
+				"cityName": "定陶"
+			},
+			{
+				"cityCode": "101121006",
+				"cityName": "巨野"
+			},
+			{
+				"cityCode": "101121007",
+				"cityName": "曹县"
+			},
+			{
+				"cityCode": "101121008",
+				"cityName": "成武"
+			},
+			{
+				"cityCode": "101121009",
+				"cityName": "单县"
+			},
+			{
+				"cityCode": "101121101",
+				"cityName": "滨州"
+			},
+			{
+				"cityCode": "101121102",
+				"cityName": "博兴"
+			},
+			{
+				"cityCode": "101121103",
+				"cityName": "无棣"
+			},
+			{
+				"cityCode": "101121104",
+				"cityName": "阳信"
+			},
+			{
+				"cityCode": "101121105",
+				"cityName": "惠民"
+			},
+			{
+				"cityCode": "101121106",
+				"cityName": "沾化"
+			},
+			{
+				"cityCode": "101121107",
+				"cityName": "邹平"
+			},
+			{
+				"cityCode": "101121201",
+				"cityName": "东营"
+			},
+			{
+				"cityCode": "101121202",
+				"cityName": "河口"
+			},
+			{
+				"cityCode": "101121203",
+				"cityName": "垦利"
+			},
+			{
+				"cityCode": "101121204",
+				"cityName": "利津"
+			},
+			{
+				"cityCode": "101121205",
+				"cityName": "广饶"
+			},
+			{
+				"cityCode": "101121301",
+				"cityName": "威海"
+			},
+			{
+				"cityCode": "101121302",
+				"cityName": "文登"
+			},
+			{
+				"cityCode": "101121303",
+				"cityName": "荣成"
+			},
+			{
+				"cityCode": "101121304",
+				"cityName": "乳山"
+			},
+			{
+				"cityCode": "101121305",
+				"cityName": "成山头"
+			},
+			{
+				"cityCode": "101121306",
+				"cityName": "石岛"
+			},
+			{
+				"cityCode": "101121401",
+				"cityName": "枣庄"
+			},
+			{
+				"cityCode": "101121402",
+				"cityName": "薛城"
+			},
+			{
+				"cityCode": "101121403",
+				"cityName": "峄城"
+			},
+			{
+				"cityCode": "101121404",
+				"cityName": "台儿庄"
+			},
+			{
+				"cityCode": "101121405",
+				"cityName": "滕州"
+			},
+			{
+				"cityCode": "101121501",
+				"cityName": "日照"
+			},
+			{
+				"cityCode": "101121502",
+				"cityName": "五莲"
+			},
+			{
+				"cityCode": "101121503",
+				"cityName": "莒县"
+			},
+			{
+				"cityCode": "101121601",
+				"cityName": "莱芜"
+			},
+			{
+				"cityCode": "101121701",
+				"cityName": "聊城"
+			},
+			{
+				"cityCode": "101121702",
+				"cityName": "冠县"
+			},
+			{
+				"cityCode": "101121703",
+				"cityName": "阳谷"
+			},
+			{
+				"cityCode": "101121704",
+				"cityName": "高唐"
+			},
+			{
+				"cityCode": "101121705",
+				"cityName": "茌平"
+			},
+			{
+				"cityCode": "101121706",
+				"cityName": "东阿"
+			},
+			{
+				"cityCode": "101121707",
+				"cityName": "临清"
+			},
+			{
+				"cityCode": "101121708",
+				"cityName": "朝城"
+			},
+			{
+				"cityCode": "101121709",
+				"cityName": "莘县"
+			}
+		]
+	},
+	{
+		"provinceCode": "101130101",
+		"provinceName": "乌鲁木齐",
+		"cities": [
+			{
+				"cityCode": "101130101",
+				"cityName": "乌鲁木齐"
+			},
+			{
+				"cityCode": "101130102",
+				"cityName": "蔡家湖"
+			},
+			{
+				"cityCode": "101130103",
+				"cityName": "小渠子"
+			},
+			{
+				"cityCode": "101130104",
+				"cityName": "巴仑台"
+			},
+			{
+				"cityCode": "101130105",
+				"cityName": "达坂城"
+			},
+			{
+				"cityCode": "101130106",
+				"cityName": "十三间房气象站"
+			},
+			{
+				"cityCode": "101130107",
+				"cityName": "天山大西沟"
+			},
+			{
+				"cityCode": "101130108",
+				"cityName": "乌鲁木齐牧试站"
+			},
+			{
+				"cityCode": "101130109",
+				"cityName": "天池"
+			},
+			{
+				"cityCode": "101130110",
+				"cityName": "白杨沟"
+			},
+			{
+				"cityCode": "101130201",
+				"cityName": "克拉玛依"
+			},
+			{
+				"cityCode": "101130301",
+				"cityName": "石河子"
+			},
+			{
+				"cityCode": "101130302",
+				"cityName": "炮台"
+			},
+			{
+				"cityCode": "101130303",
+				"cityName": "莫索湾"
+			},
+			{
+				"cityCode": "101130304",
+				"cityName": "乌兰乌苏"
+			},
+			{
+				"cityCode": "101130401",
+				"cityName": "昌吉"
+			},
+			{
+				"cityCode": "101130402",
+				"cityName": "呼图壁"
+			},
+			{
+				"cityCode": "101130403",
+				"cityName": "米泉"
+			},
+			{
+				"cityCode": "101130404",
+				"cityName": "阜康"
+			},
+			{
+				"cityCode": "101130405",
+				"cityName": "吉木萨尔"
+			},
+			{
+				"cityCode": "101130406",
+				"cityName": "奇台"
+			},
+			{
+				"cityCode": "101130407",
+				"cityName": "玛纳斯"
+			},
+			{
+				"cityCode": "101130408",
+				"cityName": "木垒"
+			},
+			{
+				"cityCode": "101130409",
+				"cityName": "北塔山"
+			},
+			{
+				"cityCode": "101130501",
+				"cityName": "吐鲁番"
+			},
+			{
+				"cityCode": "101130502",
+				"cityName": "托克逊"
+			},
+			{
+				"cityCode": "101130503",
+				"cityName": "吐鲁番东坎"
+			},
+			{
+				"cityCode": "101130504",
+				"cityName": "鄯善"
+			},
+			{
+				"cityCode": "101130505",
+				"cityName": "红柳河"
+			},
+			{
+				"cityCode": "101130601",
+				"cityName": "库尔勒"
+			},
+			{
+				"cityCode": "101130602",
+				"cityName": "轮台"
+			},
+			{
+				"cityCode": "101130603",
+				"cityName": "尉犁"
+			},
+			{
+				"cityCode": "101130604",
+				"cityName": "若羌"
+			},
+			{
+				"cityCode": "101130605",
+				"cityName": "且末"
+			},
+			{
+				"cityCode": "101130606",
+				"cityName": "和静"
+			},
+			{
+				"cityCode": "101130607",
+				"cityName": "焉耆"
+			},
+			{
+				"cityCode": "101130608",
+				"cityName": "和硕"
+			},
+			{
+				"cityCode": "101130609",
+				"cityName": "库米什"
+			},
+			{
+				"cityCode": "101130610",
+				"cityName": "巴音布鲁克"
+			},
+			{
+				"cityCode": "101130611",
+				"cityName": "铁干里克"
+			},
+			{
+				"cityCode": "101130612",
+				"cityName": "博湖"
+			},
+			{
+				"cityCode": "101130613",
+				"cityName": "塔中"
+			},
+			{
+				"cityCode": "101130701",
+				"cityName": "阿拉尔"
+			},
+			{
+				"cityCode": "101130801",
+				"cityName": "阿克苏"
+			},
+			{
+				"cityCode": "101130802",
+				"cityName": "乌什"
+			},
+			{
+				"cityCode": "101130803",
+				"cityName": "温宿"
+			},
+			{
+				"cityCode": "101130804",
+				"cityName": "拜城"
+			},
+			{
+				"cityCode": "101130805",
+				"cityName": "新和"
+			},
+			{
+				"cityCode": "101130806",
+				"cityName": "沙雅"
+			},
+			{
+				"cityCode": "101130807",
+				"cityName": "库车"
+			},
+			{
+				"cityCode": "101130808",
+				"cityName": "柯坪"
+			},
+			{
+				"cityCode": "101130809",
+				"cityName": "阿瓦提"
+			},
+			{
+				"cityCode": "101130901",
+				"cityName": "喀什"
+			},
+			{
+				"cityCode": "101130902",
+				"cityName": "英吉沙"
+			},
+			{
+				"cityCode": "101130903",
+				"cityName": "塔什库尔干"
+			},
+			{
+				"cityCode": "101130904",
+				"cityName": "麦盖提"
+			},
+			{
+				"cityCode": "101130905",
+				"cityName": "莎车"
+			},
+			{
+				"cityCode": "101130906",
+				"cityName": "叶城"
+			},
+			{
+				"cityCode": "101130907",
+				"cityName": "泽普"
+			},
+			{
+				"cityCode": "101130908",
+				"cityName": "巴楚"
+			},
+			{
+				"cityCode": "101130909",
+				"cityName": "岳普湖"
+			},
+			{
+				"cityCode": "101130910",
+				"cityName": "伽师"
+			},
+			{
+				"cityCode": "101131001",
+				"cityName": "伊宁"
+			},
+			{
+				"cityCode": "101131002",
+				"cityName": "察布查尔"
+			},
+			{
+				"cityCode": "101131003",
+				"cityName": "尼勒克"
+			},
+			{
+				"cityCode": "101131004",
+				"cityName": "伊宁县"
+			},
+			{
+				"cityCode": "101131005",
+				"cityName": "巩留"
+			},
+			{
+				"cityCode": "101131006",
+				"cityName": "新源"
+			},
+			{
+				"cityCode": "101131007",
+				"cityName": "昭苏"
+			},
+			{
+				"cityCode": "101131008",
+				"cityName": "特克斯"
+			},
+			{
+				"cityCode": "101131009",
+				"cityName": "霍城"
+			},
+			{
+				"cityCode": "101131010",
+				"cityName": "霍尔果斯"
+			},
+			{
+				"cityCode": "101131101",
+				"cityName": "塔城"
+			},
+			{
+				"cityCode": "101131102",
+				"cityName": "裕民"
+			},
+			{
+				"cityCode": "101131103",
+				"cityName": "额敏"
+			},
+			{
+				"cityCode": "101131104",
+				"cityName": "和布克赛尔"
+			},
+			{
+				"cityCode": "101131105",
+				"cityName": "托里"
+			},
+			{
+				"cityCode": "101131106",
+				"cityName": "乌苏"
+			},
+			{
+				"cityCode": "101131107",
+				"cityName": "沙湾"
+			},
+			{
+				"cityCode": "101131108",
+				"cityName": "和丰"
+			},
+			{
+				"cityCode": "101131201",
+				"cityName": "哈密"
+			},
+			{
+				"cityCode": "101131202",
+				"cityName": "沁城"
+			},
+			{
+				"cityCode": "101131203",
+				"cityName": "巴里坤"
+			},
+			{
+				"cityCode": "101131204",
+				"cityName": "伊吾"
+			},
+			{
+				"cityCode": "101131205",
+				"cityName": "淖毛湖"
+			},
+			{
+				"cityCode": "101131301",
+				"cityName": "和田"
+			},
+			{
+				"cityCode": "101131302",
+				"cityName": "皮山"
+			},
+			{
+				"cityCode": "101131303",
+				"cityName": "策勒"
+			},
+			{
+				"cityCode": "101131304",
+				"cityName": "墨玉"
+			},
+			{
+				"cityCode": "101131305",
+				"cityName": "洛浦"
+			},
+			{
+				"cityCode": "101131306",
+				"cityName": "民丰"
+			},
+			{
+				"cityCode": "101131307",
+				"cityName": "于田"
+			},
+			{
+				"cityCode": "101131401",
+				"cityName": "阿勒泰"
+			},
+			{
+				"cityCode": "101131402",
+				"cityName": "哈巴河"
+			},
+			{
+				"cityCode": "101131403",
+				"cityName": "一八五团"
+			},
+			{
+				"cityCode": "101131404",
+				"cityName": "黑山头"
+			},
+			{
+				"cityCode": "101131405",
+				"cityName": "吉木乃"
+			},
+			{
+				"cityCode": "101131406",
+				"cityName": "布尔津"
+			},
+			{
+				"cityCode": "101131407",
+				"cityName": "福海"
+			},
+			{
+				"cityCode": "101131408",
+				"cityName": "富蕴"
+			},
+			{
+				"cityCode": "101131409",
+				"cityName": "青河"
+			},
+			{
+				"cityCode": "101131410",
+				"cityName": "安德河"
+			},
+			{
+				"cityCode": "101131501",
+				"cityName": "阿图什"
+			},
+			{
+				"cityCode": "101131502",
+				"cityName": "乌恰"
+			},
+			{
+				"cityCode": "101131503",
+				"cityName": "阿克陶"
+			},
+			{
+				"cityCode": "101131504",
+				"cityName": "阿合奇"
+			},
+			{
+				"cityCode": "101131505",
+				"cityName": "吐尔尕特"
+			},
+			{
+				"cityCode": "101131601",
+				"cityName": "博乐"
+			},
+			{
+				"cityCode": "101131602",
+				"cityName": "温泉"
+			},
+			{
+				"cityCode": "101131603",
+				"cityName": "精河"
+			},
+			{
+				"cityCode": "101131606",
+				"cityName": "阿拉山口"
+			}
+		]
+	},
+	{
+		"provinceCode": "101140101",
+		"provinceName": "拉萨",
+		"cities": [
+			{
+				"cityCode": "101140101",
+				"cityName": "拉萨"
+			},
+			{
+				"cityCode": "101140102",
+				"cityName": "当雄"
+			},
+			{
+				"cityCode": "101140103",
+				"cityName": "尼木"
+			},
+			{
+				"cityCode": "101140104",
+				"cityName": "墨竹贡卡"
+			},
+			{
+				"cityCode": "101140201",
+				"cityName": "日喀则"
+			},
+			{
+				"cityCode": "101140202",
+				"cityName": "拉孜"
+			},
+			{
+				"cityCode": "101140203",
+				"cityName": "南木林"
+			},
+			{
+				"cityCode": "101140204",
+				"cityName": "聂拉木"
+			},
+			{
+				"cityCode": "101140205",
+				"cityName": "定日"
+			},
+			{
+				"cityCode": "101140206",
+				"cityName": "江孜"
+			},
+			{
+				"cityCode": "101140207",
+				"cityName": "帕里"
+			},
+			{
+				"cityCode": "101140301",
+				"cityName": "山南"
+			},
+			{
+				"cityCode": "101140302",
+				"cityName": "贡嘎"
+			},
+			{
+				"cityCode": "101140303",
+				"cityName": "琼结"
+			},
+			{
+				"cityCode": "101140304",
+				"cityName": "加查"
+			},
+			{
+				"cityCode": "101140305",
+				"cityName": "浪卡子"
+			},
+			{
+				"cityCode": "101140306",
+				"cityName": "错那"
+			},
+			{
+				"cityCode": "101140307",
+				"cityName": "隆子"
+			},
+			{
+				"cityCode": "101140308",
+				"cityName": "泽当"
+			},
+			{
+				"cityCode": "101140401",
+				"cityName": "林芝"
+			},
+			{
+				"cityCode": "101140402",
+				"cityName": "波密"
+			},
+			{
+				"cityCode": "101140403",
+				"cityName": "米林"
+			},
+			{
+				"cityCode": "101140404",
+				"cityName": "察隅"
+			},
+			{
+				"cityCode": "101140501",
+				"cityName": "昌都"
+			},
+			{
+				"cityCode": "101140502",
+				"cityName": "丁青"
+			},
+			{
+				"cityCode": "101140503",
+				"cityName": "类乌齐"
+			},
+			{
+				"cityCode": "101140504",
+				"cityName": "洛隆"
+			},
+			{
+				"cityCode": "101140505",
+				"cityName": "左贡"
+			},
+			{
+				"cityCode": "101140506",
+				"cityName": "芒康"
+			},
+			{
+				"cityCode": "101140507",
+				"cityName": "八宿"
+			},
+			{
+				"cityCode": "101140601",
+				"cityName": "那曲"
+			},
+			{
+				"cityCode": "101140603",
+				"cityName": "嘉黎"
+			},
+			{
+				"cityCode": "101140604",
+				"cityName": "班戈"
+			},
+			{
+				"cityCode": "101140605",
+				"cityName": "安多"
+			},
+			{
+				"cityCode": "101140606",
+				"cityName": "索县"
+			},
+			{
+				"cityCode": "101140607",
+				"cityName": "比如"
+			},
+			{
+				"cityCode": "101140701",
+				"cityName": "阿里"
+			},
+			{
+				"cityCode": "101140702",
+				"cityName": "改则"
+			},
+			{
+				"cityCode": "101140703",
+				"cityName": "申扎"
+			},
+			{
+				"cityCode": "101140704",
+				"cityName": "狮泉河"
+			},
+			{
+				"cityCode": "101140705",
+				"cityName": "普兰"
+			}
+		]
+	},
+	{
+		"provinceCode": "101150101",
+		"provinceName": "西宁",
+		"cities": [
+			{
+				"cityCode": "101150101",
+				"cityName": "西宁"
+			},
+			{
+				"cityCode": "101150102",
+				"cityName": "大通"
+			},
+			{
+				"cityCode": "101150103",
+				"cityName": "湟源"
+			},
+			{
+				"cityCode": "101150104",
+				"cityName": "湟中"
+			},
+			{
+				"cityCode": "101150105",
+				"cityName": "铁卜加"
+			},
+			{
+				"cityCode": "101150106",
+				"cityName": "铁卜加寺"
+			},
+			{
+				"cityCode": "101150107",
+				"cityName": "中心站"
+			},
+			{
+				"cityCode": "101150201",
+				"cityName": "海东"
+			},
+			{
+				"cityCode": "101150202",
+				"cityName": "乐都"
+			},
+			{
+				"cityCode": "101150203",
+				"cityName": "民和"
+			},
+			{
+				"cityCode": "101150204",
+				"cityName": "互助"
+			},
+			{
+				"cityCode": "101150205",
+				"cityName": "化隆"
+			},
+			{
+				"cityCode": "101150206",
+				"cityName": "循化"
+			},
+			{
+				"cityCode": "101150207",
+				"cityName": "冷湖"
+			},
+			{
+				"cityCode": "101150208",
+				"cityName": "平安"
+			},
+			{
+				"cityCode": "101150301",
+				"cityName": "黄南"
+			},
+			{
+				"cityCode": "101150302",
+				"cityName": "尖扎"
+			},
+			{
+				"cityCode": "101150303",
+				"cityName": "泽库"
+			},
+			{
+				"cityCode": "101150304",
+				"cityName": "河南"
+			},
+			{
+				"cityCode": "101150401",
+				"cityName": "海南"
+			},
+			{
+				"cityCode": "101150402",
+				"cityName": "江西沟"
+			},
+			{
+				"cityCode": "101150404",
+				"cityName": "贵德"
+			},
+			{
+				"cityCode": "101150405",
+				"cityName": "河卡"
+			},
+			{
+				"cityCode": "101150406",
+				"cityName": "兴海"
+			},
+			{
+				"cityCode": "101150407",
+				"cityName": "贵南"
+			},
+			{
+				"cityCode": "101150408",
+				"cityName": "同德"
+			},
+			{
+				"cityCode": "101150409",
+				"cityName": "共和"
+			},
+			{
+				"cityCode": "101150501",
+				"cityName": "果洛"
+			},
+			{
+				"cityCode": "101150502",
+				"cityName": "班玛"
+			},
+			{
+				"cityCode": "101150503",
+				"cityName": "甘德"
+			},
+			{
+				"cityCode": "101150504",
+				"cityName": "达日"
+			},
+			{
+				"cityCode": "101150505",
+				"cityName": "久治"
+			},
+			{
+				"cityCode": "101150506",
+				"cityName": "玛多"
+			},
+			{
+				"cityCode": "101150507",
+				"cityName": "清水河"
+			},
+			{
+				"cityCode": "101150508",
+				"cityName": "玛沁"
+			},
+			{
+				"cityCode": "101150601",
+				"cityName": "玉树"
+			},
+			{
+				"cityCode": "101150602",
+				"cityName": "托托河"
+			},
+			{
+				"cityCode": "101150603",
+				"cityName": "治多"
+			},
+			{
+				"cityCode": "101150604",
+				"cityName": "杂多"
+			},
+			{
+				"cityCode": "101150605",
+				"cityName": "囊谦"
+			},
+			{
+				"cityCode": "101150606",
+				"cityName": "曲麻莱"
+			},
+			{
+				"cityCode": "101150701",
+				"cityName": "海西"
+			},
+			{
+				"cityCode": "101150702",
+				"cityName": "格尔木"
+			},
+			{
+				"cityCode": "101150703",
+				"cityName": "察尔汉"
+			},
+			{
+				"cityCode": "101150704",
+				"cityName": "野牛沟"
+			},
+			{
+				"cityCode": "101150705",
+				"cityName": "五道梁"
+			},
+			{
+				"cityCode": "101150706",
+				"cityName": "小灶火"
+			},
+			{
+				"cityCode": "101150708",
+				"cityName": "天峻"
+			},
+			{
+				"cityCode": "101150709",
+				"cityName": "乌兰"
+			},
+			{
+				"cityCode": "101150710",
+				"cityName": "都兰"
+			},
+			{
+				"cityCode": "101150711",
+				"cityName": "诺木洪"
+			},
+			{
+				"cityCode": "101150712",
+				"cityName": "茫崖"
+			},
+			{
+				"cityCode": "101150713",
+				"cityName": "大柴旦"
+			},
+			{
+				"cityCode": "101150714",
+				"cityName": "茶卡"
+			},
+			{
+				"cityCode": "101150715",
+				"cityName": "香日德"
+			},
+			{
+				"cityCode": "101150716",
+				"cityName": "德令哈"
+			},
+			{
+				"cityCode": "101150801",
+				"cityName": "海北"
+			},
+			{
+				"cityCode": "101150802",
+				"cityName": "门源"
+			},
+			{
+				"cityCode": "101150803",
+				"cityName": "祁连"
+			},
+			{
+				"cityCode": "101150804",
+				"cityName": "海晏"
+			},
+			{
+				"cityCode": "101150805",
+				"cityName": "托勒"
+			},
+			{
+				"cityCode": "101150806",
+				"cityName": "刚察"
+			}
+		]
+	},
+	{
+		"provinceCode": "101160101",
+		"provinceName": "兰州",
+		"cities": [
+			{
+				"cityCode": "101160101",
+				"cityName": "兰州"
+			},
+			{
+				"cityCode": "101160102",
+				"cityName": "皋兰"
+			},
+			{
+				"cityCode": "101160103",
+				"cityName": "永登"
+			},
+			{
+				"cityCode": "101160104",
+				"cityName": "榆中"
+			},
+			{
+				"cityCode": "101160201",
+				"cityName": "定西"
+			},
+			{
+				"cityCode": "101160202",
+				"cityName": "通渭"
+			},
+			{
+				"cityCode": "101160203",
+				"cityName": "陇西"
+			},
+			{
+				"cityCode": "101160204",
+				"cityName": "渭源"
+			},
+			{
+				"cityCode": "101160205",
+				"cityName": "临洮"
+			},
+			{
+				"cityCode": "101160206",
+				"cityName": "漳县"
+			},
+			{
+				"cityCode": "101160207",
+				"cityName": "岷县"
+			},
+			{
+				"cityCode": "101160208",
+				"cityName": "安定"
+			},
+			{
+				"cityCode": "101160301",
+				"cityName": "平凉"
+			},
+			{
+				"cityCode": "101160302",
+				"cityName": "泾川"
+			},
+			{
+				"cityCode": "101160303",
+				"cityName": "灵台"
+			},
+			{
+				"cityCode": "101160304",
+				"cityName": "崇信"
+			},
+			{
+				"cityCode": "101160305",
+				"cityName": "华亭"
+			},
+			{
+				"cityCode": "101160306",
+				"cityName": "庄浪"
+			},
+			{
+				"cityCode": "101160307",
+				"cityName": "静宁"
+			},
+			{
+				"cityCode": "101160308",
+				"cityName": "崆峒"
+			},
+			{
+				"cityCode": "101160401",
+				"cityName": "庆阳"
+			},
+			{
+				"cityCode": "101160402",
+				"cityName": "西峰"
+			},
+			{
+				"cityCode": "101160403",
+				"cityName": "环县"
+			},
+			{
+				"cityCode": "101160404",
+				"cityName": "华池"
+			},
+			{
+				"cityCode": "101160405",
+				"cityName": "合水"
+			},
+			{
+				"cityCode": "101160406",
+				"cityName": "正宁"
+			},
+			{
+				"cityCode": "101160407",
+				"cityName": "宁县"
+			},
+			{
+				"cityCode": "101160408",
+				"cityName": "镇原"
+			},
+			{
+				"cityCode": "101160409",
+				"cityName": "庆城"
+			},
+			{
+				"cityCode": "101160501",
+				"cityName": "武威"
+			},
+			{
+				"cityCode": "101160502",
+				"cityName": "民勤"
+			},
+			{
+				"cityCode": "101160503",
+				"cityName": "古浪"
+			},
+			{
+				"cityCode": "101160504",
+				"cityName": "乌鞘岭"
+			},
+			{
+				"cityCode": "101160505",
+				"cityName": "天祝"
+			},
+			{
+				"cityCode": "101160601",
+				"cityName": "金昌"
+			},
+			{
+				"cityCode": "101160602",
+				"cityName": "永昌"
+			},
+			{
+				"cityCode": "101160701",
+				"cityName": "张掖"
+			},
+			{
+				"cityCode": "101160702",
+				"cityName": "肃南"
+			},
+			{
+				"cityCode": "101160703",
+				"cityName": "民乐"
+			},
+			{
+				"cityCode": "101160704",
+				"cityName": "临泽"
+			},
+			{
+				"cityCode": "101160705",
+				"cityName": "高台"
+			},
+			{
+				"cityCode": "101160706",
+				"cityName": "山丹"
+			},
+			{
+				"cityCode": "101160801",
+				"cityName": "酒泉"
+			},
+			{
+				"cityCode": "101160802",
+				"cityName": "鼎新"
+			},
+			{
+				"cityCode": "101160803",
+				"cityName": "金塔"
+			},
+			{
+				"cityCode": "101160804",
+				"cityName": "马鬃山"
+			},
+			{
+				"cityCode": "101160805",
+				"cityName": "瓜州"
+			},
+			{
+				"cityCode": "101160806",
+				"cityName": "肃北"
+			},
+			{
+				"cityCode": "101160807",
+				"cityName": "玉门镇"
+			},
+			{
+				"cityCode": "101160808",
+				"cityName": "敦煌"
+			},
+			{
+				"cityCode": "101160901",
+				"cityName": "天水"
+			},
+			{
+				"cityCode": "101160902",
+				"cityName": "北道区"
+			},
+			{
+				"cityCode": "101160903",
+				"cityName": "清水"
+			},
+			{
+				"cityCode": "101160904",
+				"cityName": "秦安"
+			},
+			{
+				"cityCode": "101160905",
+				"cityName": "甘谷"
+			},
+			{
+				"cityCode": "101160906",
+				"cityName": "武山"
+			},
+			{
+				"cityCode": "101160907",
+				"cityName": "张家川"
+			},
+			{
+				"cityCode": "101160908",
+				"cityName": "麦积"
+			},
+			{
+				"cityCode": "101161001",
+				"cityName": "武都"
+			},
+			{
+				"cityCode": "101161002",
+				"cityName": "成县"
+			},
+			{
+				"cityCode": "101161003",
+				"cityName": "文县"
+			},
+			{
+				"cityCode": "101161004",
+				"cityName": "宕昌"
+			},
+			{
+				"cityCode": "101161005",
+				"cityName": "康县"
+			},
+			{
+				"cityCode": "101161006",
+				"cityName": "西和"
+			},
+			{
+				"cityCode": "101161007",
+				"cityName": "礼县"
+			},
+			{
+				"cityCode": "101161008",
+				"cityName": "徽县"
+			},
+			{
+				"cityCode": "101161009",
+				"cityName": "两当"
+			},
+			{
+				"cityCode": "101161101",
+				"cityName": "临夏"
+			},
+			{
+				"cityCode": "101161102",
+				"cityName": "康乐"
+			},
+			{
+				"cityCode": "101161103",
+				"cityName": "永靖"
+			},
+			{
+				"cityCode": "101161104",
+				"cityName": "广河"
+			},
+			{
+				"cityCode": "101161105",
+				"cityName": "和政"
+			},
+			{
+				"cityCode": "101161106",
+				"cityName": "东乡"
+			},
+			{
+				"cityCode": "101161201",
+				"cityName": "合作"
+			},
+			{
+				"cityCode": "101161202",
+				"cityName": "临潭"
+			},
+			{
+				"cityCode": "101161203",
+				"cityName": "卓尼"
+			},
+			{
+				"cityCode": "101161204",
+				"cityName": "舟曲"
+			},
+			{
+				"cityCode": "101161205",
+				"cityName": "迭部"
+			},
+			{
+				"cityCode": "101161206",
+				"cityName": "玛曲"
+			},
+			{
+				"cityCode": "101161207",
+				"cityName": "碌曲"
+			},
+			{
+				"cityCode": "101161208",
+				"cityName": "夏河"
+			},
+			{
+				"cityCode": "101161301",
+				"cityName": "白银"
+			},
+			{
+				"cityCode": "101161302",
+				"cityName": "靖远"
+			},
+			{
+				"cityCode": "101161303",
+				"cityName": "会宁"
+			},
+			{
+				"cityCode": "101161304",
+				"cityName": "华家岭"
+			},
+			{
+				"cityCode": "101161305",
+				"cityName": "景泰"
+			}
+		]
+	},
+	{
+		"provinceCode": "101170101",
+		"provinceName": "银川",
+		"cities": [
+			{
+				"cityCode": "101170101",
+				"cityName": "银川"
+			},
+			{
+				"cityCode": "101170102",
+				"cityName": "永宁"
+			},
+			{
+				"cityCode": "101170103",
+				"cityName": "灵武"
+			},
+			{
+				"cityCode": "101170104",
+				"cityName": "贺兰"
+			},
+			{
+				"cityCode": "101170201",
+				"cityName": "石嘴山"
+			},
+			{
+				"cityCode": "101170202",
+				"cityName": "惠农"
+			},
+			{
+				"cityCode": "101170203",
+				"cityName": "平罗"
+			},
+			{
+				"cityCode": "101170204",
+				"cityName": "陶乐"
+			},
+			{
+				"cityCode": "101170205",
+				"cityName": "石炭井"
+			},
+			{
+				"cityCode": "101170206",
+				"cityName": "大武口"
+			},
+			{
+				"cityCode": "101170301",
+				"cityName": "吴忠"
+			},
+			{
+				"cityCode": "101170302",
+				"cityName": "同心"
+			},
+			{
+				"cityCode": "101170303",
+				"cityName": "盐池"
+			},
+			{
+				"cityCode": "101170304",
+				"cityName": "韦州"
+			},
+			{
+				"cityCode": "101170305",
+				"cityName": "麻黄山"
+			},
+			{
+				"cityCode": "101170306",
+				"cityName": "青铜峡"
+			},
+			{
+				"cityCode": "101170401",
+				"cityName": "固原"
+			},
+			{
+				"cityCode": "101170402",
+				"cityName": "西吉"
+			},
+			{
+				"cityCode": "101170403",
+				"cityName": "隆德"
+			},
+			{
+				"cityCode": "101170404",
+				"cityName": "泾源"
+			},
+			{
+				"cityCode": "101170405",
+				"cityName": "六盘山"
+			},
+			{
+				"cityCode": "101170406",
+				"cityName": "彭阳"
+			},
+			{
+				"cityCode": "101170501",
+				"cityName": "中卫"
+			},
+			{
+				"cityCode": "101170502",
+				"cityName": "中宁"
+			},
+			{
+				"cityCode": "101170503",
+				"cityName": "兴仁堡"
+			},
+			{
+				"cityCode": "101170504",
+				"cityName": "海原"
+			}
+		]
+	},
+	{
+		"provinceCode": "101180101",
+		"provinceName": "郑州",
+		"cities": [
+			{
+				"cityCode": "101180101",
+				"cityName": "郑州"
+			},
+			{
+				"cityCode": "101180102",
+				"cityName": "巩义"
+			},
+			{
+				"cityCode": "101180103",
+				"cityName": "荥阳"
+			},
+			{
+				"cityCode": "101180104",
+				"cityName": "登封"
+			},
+			{
+				"cityCode": "101180105",
+				"cityName": "新密"
+			},
+			{
+				"cityCode": "101180106",
+				"cityName": "新郑"
+			},
+			{
+				"cityCode": "101180107",
+				"cityName": "中牟"
+			},
+			{
+				"cityCode": "101180108",
+				"cityName": "郑州农试站"
+			},
+			{
+				"cityCode": "101180201",
+				"cityName": "安阳"
+			},
+			{
+				"cityCode": "101180202",
+				"cityName": "汤阴"
+			},
+			{
+				"cityCode": "101180203",
+				"cityName": "滑县"
+			},
+			{
+				"cityCode": "101180204",
+				"cityName": "内黄"
+			},
+			{
+				"cityCode": "101180205",
+				"cityName": "林州"
+			},
+			{
+				"cityCode": "101180301",
+				"cityName": "新乡"
+			},
+			{
+				"cityCode": "101180302",
+				"cityName": "获嘉"
+			},
+			{
+				"cityCode": "101180303",
+				"cityName": "原阳"
+			},
+			{
+				"cityCode": "101180304",
+				"cityName": "辉县"
+			},
+			{
+				"cityCode": "101180305",
+				"cityName": "卫辉"
+			},
+			{
+				"cityCode": "101180306",
+				"cityName": "延津"
+			},
+			{
+				"cityCode": "101180307",
+				"cityName": "封丘"
+			},
+			{
+				"cityCode": "101180308",
+				"cityName": "长垣"
+			},
+			{
+				"cityCode": "101180401",
+				"cityName": "许昌"
+			},
+			{
+				"cityCode": "101180402",
+				"cityName": "鄢陵"
+			},
+			{
+				"cityCode": "101180403",
+				"cityName": "襄城"
+			},
+			{
+				"cityCode": "101180404",
+				"cityName": "长葛"
+			},
+			{
+				"cityCode": "101180405",
+				"cityName": "禹州"
+			},
+			{
+				"cityCode": "101180501",
+				"cityName": "平顶山"
+			},
+			{
+				"cityCode": "101180502",
+				"cityName": "郏县"
+			},
+			{
+				"cityCode": "101180503",
+				"cityName": "宝丰"
+			},
+			{
+				"cityCode": "101180504",
+				"cityName": "汝州"
+			},
+			{
+				"cityCode": "101180505",
+				"cityName": "叶县"
+			},
+			{
+				"cityCode": "101180506",
+				"cityName": "舞钢"
+			},
+			{
+				"cityCode": "101180507",
+				"cityName": "鲁山"
+			},
+			{
+				"cityCode": "101180601",
+				"cityName": "信阳"
+			},
+			{
+				"cityCode": "101180602",
+				"cityName": "息县"
+			},
+			{
+				"cityCode": "101180603",
+				"cityName": "罗山"
+			},
+			{
+				"cityCode": "101180604",
+				"cityName": "光山"
+			},
+			{
+				"cityCode": "101180605",
+				"cityName": "新县"
+			},
+			{
+				"cityCode": "101180606",
+				"cityName": "淮滨"
+			},
+			{
+				"cityCode": "101180607",
+				"cityName": "潢川"
+			},
+			{
+				"cityCode": "101180608",
+				"cityName": "固始"
+			},
+			{
+				"cityCode": "101180609",
+				"cityName": "商城"
+			},
+			{
+				"cityCode": "101180610",
+				"cityName": "鸡公山"
+			},
+			{
+				"cityCode": "101180611",
+				"cityName": "信阳地区农试站"
+			},
+			{
+				"cityCode": "101180701",
+				"cityName": "南阳"
+			},
+			{
+				"cityCode": "101180702",
+				"cityName": "南召"
+			},
+			{
+				"cityCode": "101180703",
+				"cityName": "方城"
+			},
+			{
+				"cityCode": "101180704",
+				"cityName": "社旗"
+			},
+			{
+				"cityCode": "101180705",
+				"cityName": "西峡"
+			},
+			{
+				"cityCode": "101180706",
+				"cityName": "内乡"
+			},
+			{
+				"cityCode": "101180707",
+				"cityName": "镇平"
+			},
+			{
+				"cityCode": "101180708",
+				"cityName": "淅川"
+			},
+			{
+				"cityCode": "101180709",
+				"cityName": "新野"
+			},
+			{
+				"cityCode": "101180710",
+				"cityName": "唐河"
+			},
+			{
+				"cityCode": "101180711",
+				"cityName": "邓州"
+			},
+			{
+				"cityCode": "101180712",
+				"cityName": "桐柏"
+			},
+			{
+				"cityCode": "101180801",
+				"cityName": "开封"
+			},
+			{
+				"cityCode": "101180802",
+				"cityName": "杞县"
+			},
+			{
+				"cityCode": "101180803",
+				"cityName": "尉氏"
+			},
+			{
+				"cityCode": "101180804",
+				"cityName": "通许"
+			},
+			{
+				"cityCode": "101180805",
+				"cityName": "兰考"
+			},
+			{
+				"cityCode": "101180901",
+				"cityName": "洛阳"
+			},
+			{
+				"cityCode": "101180902",
+				"cityName": "新安"
+			},
+			{
+				"cityCode": "101180903",
+				"cityName": "孟津"
+			},
+			{
+				"cityCode": "101180904",
+				"cityName": "宜阳"
+			},
+			{
+				"cityCode": "101180905",
+				"cityName": "洛宁"
+			},
+			{
+				"cityCode": "101180906",
+				"cityName": "伊川"
+			},
+			{
+				"cityCode": "101180907",
+				"cityName": "嵩县"
+			},
+			{
+				"cityCode": "101180908",
+				"cityName": "偃师"
+			},
+			{
+				"cityCode": "101180909",
+				"cityName": "栾川"
+			},
+			{
+				"cityCode": "101180910",
+				"cityName": "汝阳"
+			},
+			{
+				"cityCode": "101181001",
+				"cityName": "商丘"
+			},
+			{
+				"cityCode": "101181002",
+				"cityName": "睢阳区"
+			},
+			{
+				"cityCode": "101181003",
+				"cityName": "睢县"
+			},
+			{
+				"cityCode": "101181004",
+				"cityName": "民权"
+			},
+			{
+				"cityCode": "101181005",
+				"cityName": "虞城"
+			},
+			{
+				"cityCode": "101181006",
+				"cityName": "柘城"
+			},
+			{
+				"cityCode": "101181007",
+				"cityName": "宁陵"
+			},
+			{
+				"cityCode": "101181008",
+				"cityName": "夏邑"
+			},
+			{
+				"cityCode": "101181009",
+				"cityName": "永城"
+			},
+			{
+				"cityCode": "101181101",
+				"cityName": "焦作"
+			},
+			{
+				"cityCode": "101181102",
+				"cityName": "修武"
+			},
+			{
+				"cityCode": "101181103",
+				"cityName": "武陟"
+			},
+			{
+				"cityCode": "101181104",
+				"cityName": "沁阳"
+			},
+			{
+				"cityCode": "101181106",
+				"cityName": "博爱"
+			},
+			{
+				"cityCode": "101181107",
+				"cityName": "温县"
+			},
+			{
+				"cityCode": "101181108",
+				"cityName": "孟州"
+			},
+			{
+				"cityCode": "101181201",
+				"cityName": "鹤壁"
+			},
+			{
+				"cityCode": "101181202",
+				"cityName": "浚县"
+			},
+			{
+				"cityCode": "101181203",
+				"cityName": "淇县"
+			},
+			{
+				"cityCode": "101181301",
+				"cityName": "濮阳"
+			},
+			{
+				"cityCode": "101181302",
+				"cityName": "台前"
+			},
+			{
+				"cityCode": "101181303",
+				"cityName": "南乐"
+			},
+			{
+				"cityCode": "101181304",
+				"cityName": "清丰"
+			},
+			{
+				"cityCode": "101181305",
+				"cityName": "范县"
+			},
+			{
+				"cityCode": "101181401",
+				"cityName": "周口"
+			},
+			{
+				"cityCode": "101181402",
+				"cityName": "扶沟"
+			},
+			{
+				"cityCode": "101181403",
+				"cityName": "太康"
+			},
+			{
+				"cityCode": "101181404",
+				"cityName": "淮阳"
+			},
+			{
+				"cityCode": "101181405",
+				"cityName": "西华"
+			},
+			{
+				"cityCode": "101181406",
+				"cityName": "商水"
+			},
+			{
+				"cityCode": "101181407",
+				"cityName": "项城"
+			},
+			{
+				"cityCode": "101181408",
+				"cityName": "郸城"
+			},
+			{
+				"cityCode": "101181409",
+				"cityName": "鹿邑"
+			},
+			{
+				"cityCode": "101181410",
+				"cityName": "沈丘"
+			},
+			{
+				"cityCode": "101181411",
+				"cityName": "黄泛区"
+			},
+			{
+				"cityCode": "101181501",
+				"cityName": "漯河"
+			},
+			{
+				"cityCode": "101181502",
+				"cityName": "临颍"
+			},
+			{
+				"cityCode": "101181503",
+				"cityName": "舞阳"
+			},
+			{
+				"cityCode": "101181601",
+				"cityName": "驻马店"
+			},
+			{
+				"cityCode": "101181602",
+				"cityName": "西平"
+			},
+			{
+				"cityCode": "101181603",
+				"cityName": "遂平"
+			},
+			{
+				"cityCode": "101181604",
+				"cityName": "上蔡"
+			},
+			{
+				"cityCode": "101181605",
+				"cityName": "汝南"
+			},
+			{
+				"cityCode": "101181606",
+				"cityName": "泌阳"
+			},
+			{
+				"cityCode": "101181607",
+				"cityName": "平舆"
+			},
+			{
+				"cityCode": "101181608",
+				"cityName": "新蔡"
+			},
+			{
+				"cityCode": "101181609",
+				"cityName": "确山"
+			},
+			{
+				"cityCode": "101181610",
+				"cityName": "正阳"
+			},
+			{
+				"cityCode": "101181701",
+				"cityName": "三门峡"
+			},
+			{
+				"cityCode": "101181702",
+				"cityName": "灵宝"
+			},
+			{
+				"cityCode": "101181703",
+				"cityName": "渑池"
+			},
+			{
+				"cityCode": "101181704",
+				"cityName": "卢氏"
+			},
+			{
+				"cityCode": "101181801",
+				"cityName": "济源"
+			}
+		]
+	},
+	{
+		"provinceCode": "101190101",
+		"provinceName": "南京",
+		"cities": [
+			{
+				"cityCode": "101190101",
+				"cityName": "南京"
+			},
+			{
+				"cityCode": "101190102",
+				"cityName": "溧水"
+			},
+			{
+				"cityCode": "101190103",
+				"cityName": "高淳"
+			},
+			{
+				"cityCode": "101190104",
+				"cityName": "江宁"
+			},
+			{
+				"cityCode": "101190105",
+				"cityName": "六合"
+			},
+			{
+				"cityCode": "101190106",
+				"cityName": "江浦"
+			},
+			{
+				"cityCode": "101190107",
+				"cityName": "浦口"
+			},
+			{
+				"cityCode": "101190201",
+				"cityName": "无锡"
+			},
+			{
+				"cityCode": "101190202",
+				"cityName": "江阴"
+			},
+			{
+				"cityCode": "101190203",
+				"cityName": "宜兴"
+			},
+			{
+				"cityCode": "101190301",
+				"cityName": "镇江"
+			},
+			{
+				"cityCode": "101190302",
+				"cityName": "丹阳"
+			},
+			{
+				"cityCode": "101190303",
+				"cityName": "扬中"
+			},
+			{
+				"cityCode": "101190304",
+				"cityName": "句容"
+			},
+			{
+				"cityCode": "101190305",
+				"cityName": "丹徒"
+			},
+			{
+				"cityCode": "101190401",
+				"cityName": "苏州"
+			},
+			{
+				"cityCode": "101190402",
+				"cityName": "常熟"
+			},
+			{
+				"cityCode": "101190403",
+				"cityName": "张家港"
+			},
+			{
+				"cityCode": "101190404",
+				"cityName": "昆山"
+			},
+			{
+				"cityCode": "101190405",
+				"cityName": "吴县东山"
+			},
+			{
+				"cityCode": "101190406",
+				"cityName": "吴县"
+			},
+			{
+				"cityCode": "101190407",
+				"cityName": "吴江"
+			},
+			{
+				"cityCode": "101190408",
+				"cityName": "太仓"
+			},
+			{
+				"cityCode": "101190501",
+				"cityName": "南通"
+			},
+			{
+				"cityCode": "101190502",
+				"cityName": "海安"
+			},
+			{
+				"cityCode": "101190503",
+				"cityName": "如皋"
+			},
+			{
+				"cityCode": "101190504",
+				"cityName": "如东"
+			},
+			{
+				"cityCode": "101190505",
+				"cityName": "吕泗"
+			},
+			{
+				"cityCode": "101190506",
+				"cityName": "吕泗渔场"
+			},
+			{
+				"cityCode": "101190507",
+				"cityName": "启东"
+			},
+			{
+				"cityCode": "101190508",
+				"cityName": "海门"
+			},
+			{
+				"cityCode": "101190509",
+				"cityName": "通州"
+			},
+			{
+				"cityCode": "101190601",
+				"cityName": "扬州"
+			},
+			{
+				"cityCode": "101190602",
+				"cityName": "宝应"
+			},
+			{
+				"cityCode": "101190603",
+				"cityName": "仪征"
+			},
+			{
+				"cityCode": "101190604",
+				"cityName": "高邮"
+			},
+			{
+				"cityCode": "101190605",
+				"cityName": "江都"
+			},
+			{
+				"cityCode": "101190606",
+				"cityName": "邗江"
+			},
+			{
+				"cityCode": "101190701",
+				"cityName": "盐城"
+			},
+			{
+				"cityCode": "101190702",
+				"cityName": "响水"
+			},
+			{
+				"cityCode": "101190703",
+				"cityName": "滨海"
+			},
+			{
+				"cityCode": "101190704",
+				"cityName": "阜宁"
+			},
+			{
+				"cityCode": "101190705",
+				"cityName": "射阳"
+			},
+			{
+				"cityCode": "101190706",
+				"cityName": "建湖"
+			},
+			{
+				"cityCode": "101190707",
+				"cityName": "东台"
+			},
+			{
+				"cityCode": "101190708",
+				"cityName": "大丰"
+			},
+			{
+				"cityCode": "101190709",
+				"cityName": "盐都"
+			},
+			{
+				"cityCode": "101190801",
+				"cityName": "徐州"
+			},
+			{
+				"cityCode": "101190802",
+				"cityName": "徐州农试站"
+			},
+			{
+				"cityCode": "101190803",
+				"cityName": "丰县"
+			},
+			{
+				"cityCode": "101190804",
+				"cityName": "沛县"
+			},
+			{
+				"cityCode": "101190805",
+				"cityName": "邳州"
+			},
+			{
+				"cityCode": "101190806",
+				"cityName": "睢宁"
+			},
+			{
+				"cityCode": "101190807",
+				"cityName": "新沂"
+			},
+			{
+				"cityCode": "101190901",
+				"cityName": "淮安"
+			},
+			{
+				"cityCode": "101190902",
+				"cityName": "金湖"
+			},
+			{
+				"cityCode": "101190903",
+				"cityName": "盱眙"
+			},
+			{
+				"cityCode": "101190904",
+				"cityName": "洪泽"
+			},
+			{
+				"cityCode": "101190905",
+				"cityName": "涟水"
+			},
+			{
+				"cityCode": "101190906",
+				"cityName": "淮阴县"
+			},
+			{
+				"cityCode": "101190907",
+				"cityName": "淮阴"
+			},
+			{
+				"cityCode": "101190908",
+				"cityName": "楚州"
+			},
+			{
+				"cityCode": "101191001",
+				"cityName": "连云港"
+			},
+			{
+				"cityCode": "101191002",
+				"cityName": "东海"
+			},
+			{
+				"cityCode": "101191003",
+				"cityName": "赣榆"
+			},
+			{
+				"cityCode": "101191004",
+				"cityName": "灌云"
+			},
+			{
+				"cityCode": "101191005",
+				"cityName": "灌南"
+			},
+			{
+				"cityCode": "101191006",
+				"cityName": "西连岛"
+			},
+			{
+				"cityCode": "101191007",
+				"cityName": "燕尾港"
+			},
+			{
+				"cityCode": "101191101",
+				"cityName": "常州"
+			},
+			{
+				"cityCode": "101191102",
+				"cityName": "溧阳"
+			},
+			{
+				"cityCode": "101191103",
+				"cityName": "金坛"
+			},
+			{
+				"cityCode": "101191201",
+				"cityName": "泰州"
+			},
+			{
+				"cityCode": "101191202",
+				"cityName": "兴化"
+			},
+			{
+				"cityCode": "101191203",
+				"cityName": "泰兴"
+			},
+			{
+				"cityCode": "101191204",
+				"cityName": "姜堰"
+			},
+			{
+				"cityCode": "101191205",
+				"cityName": "靖江"
+			},
+			{
+				"cityCode": "101191301",
+				"cityName": "宿迁"
+			},
+			{
+				"cityCode": "101191302",
+				"cityName": "沭阳"
+			},
+			{
+				"cityCode": "101191303",
+				"cityName": "泗阳"
+			},
+			{
+				"cityCode": "101191304",
+				"cityName": "泗洪"
+			}
+		]
+	},
+	{
+		"provinceCode": "101200101",
+		"provinceName": "武汉",
+		"cities": [
+			{
+				"cityCode": "101200101",
+				"cityName": "武汉"
+			},
+			{
+				"cityCode": "101200102",
+				"cityName": "蔡甸"
+			},
+			{
+				"cityCode": "101200103",
+				"cityName": "黄陂"
+			},
+			{
+				"cityCode": "101200104",
+				"cityName": "新洲"
+			},
+			{
+				"cityCode": "101200105",
+				"cityName": "江夏"
+			},
+			{
+				"cityCode": "101200201",
+				"cityName": "襄樊"
+			},
+			{
+				"cityCode": "101200202",
+				"cityName": "襄阳"
+			},
+			{
+				"cityCode": "101200203",
+				"cityName": "保康"
+			},
+			{
+				"cityCode": "101200204",
+				"cityName": "南漳"
+			},
+			{
+				"cityCode": "101200205",
+				"cityName": "宜城"
+			},
+			{
+				"cityCode": "101200206",
+				"cityName": "老河口"
+			},
+			{
+				"cityCode": "101200207",
+				"cityName": "谷城"
+			},
+			{
+				"cityCode": "101200208",
+				"cityName": "枣阳"
+			},
+			{
+				"cityCode": "101200301",
+				"cityName": "鄂州"
+			},
+			{
+				"cityCode": "101200401",
+				"cityName": "孝感"
+			},
+			{
+				"cityCode": "101200402",
+				"cityName": "安陆"
+			},
+			{
+				"cityCode": "101200403",
+				"cityName": "云梦"
+			},
+			{
+				"cityCode": "101200404",
+				"cityName": "大悟"
+			},
+			{
+				"cityCode": "101200405",
+				"cityName": "应城"
+			},
+			{
+				"cityCode": "101200406",
+				"cityName": "汉川"
+			},
+			{
+				"cityCode": "101200501",
+				"cityName": "黄冈"
+			},
+			{
+				"cityCode": "101200502",
+				"cityName": "红安"
+			},
+			{
+				"cityCode": "101200503",
+				"cityName": "麻城"
+			},
+			{
+				"cityCode": "101200504",
+				"cityName": "罗田"
+			},
+			{
+				"cityCode": "101200505",
+				"cityName": "英山"
+			},
+			{
+				"cityCode": "101200506",
+				"cityName": "浠水"
+			},
+			{
+				"cityCode": "101200507",
+				"cityName": "蕲春"
+			},
+			{
+				"cityCode": "101200508",
+				"cityName": "黄梅"
+			},
+			{
+				"cityCode": "101200509",
+				"cityName": "武穴"
+			},
+			{
+				"cityCode": "101200601",
+				"cityName": "黄石"
+			},
+			{
+				"cityCode": "101200602",
+				"cityName": "大冶"
+			},
+			{
+				"cityCode": "101200603",
+				"cityName": "阳新"
+			},
+			{
+				"cityCode": "101200701",
+				"cityName": "咸宁"
+			},
+			{
+				"cityCode": "101200702",
+				"cityName": "赤壁"
+			},
+			{
+				"cityCode": "101200703",
+				"cityName": "嘉鱼"
+			},
+			{
+				"cityCode": "101200704",
+				"cityName": "崇阳"
+			},
+			{
+				"cityCode": "101200705",
+				"cityName": "通城"
+			},
+			{
+				"cityCode": "101200706",
+				"cityName": "通山"
+			},
+			{
+				"cityCode": "101200801",
+				"cityName": "荆州"
+			},
+			{
+				"cityCode": "101200802",
+				"cityName": "江陵"
+			},
+			{
+				"cityCode": "101200803",
+				"cityName": "公安"
+			},
+			{
+				"cityCode": "101200804",
+				"cityName": "石首"
+			},
+			{
+				"cityCode": "101200805",
+				"cityName": "监利"
+			},
+			{
+				"cityCode": "101200806",
+				"cityName": "洪湖"
+			},
+			{
+				"cityCode": "101200807",
+				"cityName": "松滋"
+			},
+			{
+				"cityCode": "101200901",
+				"cityName": "宜昌"
+			},
+			{
+				"cityCode": "101200902",
+				"cityName": "远安"
+			},
+			{
+				"cityCode": "101200903",
+				"cityName": "秭归"
+			},
+			{
+				"cityCode": "101200904",
+				"cityName": "兴山"
+			},
+			{
+				"cityCode": "101200905",
+				"cityName": "宜昌县"
+			},
+			{
+				"cityCode": "101200906",
+				"cityName": "五峰"
+			},
+			{
+				"cityCode": "101200907",
+				"cityName": "当阳"
+			},
+			{
+				"cityCode": "101200908",
+				"cityName": "长阳"
+			},
+			{
+				"cityCode": "101200909",
+				"cityName": "宜都"
+			},
+			{
+				"cityCode": "101200910",
+				"cityName": "枝江"
+			},
+			{
+				"cityCode": "101200911",
+				"cityName": "三峡"
+			},
+			{
+				"cityCode": "101200912",
+				"cityName": "夷陵"
+			},
+			{
+				"cityCode": "101201001",
+				"cityName": "恩施"
+			},
+			{
+				"cityCode": "101201002",
+				"cityName": "利川"
+			},
+			{
+				"cityCode": "101201003",
+				"cityName": "建始"
+			},
+			{
+				"cityCode": "101201004",
+				"cityName": "咸丰"
+			},
+			{
+				"cityCode": "101201005",
+				"cityName": "宣恩"
+			},
+			{
+				"cityCode": "101201006",
+				"cityName": "鹤峰"
+			},
+			{
+				"cityCode": "101201007",
+				"cityName": "来凤"
+			},
+			{
+				"cityCode": "101201008",
+				"cityName": "巴东"
+			},
+			{
+				"cityCode": "101201009",
+				"cityName": "绿葱坡"
+			},
+			{
+				"cityCode": "101201101",
+				"cityName": "十堰"
+			},
+			{
+				"cityCode": "101201102",
+				"cityName": "竹溪"
+			},
+			{
+				"cityCode": "101201103",
+				"cityName": "郧西"
+			},
+			{
+				"cityCode": "101201104",
+				"cityName": "郧县"
+			},
+			{
+				"cityCode": "101201105",
+				"cityName": "竹山"
+			},
+			{
+				"cityCode": "101201106",
+				"cityName": "房县"
+			},
+			{
+				"cityCode": "101201107",
+				"cityName": "丹江口"
+			},
+			{
+				"cityCode": "101201201",
+				"cityName": "神农架"
+			},
+			{
+				"cityCode": "101201301",
+				"cityName": "随州"
+			},
+			{
+				"cityCode": "101201302",
+				"cityName": "广水"
+			},
+			{
+				"cityCode": "101201401",
+				"cityName": "荆门"
+			},
+			{
+				"cityCode": "101201402",
+				"cityName": "钟祥"
+			},
+			{
+				"cityCode": "101201403",
+				"cityName": "京山"
+			},
+			{
+				"cityCode": "101201501",
+				"cityName": "天门"
+			},
+			{
+				"cityCode": "101201601",
+				"cityName": "仙桃"
+			},
+			{
+				"cityCode": "101201701",
+				"cityName": "潜江"
+			}
+		]
+	},
+	{
+		"provinceCode": "101210101",
+		"provinceName": "杭州",
+		"cities": [
+			{
+				"cityCode": "101210101",
+				"cityName": "杭州"
+			},
+			{
+				"cityCode": "101210102",
+				"cityName": "萧山"
+			},
+			{
+				"cityCode": "101210103",
+				"cityName": "桐庐"
+			},
+			{
+				"cityCode": "101210104",
+				"cityName": "淳安"
+			},
+			{
+				"cityCode": "101210105",
+				"cityName": "建德"
+			},
+			{
+				"cityCode": "101210106",
+				"cityName": "余杭"
+			},
+			{
+				"cityCode": "101210107",
+				"cityName": "临安"
+			},
+			{
+				"cityCode": "101210108",
+				"cityName": "富阳"
+			},
+			{
+				"cityCode": "101210201",
+				"cityName": "湖州"
+			},
+			{
+				"cityCode": "101210202",
+				"cityName": "长兴"
+			},
+			{
+				"cityCode": "101210203",
+				"cityName": "安吉"
+			},
+			{
+				"cityCode": "101210204",
+				"cityName": "德清"
+			},
+			{
+				"cityCode": "101210301",
+				"cityName": "嘉兴"
+			},
+			{
+				"cityCode": "101210302",
+				"cityName": "嘉善"
+			},
+			{
+				"cityCode": "101210303",
+				"cityName": "海宁"
+			},
+			{
+				"cityCode": "101210304",
+				"cityName": "桐乡"
+			},
+			{
+				"cityCode": "101210305",
+				"cityName": "平湖"
+			},
+			{
+				"cityCode": "101210306",
+				"cityName": "海盐"
+			},
+			{
+				"cityCode": "101210401",
+				"cityName": "宁波"
+			},
+			{
+				"cityCode": "101210403",
+				"cityName": "慈溪"
+			},
+			{
+				"cityCode": "101210404",
+				"cityName": "余姚"
+			},
+			{
+				"cityCode": "101210405",
+				"cityName": "奉化"
+			},
+			{
+				"cityCode": "101210406",
+				"cityName": "象山"
+			},
+			{
+				"cityCode": "101210407",
+				"cityName": "石浦"
+			},
+			{
+				"cityCode": "101210408",
+				"cityName": "宁海"
+			},
+			{
+				"cityCode": "101210409",
+				"cityName": "鄞县"
+			},
+			{
+				"cityCode": "101210410",
+				"cityName": "北仑"
+			},
+			{
+				"cityCode": "101210411",
+				"cityName": "鄞州"
+			},
+			{
+				"cityCode": "101210412",
+				"cityName": "镇海"
+			},
+			{
+				"cityCode": "101210501",
+				"cityName": "绍兴"
+			},
+			{
+				"cityCode": "101210502",
+				"cityName": "诸暨"
+			},
+			{
+				"cityCode": "101210503",
+				"cityName": "上虞"
+			},
+			{
+				"cityCode": "101210504",
+				"cityName": "新昌"
+			},
+			{
+				"cityCode": "101210505",
+				"cityName": "嵊州"
+			},
+			{
+				"cityCode": "101210601",
+				"cityName": "台州"
+			},
+			{
+				"cityCode": "101210602",
+				"cityName": "括苍山"
+			},
+			{
+				"cityCode": "101210603",
+				"cityName": "玉环"
+			},
+			{
+				"cityCode": "101210604",
+				"cityName": "三门"
+			},
+			{
+				"cityCode": "101210605",
+				"cityName": "天台"
+			},
+			{
+				"cityCode": "101210606",
+				"cityName": "仙居"
+			},
+			{
+				"cityCode": "101210607",
+				"cityName": "温岭"
+			},
+			{
+				"cityCode": "101210608",
+				"cityName": "大陈"
+			},
+			{
+				"cityCode": "101210609",
+				"cityName": "洪家"
+			},
+			{
+				"cityCode": "101210701",
+				"cityName": "温州"
+			},
+			{
+				"cityCode": "101210702",
+				"cityName": "泰顺"
+			},
+			{
+				"cityCode": "101210703",
+				"cityName": "文成"
+			},
+			{
+				"cityCode": "101210704",
+				"cityName": "平阳"
+			},
+			{
+				"cityCode": "101210705",
+				"cityName": "瑞安"
+			},
+			{
+				"cityCode": "101210706",
+				"cityName": "洞头"
+			},
+			{
+				"cityCode": "101210707",
+				"cityName": "乐清"
+			},
+			{
+				"cityCode": "101210708",
+				"cityName": "永嘉"
+			},
+			{
+				"cityCode": "101210709",
+				"cityName": "苍南"
+			},
+			{
+				"cityCode": "101210801",
+				"cityName": "丽水"
+			},
+			{
+				"cityCode": "101210802",
+				"cityName": "遂昌"
+			},
+			{
+				"cityCode": "101210803",
+				"cityName": "龙泉"
+			},
+			{
+				"cityCode": "101210804",
+				"cityName": "缙云"
+			},
+			{
+				"cityCode": "101210805",
+				"cityName": "青田"
+			},
+			{
+				"cityCode": "101210806",
+				"cityName": "云和"
+			},
+			{
+				"cityCode": "101210807",
+				"cityName": "庆元"
+			},
+			{
+				"cityCode": "101210901",
+				"cityName": "金华"
+			},
+			{
+				"cityCode": "101210902",
+				"cityName": "浦江"
+			},
+			{
+				"cityCode": "101210903",
+				"cityName": "兰溪"
+			},
+			{
+				"cityCode": "101210904",
+				"cityName": "义乌"
+			},
+			{
+				"cityCode": "101210905",
+				"cityName": "东阳"
+			},
+			{
+				"cityCode": "101210906",
+				"cityName": "武义"
+			},
+			{
+				"cityCode": "101210907",
+				"cityName": "永康"
+			},
+			{
+				"cityCode": "101210908",
+				"cityName": "磐安"
+			},
+			{
+				"cityCode": "101211001",
+				"cityName": "衢州"
+			},
+			{
+				"cityCode": "101211002",
+				"cityName": "常山"
+			},
+			{
+				"cityCode": "101211003",
+				"cityName": "开化"
+			},
+			{
+				"cityCode": "101211004",
+				"cityName": "龙游"
+			},
+			{
+				"cityCode": "101211005",
+				"cityName": "江山"
+			},
+			{
+				"cityCode": "101211101",
+				"cityName": "舟山"
+			},
+			{
+				"cityCode": "101211102",
+				"cityName": "嵊泗"
+			},
+			{
+				"cityCode": "101211103",
+				"cityName": "嵊山"
+			},
+			{
+				"cityCode": "101211104",
+				"cityName": "岱山"
+			},
+			{
+				"cityCode": "101211105",
+				"cityName": "普陀"
+			},
+			{
+				"cityCode": "101211106",
+				"cityName": "定海"
+			}
+		]
+	},
+	{
+		"provinceCode": "101220101",
+		"provinceName": "合肥",
+		"cities": [
+			{
+				"cityCode": "101220101",
+				"cityName": "合肥"
+			},
+			{
+				"cityCode": "101220102",
+				"cityName": "长丰"
+			},
+			{
+				"cityCode": "101220103",
+				"cityName": "肥东"
+			},
+			{
+				"cityCode": "101220104",
+				"cityName": "肥西"
+			},
+			{
+				"cityCode": "101220201",
+				"cityName": "蚌埠"
+			},
+			{
+				"cityCode": "101220202",
+				"cityName": "怀远"
+			},
+			{
+				"cityCode": "101220203",
+				"cityName": "固镇"
+			},
+			{
+				"cityCode": "101220204",
+				"cityName": "五河"
+			},
+			{
+				"cityCode": "101220301",
+				"cityName": "芜湖"
+			},
+			{
+				"cityCode": "101220302",
+				"cityName": "繁昌"
+			},
+			{
+				"cityCode": "101220303",
+				"cityName": "芜湖县"
+			},
+			{
+				"cityCode": "101220304",
+				"cityName": "南陵"
+			},
+			{
+				"cityCode": "101220401",
+				"cityName": "淮南"
+			},
+			{
+				"cityCode": "101220402",
+				"cityName": "凤台"
+			},
+			{
+				"cityCode": "101220501",
+				"cityName": "马鞍山"
+			},
+			{
+				"cityCode": "101220502",
+				"cityName": "当涂"
+			},
+			{
+				"cityCode": "101220601",
+				"cityName": "安庆"
+			},
+			{
+				"cityCode": "101220602",
+				"cityName": "枞阳"
+			},
+			{
+				"cityCode": "101220603",
+				"cityName": "太湖"
+			},
+			{
+				"cityCode": "101220604",
+				"cityName": "潜山"
+			},
+			{
+				"cityCode": "101220605",
+				"cityName": "怀宁"
+			},
+			{
+				"cityCode": "101220606",
+				"cityName": "宿松"
+			},
+			{
+				"cityCode": "101220607",
+				"cityName": "望江"
+			},
+			{
+				"cityCode": "101220608",
+				"cityName": "岳西"
+			},
+			{
+				"cityCode": "101220609",
+				"cityName": "桐城"
+			},
+			{
+				"cityCode": "101220701",
+				"cityName": "宿州"
+			},
+			{
+				"cityCode": "101220702",
+				"cityName": "砀山"
+			},
+			{
+				"cityCode": "101220703",
+				"cityName": "灵璧"
+			},
+			{
+				"cityCode": "101220704",
+				"cityName": "泗县"
+			},
+			{
+				"cityCode": "101220705",
+				"cityName": "萧县"
+			},
+			{
+				"cityCode": "101220801",
+				"cityName": "阜阳"
+			},
+			{
+				"cityCode": "101220802",
+				"cityName": "阜南"
+			},
+			{
+				"cityCode": "101220803",
+				"cityName": "颍上"
+			},
+			{
+				"cityCode": "101220804",
+				"cityName": "临泉"
+			},
+			{
+				"cityCode": "101220805",
+				"cityName": "界首"
+			},
+			{
+				"cityCode": "101220806",
+				"cityName": "太和"
+			},
+			{
+				"cityCode": "101220901",
+				"cityName": "亳州"
+			},
+			{
+				"cityCode": "101220902",
+				"cityName": "涡阳"
+			},
+			{
+				"cityCode": "101220903",
+				"cityName": "利辛"
+			},
+			{
+				"cityCode": "101220904",
+				"cityName": "蒙城"
+			},
+			{
+				"cityCode": "101221001",
+				"cityName": "黄山站"
+			},
+			{
+				"cityCode": "101221002",
+				"cityName": "黄山区"
+			},
+			{
+				"cityCode": "101221003",
+				"cityName": "屯溪"
+			},
+			{
+				"cityCode": "101221004",
+				"cityName": "祁门"
+			},
+			{
+				"cityCode": "101221005",
+				"cityName": "黟县"
+			},
+			{
+				"cityCode": "101221006",
+				"cityName": "歙县"
+			},
+			{
+				"cityCode": "101221007",
+				"cityName": "休宁"
+			},
+			{
+				"cityCode": "101221008",
+				"cityName": "黄山市"
+			},
+			{
+				"cityCode": "101221101",
+				"cityName": "滁州"
+			},
+			{
+				"cityCode": "101221102",
+				"cityName": "凤阳"
+			},
+			{
+				"cityCode": "101221103",
+				"cityName": "明光"
+			},
+			{
+				"cityCode": "101221104",
+				"cityName": "定远"
+			},
+			{
+				"cityCode": "101221105",
+				"cityName": "全椒"
+			},
+			{
+				"cityCode": "101221106",
+				"cityName": "来安"
+			},
+			{
+				"cityCode": "101221107",
+				"cityName": "天长"
+			},
+			{
+				"cityCode": "101221201",
+				"cityName": "淮北"
+			},
+			{
+				"cityCode": "101221202",
+				"cityName": "濉溪"
+			},
+			{
+				"cityCode": "101221301",
+				"cityName": "铜陵"
+			},
+			{
+				"cityCode": "101221401",
+				"cityName": "宣城"
+			},
+			{
+				"cityCode": "101221402",
+				"cityName": "泾县"
+			},
+			{
+				"cityCode": "101221403",
+				"cityName": "旌德"
+			},
+			{
+				"cityCode": "101221404",
+				"cityName": "宁国"
+			},
+			{
+				"cityCode": "101221405",
+				"cityName": "绩溪"
+			},
+			{
+				"cityCode": "101221406",
+				"cityName": "广德"
+			},
+			{
+				"cityCode": "101221407",
+				"cityName": "郎溪"
+			},
+			{
+				"cityCode": "101221501",
+				"cityName": "六安"
+			},
+			{
+				"cityCode": "101221502",
+				"cityName": "霍邱"
+			},
+			{
+				"cityCode": "101221503",
+				"cityName": "寿县"
+			},
+			{
+				"cityCode": "101221504",
+				"cityName": "南溪"
+			},
+			{
+				"cityCode": "101221505",
+				"cityName": "金寨"
+			},
+			{
+				"cityCode": "101221506",
+				"cityName": "霍山"
+			},
+			{
+				"cityCode": "101221507",
+				"cityName": "舒城"
+			},
+			{
+				"cityCode": "101221601",
+				"cityName": "巢湖"
+			},
+			{
+				"cityCode": "101221602",
+				"cityName": "庐江"
+			},
+			{
+				"cityCode": "101221603",
+				"cityName": "无为"
+			},
+			{
+				"cityCode": "101221604",
+				"cityName": "含山"
+			},
+			{
+				"cityCode": "101221605",
+				"cityName": "和县"
+			},
+			{
+				"cityCode": "101221701",
+				"cityName": "池州"
+			},
+			{
+				"cityCode": "101221702",
+				"cityName": "东至"
+			},
+			{
+				"cityCode": "101221703",
+				"cityName": "青阳"
+			},
+			{
+				"cityCode": "101221704",
+				"cityName": "九华山"
+			},
+			{
+				"cityCode": "101221705",
+				"cityName": "石台"
+			}
+		]
+	},
+	{
+		"provinceCode": "101230101",
+		"provinceName": "福州",
+		"cities": [
+			{
+				"cityCode": "101230101",
+				"cityName": "福州"
+			},
+			{
+				"cityCode": "101230102",
+				"cityName": "闽清"
+			},
+			{
+				"cityCode": "101230103",
+				"cityName": "闽侯"
+			},
+			{
+				"cityCode": "101230104",
+				"cityName": "罗源"
+			},
+			{
+				"cityCode": "101230105",
+				"cityName": "连江"
+			},
+			{
+				"cityCode": "101230106",
+				"cityName": "马祖"
+			},
+			{
+				"cityCode": "101230107",
+				"cityName": "永泰"
+			},
+			{
+				"cityCode": "101230108",
+				"cityName": "平潭"
+			},
+			{
+				"cityCode": "101230109",
+				"cityName": "福州郊区"
+			},
+			{
+				"cityCode": "101230110",
+				"cityName": "长乐"
+			},
+			{
+				"cityCode": "101230111",
+				"cityName": "福清"
+			},
+			{
+				"cityCode": "101230112",
+				"cityName": "平潭海峡大桥"
+			},
+			{
+				"cityCode": "101230201",
+				"cityName": "厦门"
+			},
+			{
+				"cityCode": "101230202",
+				"cityName": "同安"
+			},
+			{
+				"cityCode": "101230301",
+				"cityName": "宁德"
+			},
+			{
+				"cityCode": "101230302",
+				"cityName": "古田"
+			},
+			{
+				"cityCode": "101230303",
+				"cityName": "霞浦"
+			},
+			{
+				"cityCode": "101230304",
+				"cityName": "寿宁"
+			},
+			{
+				"cityCode": "101230305",
+				"cityName": "周宁"
+			},
+			{
+				"cityCode": "101230306",
+				"cityName": "福安"
+			},
+			{
+				"cityCode": "101230307",
+				"cityName": "柘荣"
+			},
+			{
+				"cityCode": "101230308",
+				"cityName": "福鼎"
+			},
+			{
+				"cityCode": "101230309",
+				"cityName": "屏南"
+			},
+			{
+				"cityCode": "101230401",
+				"cityName": "莆田"
+			},
+			{
+				"cityCode": "101230402",
+				"cityName": "仙游"
+			},
+			{
+				"cityCode": "101230403",
+				"cityName": "秀屿港"
+			},
+			{
+				"cityCode": "101230501",
+				"cityName": "泉州"
+			},
+			{
+				"cityCode": "101230502",
+				"cityName": "安溪"
+			},
+			{
+				"cityCode": "101230503",
+				"cityName": "九仙山"
+			},
+			{
+				"cityCode": "101230504",
+				"cityName": "永春"
+			},
+			{
+				"cityCode": "101230505",
+				"cityName": "德化"
+			},
+			{
+				"cityCode": "101230506",
+				"cityName": "南安"
+			},
+			{
+				"cityCode": "101230507",
+				"cityName": "崇武"
+			},
+			{
+				"cityCode": "101230508",
+				"cityName": "金山"
+			},
+			{
+				"cityCode": "101230509",
+				"cityName": "晋江"
+			},
+			{
+				"cityCode": "101230601",
+				"cityName": "漳州"
+			},
+			{
+				"cityCode": "101230602",
+				"cityName": "长泰"
+			},
+			{
+				"cityCode": "101230603",
+				"cityName": "南靖"
+			},
+			{
+				"cityCode": "101230604",
+				"cityName": "平和"
+			},
+			{
+				"cityCode": "101230605",
+				"cityName": "龙海"
+			},
+			{
+				"cityCode": "101230606",
+				"cityName": "漳浦"
+			},
+			{
+				"cityCode": "101230607",
+				"cityName": "诏安"
+			},
+			{
+				"cityCode": "101230608",
+				"cityName": "东山"
+			},
+			{
+				"cityCode": "101230609",
+				"cityName": "云霄"
+			},
+			{
+				"cityCode": "101230610",
+				"cityName": "华安"
+			},
+			{
+				"cityCode": "101230701",
+				"cityName": "龙岩"
+			},
+			{
+				"cityCode": "101230702",
+				"cityName": "长汀"
+			},
+			{
+				"cityCode": "101230703",
+				"cityName": "连城"
+			},
+			{
+				"cityCode": "101230704",
+				"cityName": "武平"
+			},
+			{
+				"cityCode": "101230705",
+				"cityName": "上杭"
+			},
+			{
+				"cityCode": "101230706",
+				"cityName": "永定"
+			},
+			{
+				"cityCode": "101230707",
+				"cityName": "漳平"
+			},
+			{
+				"cityCode": "101230801",
+				"cityName": "三明"
+			},
+			{
+				"cityCode": "101230802",
+				"cityName": "宁化"
+			},
+			{
+				"cityCode": "101230803",
+				"cityName": "清流"
+			},
+			{
+				"cityCode": "101230804",
+				"cityName": "泰宁"
+			},
+			{
+				"cityCode": "101230805",
+				"cityName": "将乐"
+			},
+			{
+				"cityCode": "101230806",
+				"cityName": "建宁"
+			},
+			{
+				"cityCode": "101230807",
+				"cityName": "明溪"
+			},
+			{
+				"cityCode": "101230808",
+				"cityName": "沙县"
+			},
+			{
+				"cityCode": "101230809",
+				"cityName": "尤溪"
+			},
+			{
+				"cityCode": "101230810",
+				"cityName": "永安"
+			},
+			{
+				"cityCode": "101230811",
+				"cityName": "大田"
+			},
+			{
+				"cityCode": "101230901",
+				"cityName": "南平"
+			},
+			{
+				"cityCode": "101230902",
+				"cityName": "顺昌"
+			},
+			{
+				"cityCode": "101230903",
+				"cityName": "光泽"
+			},
+			{
+				"cityCode": "101230904",
+				"cityName": "邵武"
+			},
+			{
+				"cityCode": "101230905",
+				"cityName": "武夷山"
+			},
+			{
+				"cityCode": "101230906",
+				"cityName": "浦城"
+			},
+			{
+				"cityCode": "101230907",
+				"cityName": "建阳"
+			},
+			{
+				"cityCode": "101230908",
+				"cityName": "松溪"
+			},
+			{
+				"cityCode": "101230909",
+				"cityName": "政和"
+			},
+			{
+				"cityCode": "101230910",
+				"cityName": "建瓯"
+			}
+		]
+	},
+	{
+		"provinceCode": "101240101",
+		"provinceName": "南昌",
+		"cities": [
+			{
+				"cityCode": "101240101",
+				"cityName": "南昌"
+			},
+			{
+				"cityCode": "101240102",
+				"cityName": "新建"
+			},
+			{
+				"cityCode": "101240103",
+				"cityName": "南昌县"
+			},
+			{
+				"cityCode": "101240104",
+				"cityName": "安义"
+			},
+			{
+				"cityCode": "101240105",
+				"cityName": "进贤"
+			},
+			{
+				"cityCode": "101240106",
+				"cityName": "莲塘"
+			},
+			{
+				"cityCode": "101240201",
+				"cityName": "九江"
+			},
+			{
+				"cityCode": "101240202",
+				"cityName": "瑞昌"
+			},
+			{
+				"cityCode": "101240203",
+				"cityName": "庐山"
+			},
+			{
+				"cityCode": "101240204",
+				"cityName": "武宁"
+			},
+			{
+				"cityCode": "101240205",
+				"cityName": "德安"
+			},
+			{
+				"cityCode": "101240206",
+				"cityName": "永修"
+			},
+			{
+				"cityCode": "101240207",
+				"cityName": "湖口"
+			},
+			{
+				"cityCode": "101240208",
+				"cityName": "彭泽"
+			},
+			{
+				"cityCode": "101240209",
+				"cityName": "星子"
+			},
+			{
+				"cityCode": "101240210",
+				"cityName": "都昌"
+			},
+			{
+				"cityCode": "101240211",
+				"cityName": "棠荫"
+			},
+			{
+				"cityCode": "101240212",
+				"cityName": "修水"
+			},
+			{
+				"cityCode": "101240301",
+				"cityName": "上饶"
+			},
+			{
+				"cityCode": "101240302",
+				"cityName": "鄱阳"
+			},
+			{
+				"cityCode": "101240303",
+				"cityName": "婺源"
+			},
+			{
+				"cityCode": "101240304",
+				"cityName": "康山"
+			},
+			{
+				"cityCode": "101240305",
+				"cityName": "余干"
+			},
+			{
+				"cityCode": "101240306",
+				"cityName": "万年"
+			},
+			{
+				"cityCode": "101240307",
+				"cityName": "德兴"
+			},
+			{
+				"cityCode": "101240308",
+				"cityName": "上饶县"
+			},
+			{
+				"cityCode": "101240309",
+				"cityName": "弋阳"
+			},
+			{
+				"cityCode": "101240310",
+				"cityName": "横峰"
+			},
+			{
+				"cityCode": "101240311",
+				"cityName": "铅山"
+			},
+			{
+				"cityCode": "101240312",
+				"cityName": "玉山"
+			},
+			{
+				"cityCode": "101240313",
+				"cityName": "广丰"
+			},
+			{
+				"cityCode": "101240314",
+				"cityName": "波阳"
+			},
+			{
+				"cityCode": "101240401",
+				"cityName": "抚州"
+			},
+			{
+				"cityCode": "101240402",
+				"cityName": "广昌"
+			},
+			{
+				"cityCode": "101240403",
+				"cityName": "乐安"
+			},
+			{
+				"cityCode": "101240404",
+				"cityName": "崇仁"
+			},
+			{
+				"cityCode": "101240405",
+				"cityName": "金溪"
+			},
+			{
+				"cityCode": "101240406",
+				"cityName": "资溪"
+			},
+			{
+				"cityCode": "101240407",
+				"cityName": "宜黄"
+			},
+			{
+				"cityCode": "101240408",
+				"cityName": "南城"
+			},
+			{
+				"cityCode": "101240409",
+				"cityName": "南丰"
+			},
+			{
+				"cityCode": "101240410",
+				"cityName": "黎川"
+			},
+			{
+				"cityCode": "101240411",
+				"cityName": "东乡"
+			},
+			{
+				"cityCode": "101240501",
+				"cityName": "宜春"
+			},
+			{
+				"cityCode": "101240502",
+				"cityName": "铜鼓"
+			},
+			{
+				"cityCode": "101240503",
+				"cityName": "宜丰"
+			},
+			{
+				"cityCode": "101240504",
+				"cityName": "万载"
+			},
+			{
+				"cityCode": "101240505",
+				"cityName": "上高"
+			},
+			{
+				"cityCode": "101240506",
+				"cityName": "靖安"
+			},
+			{
+				"cityCode": "101240507",
+				"cityName": "奉新"
+			},
+			{
+				"cityCode": "101240508",
+				"cityName": "高安"
+			},
+			{
+				"cityCode": "101240509",
+				"cityName": "樟树"
+			},
+			{
+				"cityCode": "101240510",
+				"cityName": "丰城"
+			},
+			{
+				"cityCode": "101240601",
+				"cityName": "吉安"
+			},
+			{
+				"cityCode": "101240602",
+				"cityName": "吉安县"
+			},
+			{
+				"cityCode": "101240603",
+				"cityName": "吉水"
+			},
+			{
+				"cityCode": "101240604",
+				"cityName": "新干"
+			},
+			{
+				"cityCode": "101240605",
+				"cityName": "峡江"
+			},
+			{
+				"cityCode": "101240606",
+				"cityName": "永丰"
+			},
+			{
+				"cityCode": "101240607",
+				"cityName": "永新"
+			},
+			{
+				"cityCode": "101240608",
+				"cityName": "井冈山"
+			},
+			{
+				"cityCode": "101240609",
+				"cityName": "万安"
+			},
+			{
+				"cityCode": "101240610",
+				"cityName": "遂川"
+			},
+			{
+				"cityCode": "101240611",
+				"cityName": "泰和"
+			},
+			{
+				"cityCode": "101240612",
+				"cityName": "安福"
+			},
+			{
+				"cityCode": "101240613",
+				"cityName": "宁冈"
+			},
+			{
+				"cityCode": "101240701",
+				"cityName": "赣州"
+			},
+			{
+				"cityCode": "101240702",
+				"cityName": "崇义"
+			},
+			{
+				"cityCode": "101240703",
+				"cityName": "上犹"
+			},
+			{
+				"cityCode": "101240704",
+				"cityName": "南康"
+			},
+			{
+				"cityCode": "101240705",
+				"cityName": "大余"
+			},
+			{
+				"cityCode": "101240706",
+				"cityName": "信丰"
+			},
+			{
+				"cityCode": "101240707",
+				"cityName": "宁都"
+			},
+			{
+				"cityCode": "101240708",
+				"cityName": "石城"
+			},
+			{
+				"cityCode": "101240709",
+				"cityName": "瑞金"
+			},
+			{
+				"cityCode": "101240710",
+				"cityName": "于都"
+			},
+			{
+				"cityCode": "101240711",
+				"cityName": "会昌"
+			},
+			{
+				"cityCode": "101240712",
+				"cityName": "安远"
+			},
+			{
+				"cityCode": "101240713",
+				"cityName": "全南"
+			},
+			{
+				"cityCode": "101240714",
+				"cityName": "龙南"
+			},
+			{
+				"cityCode": "101240715",
+				"cityName": "定南"
+			},
+			{
+				"cityCode": "101240716",
+				"cityName": "寻乌"
+			},
+			{
+				"cityCode": "101240717",
+				"cityName": "兴国"
+			},
+			{
+				"cityCode": "101240801",
+				"cityName": "景德镇"
+			},
+			{
+				"cityCode": "101240802",
+				"cityName": "乐平"
+			},
+			{
+				"cityCode": "101240901",
+				"cityName": "萍乡"
+			},
+			{
+				"cityCode": "101240902",
+				"cityName": "莲花"
+			},
+			{
+				"cityCode": "101241001",
+				"cityName": "新余"
+			},
+			{
+				"cityCode": "101241002",
+				"cityName": "分宜"
+			},
+			{
+				"cityCode": "101241101",
+				"cityName": "鹰潭"
+			},
+			{
+				"cityCode": "101241102",
+				"cityName": "余江"
+			},
+			{
+				"cityCode": "101241103",
+				"cityName": "贵溪"
+			}
+		]
+	},
+	{
+		"provinceCode": "101250101",
+		"provinceName": "长沙",
+		"cities": [
+			{
+				"cityCode": "101250101",
+				"cityName": "长沙"
+			},
+			{
+				"cityCode": "101250102",
+				"cityName": "宁乡"
+			},
+			{
+				"cityCode": "101250103",
+				"cityName": "浏阳"
+			},
+			{
+				"cityCode": "101250104",
+				"cityName": "马坡岭"
+			},
+			{
+				"cityCode": "101250201",
+				"cityName": "湘潭"
+			},
+			{
+				"cityCode": "101250202",
+				"cityName": "韶山"
+			},
+			{
+				"cityCode": "101250203",
+				"cityName": "湘乡"
+			},
+			{
+				"cityCode": "101250301",
+				"cityName": "株洲"
+			},
+			{
+				"cityCode": "101250302",
+				"cityName": "攸县"
+			},
+			{
+				"cityCode": "101250303",
+				"cityName": "醴陵"
+			},
+			{
+				"cityCode": "101250304",
+				"cityName": "株洲县"
+			},
+			{
+				"cityCode": "101250305",
+				"cityName": "茶陵"
+			},
+			{
+				"cityCode": "101250306",
+				"cityName": "炎陵"
+			},
+			{
+				"cityCode": "101250401",
+				"cityName": "衡阳"
+			},
+			{
+				"cityCode": "101250402",
+				"cityName": "衡山"
+			},
+			{
+				"cityCode": "101250403",
+				"cityName": "衡东"
+			},
+			{
+				"cityCode": "101250404",
+				"cityName": "祁东"
+			},
+			{
+				"cityCode": "101250405",
+				"cityName": "衡阳县"
+			},
+			{
+				"cityCode": "101250406",
+				"cityName": "常宁"
+			},
+			{
+				"cityCode": "101250407",
+				"cityName": "衡南"
+			},
+			{
+				"cityCode": "101250408",
+				"cityName": "耒阳"
+			},
+			{
+				"cityCode": "101250409",
+				"cityName": "南岳"
+			},
+			{
+				"cityCode": "101250501",
+				"cityName": "郴州"
+			},
+			{
+				"cityCode": "101250502",
+				"cityName": "桂阳"
+			},
+			{
+				"cityCode": "101250503",
+				"cityName": "嘉禾"
+			},
+			{
+				"cityCode": "101250504",
+				"cityName": "宜章"
+			},
+			{
+				"cityCode": "101250505",
+				"cityName": "临武"
+			},
+			{
+				"cityCode": "101250506",
+				"cityName": "桥口"
+			},
+			{
+				"cityCode": "101250507",
+				"cityName": "资兴"
+			},
+			{
+				"cityCode": "101250508",
+				"cityName": "汝城"
+			},
+			{
+				"cityCode": "101250509",
+				"cityName": "安仁"
+			},
+			{
+				"cityCode": "101250510",
+				"cityName": "永兴"
+			},
+			{
+				"cityCode": "101250511",
+				"cityName": "桂东"
+			},
+			{
+				"cityCode": "101250601",
+				"cityName": "常德"
+			},
+			{
+				"cityCode": "101250602",
+				"cityName": "安乡"
+			},
+			{
+				"cityCode": "101250603",
+				"cityName": "桃源"
+			},
+			{
+				"cityCode": "101250604",
+				"cityName": "汉寿"
+			},
+			{
+				"cityCode": "101250605",
+				"cityName": "澧县"
+			},
+			{
+				"cityCode": "101250606",
+				"cityName": "临澧"
+			},
+			{
+				"cityCode": "101250607",
+				"cityName": "石门"
+			},
+			{
+				"cityCode": "101250700",
+				"cityName": "益阳"
+			},
+			{
+				"cityCode": "101250701",
+				"cityName": "赫山区"
+			},
+			{
+				"cityCode": "101250702",
+				"cityName": "南县"
+			},
+			{
+				"cityCode": "101250703",
+				"cityName": "桃江"
+			},
+			{
+				"cityCode": "101250704",
+				"cityName": "安化"
+			},
+			{
+				"cityCode": "101250705",
+				"cityName": "沅江"
+			},
+			{
+				"cityCode": "101250801",
+				"cityName": "娄底"
+			},
+			{
+				"cityCode": "101250802",
+				"cityName": "双峰"
+			},
+			{
+				"cityCode": "101250803",
+				"cityName": "冷水江"
+			},
+			{
+				"cityCode": "101250804",
+				"cityName": "冷水滩"
+			},
+			{
+				"cityCode": "101250805",
+				"cityName": "新化"
+			},
+			{
+				"cityCode": "101250806",
+				"cityName": "涟源"
+			},
+			{
+				"cityCode": "101250901",
+				"cityName": "邵阳"
+			},
+			{
+				"cityCode": "101250902",
+				"cityName": "隆回"
+			},
+			{
+				"cityCode": "101250903",
+				"cityName": "洞口"
+			},
+			{
+				"cityCode": "101250904",
+				"cityName": "新邵"
+			},
+			{
+				"cityCode": "101250905",
+				"cityName": "邵东"
+			},
+			{
+				"cityCode": "101250906",
+				"cityName": "绥宁"
+			},
+			{
+				"cityCode": "101250907",
+				"cityName": "新宁"
+			},
+			{
+				"cityCode": "101250908",
+				"cityName": "武冈"
+			},
+			{
+				"cityCode": "101250909",
+				"cityName": "城步"
+			},
+			{
+				"cityCode": "101250910",
+				"cityName": "邵阳县"
+			},
+			{
+				"cityCode": "101251001",
+				"cityName": "岳阳"
+			},
+			{
+				"cityCode": "101251002",
+				"cityName": "华容"
+			},
+			{
+				"cityCode": "101251003",
+				"cityName": "湘阴"
+			},
+			{
+				"cityCode": "101251004",
+				"cityName": "汨罗"
+			},
+			{
+				"cityCode": "101251005",
+				"cityName": "平江"
+			},
+			{
+				"cityCode": "101251006",
+				"cityName": "临湘"
+			},
+			{
+				"cityCode": "101251101",
+				"cityName": "张家界"
+			},
+			{
+				"cityCode": "101251102",
+				"cityName": "桑植"
+			},
+			{
+				"cityCode": "101251103",
+				"cityName": "慈利"
+			},
+			{
+				"cityCode": "101251201",
+				"cityName": "怀化"
+			},
+			{
+				"cityCode": "101251202",
+				"cityName": "鹤城区"
+			},
+			{
+				"cityCode": "101251203",
+				"cityName": "沅陵"
+			},
+			{
+				"cityCode": "101251204",
+				"cityName": "辰溪"
+			},
+			{
+				"cityCode": "101251205",
+				"cityName": "靖州"
+			},
+			{
+				"cityCode": "101251206",
+				"cityName": "会同"
+			},
+			{
+				"cityCode": "101251207",
+				"cityName": "通道"
+			},
+			{
+				"cityCode": "101251208",
+				"cityName": "麻阳"
+			},
+			{
+				"cityCode": "101251209",
+				"cityName": "新晃"
+			},
+			{
+				"cityCode": "101251210",
+				"cityName": "芷江"
+			},
+			{
+				"cityCode": "101251211",
+				"cityName": "溆浦"
+			},
+			{
+				"cityCode": "101251301",
+				"cityName": "黔阳"
+			},
+			{
+				"cityCode": "101251302",
+				"cityName": "洪江"
+			},
+			{
+				"cityCode": "101251401",
+				"cityName": "永州"
+			},
+			{
+				"cityCode": "101251402",
+				"cityName": "祁阳"
+			},
+			{
+				"cityCode": "101251403",
+				"cityName": "东安"
+			},
+			{
+				"cityCode": "101251404",
+				"cityName": "双牌"
+			},
+			{
+				"cityCode": "101251405",
+				"cityName": "道县"
+			},
+			{
+				"cityCode": "101251406",
+				"cityName": "宁远"
+			},
+			{
+				"cityCode": "101251407",
+				"cityName": "江永"
+			},
+			{
+				"cityCode": "101251408",
+				"cityName": "蓝山"
+			},
+			{
+				"cityCode": "101251409",
+				"cityName": "新田"
+			},
+			{
+				"cityCode": "101251410",
+				"cityName": "江华"
+			},
+			{
+				"cityCode": "101251501",
+				"cityName": "吉首"
+			},
+			{
+				"cityCode": "101251502",
+				"cityName": "保靖"
+			},
+			{
+				"cityCode": "101251503",
+				"cityName": "永顺"
+			},
+			{
+				"cityCode": "101251504",
+				"cityName": "古丈"
+			},
+			{
+				"cityCode": "101251505",
+				"cityName": "凤凰"
+			},
+			{
+				"cityCode": "101251506",
+				"cityName": "泸溪"
+			},
+			{
+				"cityCode": "101251507",
+				"cityName": "龙山"
+			},
+			{
+				"cityCode": "101251508",
+				"cityName": "花垣"
+			}
+		]
+	},
+	{
+		"provinceCode": "101260101",
+		"provinceName": "贵阳",
+		"cities": [
+			{
+				"cityCode": "101260101",
+				"cityName": "贵阳"
+			},
+			{
+				"cityCode": "101260102",
+				"cityName": "白云"
+			},
+			{
+				"cityCode": "101260103",
+				"cityName": "花溪"
+			},
+			{
+				"cityCode": "101260104",
+				"cityName": "乌当"
+			},
+			{
+				"cityCode": "101260105",
+				"cityName": "息烽"
+			},
+			{
+				"cityCode": "101260106",
+				"cityName": "开阳"
+			},
+			{
+				"cityCode": "101260107",
+				"cityName": "修文"
+			},
+			{
+				"cityCode": "101260108",
+				"cityName": "清镇"
+			},
+			{
+				"cityCode": "101260201",
+				"cityName": "遵义"
+			},
+			{
+				"cityCode": "101260202",
+				"cityName": "遵义县"
+			},
+			{
+				"cityCode": "101260203",
+				"cityName": "仁怀"
+			},
+			{
+				"cityCode": "101260204",
+				"cityName": "绥阳"
+			},
+			{
+				"cityCode": "101260205",
+				"cityName": "湄潭"
+			},
+			{
+				"cityCode": "101260206",
+				"cityName": "凤冈"
+			},
+			{
+				"cityCode": "101260207",
+				"cityName": "桐梓"
+			},
+			{
+				"cityCode": "101260208",
+				"cityName": "赤水"
+			},
+			{
+				"cityCode": "101260209",
+				"cityName": "习水"
+			},
+			{
+				"cityCode": "101260210",
+				"cityName": "道真"
+			},
+			{
+				"cityCode": "101260211",
+				"cityName": "正安"
+			},
+			{
+				"cityCode": "101260212",
+				"cityName": "务川"
+			},
+			{
+				"cityCode": "101260213",
+				"cityName": "余庆"
+			},
+			{
+				"cityCode": "101260214",
+				"cityName": "汇川"
+			},
+			{
+				"cityCode": "101260301",
+				"cityName": "安顺"
+			},
+			{
+				"cityCode": "101260302",
+				"cityName": "普定"
+			},
+			{
+				"cityCode": "101260303",
+				"cityName": "镇宁"
+			},
+			{
+				"cityCode": "101260304",
+				"cityName": "平坝"
+			},
+			{
+				"cityCode": "101260305",
+				"cityName": "紫云"
+			},
+			{
+				"cityCode": "101260306",
+				"cityName": "关岭"
+			},
+			{
+				"cityCode": "101260401",
+				"cityName": "都匀"
+			},
+			{
+				"cityCode": "101260402",
+				"cityName": "贵定"
+			},
+			{
+				"cityCode": "101260403",
+				"cityName": "瓮安"
+			},
+			{
+				"cityCode": "101260404",
+				"cityName": "长顺"
+			},
+			{
+				"cityCode": "101260405",
+				"cityName": "福泉"
+			},
+			{
+				"cityCode": "101260406",
+				"cityName": "惠水"
+			},
+			{
+				"cityCode": "101260407",
+				"cityName": "龙里"
+			},
+			{
+				"cityCode": "101260408",
+				"cityName": "罗甸"
+			},
+			{
+				"cityCode": "101260409",
+				"cityName": "平塘"
+			},
+			{
+				"cityCode": "101260410",
+				"cityName": "独山"
+			},
+			{
+				"cityCode": "101260411",
+				"cityName": "三都"
+			},
+			{
+				"cityCode": "101260412",
+				"cityName": "荔波"
+			},
+			{
+				"cityCode": "101260501",
+				"cityName": "凯里"
+			},
+			{
+				"cityCode": "101260502",
+				"cityName": "岑巩"
+			},
+			{
+				"cityCode": "101260503",
+				"cityName": "施秉"
+			},
+			{
+				"cityCode": "101260504",
+				"cityName": "镇远"
+			},
+			{
+				"cityCode": "101260505",
+				"cityName": "黄平"
+			},
+			{
+				"cityCode": "101260506",
+				"cityName": "黄平旧洲"
+			},
+			{
+				"cityCode": "101260507",
+				"cityName": "麻江"
+			},
+			{
+				"cityCode": "101260508",
+				"cityName": "丹寨"
+			},
+			{
+				"cityCode": "101260509",
+				"cityName": "三穗"
+			},
+			{
+				"cityCode": "101260510",
+				"cityName": "台江"
+			},
+			{
+				"cityCode": "101260511",
+				"cityName": "剑河"
+			},
+			{
+				"cityCode": "101260512",
+				"cityName": "雷山"
+			},
+			{
+				"cityCode": "101260513",
+				"cityName": "黎平"
+			},
+			{
+				"cityCode": "101260514",
+				"cityName": "天柱"
+			},
+			{
+				"cityCode": "101260515",
+				"cityName": "锦屏"
+			},
+			{
+				"cityCode": "101260516",
+				"cityName": "榕江"
+			},
+			{
+				"cityCode": "101260517",
+				"cityName": "从江"
+			},
+			{
+				"cityCode": "101260518",
+				"cityName": "炉山"
+			},
+			{
+				"cityCode": "101260601",
+				"cityName": "铜仁"
+			},
+			{
+				"cityCode": "101260602",
+				"cityName": "江口"
+			},
+			{
+				"cityCode": "101260603",
+				"cityName": "玉屏"
+			},
+			{
+				"cityCode": "101260604",
+				"cityName": "万山"
+			},
+			{
+				"cityCode": "101260605",
+				"cityName": "思南"
+			},
+			{
+				"cityCode": "101260606",
+				"cityName": "塘头"
+			},
+			{
+				"cityCode": "101260607",
+				"cityName": "印江"
+			},
+			{
+				"cityCode": "101260608",
+				"cityName": "石阡"
+			},
+			{
+				"cityCode": "101260609",
+				"cityName": "沿河"
+			},
+			{
+				"cityCode": "101260610",
+				"cityName": "德江"
+			},
+			{
+				"cityCode": "101260611",
+				"cityName": "松桃"
+			},
+			{
+				"cityCode": "101260701",
+				"cityName": "毕节"
+			},
+			{
+				"cityCode": "101260702",
+				"cityName": "赫章"
+			},
+			{
+				"cityCode": "101260703",
+				"cityName": "金沙"
+			},
+			{
+				"cityCode": "101260704",
+				"cityName": "威宁"
+			},
+			{
+				"cityCode": "101260705",
+				"cityName": "大方"
+			},
+			{
+				"cityCode": "101260706",
+				"cityName": "纳雍"
+			},
+			{
+				"cityCode": "101260707",
+				"cityName": "织金"
+			},
+			{
+				"cityCode": "101260801",
+				"cityName": "六盘水"
+			},
+			{
+				"cityCode": "101260802",
+				"cityName": "六枝"
+			},
+			{
+				"cityCode": "101260803",
+				"cityName": "水城"
+			},
+			{
+				"cityCode": "101260804",
+				"cityName": "盘县"
+			},
+			{
+				"cityCode": "101260901",
+				"cityName": "黔西"
+			},
+			{
+				"cityCode": "101260902",
+				"cityName": "晴隆"
+			},
+			{
+				"cityCode": "101260903",
+				"cityName": "兴仁"
+			},
+			{
+				"cityCode": "101260904",
+				"cityName": "贞丰"
+			},
+			{
+				"cityCode": "101260905",
+				"cityName": "望谟"
+			},
+			{
+				"cityCode": "101260906",
+				"cityName": "兴义"
+			},
+			{
+				"cityCode": "101260907",
+				"cityName": "安龙"
+			},
+			{
+				"cityCode": "101260908",
+				"cityName": "册亨"
+			},
+			{
+				"cityCode": "101260909",
+				"cityName": "普安"
+			}
+		]
+	},
+	{
+		"provinceCode": "101270101",
+		"provinceName": "成都",
+		"cities": [
+			{
+				"cityCode": "101270101",
+				"cityName": "成都"
+			},
+			{
+				"cityCode": "101270102",
+				"cityName": "龙泉驿"
+			},
+			{
+				"cityCode": "101270103",
+				"cityName": "新都"
+			},
+			{
+				"cityCode": "101270104",
+				"cityName": "温江"
+			},
+			{
+				"cityCode": "101270105",
+				"cityName": "金堂"
+			},
+			{
+				"cityCode": "101270106",
+				"cityName": "双流"
+			},
+			{
+				"cityCode": "101270107",
+				"cityName": "郫县"
+			},
+			{
+				"cityCode": "101270108",
+				"cityName": "大邑"
+			},
+			{
+				"cityCode": "101270109",
+				"cityName": "蒲江"
+			},
+			{
+				"cityCode": "101270110",
+				"cityName": "新津"
+			},
+			{
+				"cityCode": "101270111",
+				"cityName": "都江堰"
+			},
+			{
+				"cityCode": "101270112",
+				"cityName": "彭州"
+			},
+			{
+				"cityCode": "101270113",
+				"cityName": "邛崃"
+			},
+			{
+				"cityCode": "101270114",
+				"cityName": "崇州"
+			},
+			{
+				"cityCode": "101270115",
+				"cityName": "崇庆"
+			},
+			{
+				"cityCode": "101270116",
+				"cityName": "彭县"
+			},
+			{
+				"cityCode": "101270201",
+				"cityName": "攀枝花"
+			},
+			{
+				"cityCode": "101270202",
+				"cityName": "仁和"
+			},
+			{
+				"cityCode": "101270203",
+				"cityName": "米易"
+			},
+			{
+				"cityCode": "101270204",
+				"cityName": "盐边"
+			},
+			{
+				"cityCode": "101270301",
+				"cityName": "自贡"
+			},
+			{
+				"cityCode": "101270302",
+				"cityName": "富顺"
+			},
+			{
+				"cityCode": "101270303",
+				"cityName": "荣县"
+			},
+			{
+				"cityCode": "101270401",
+				"cityName": "绵阳"
+			},
+			{
+				"cityCode": "101270402",
+				"cityName": "三台"
+			},
+			{
+				"cityCode": "101270403",
+				"cityName": "盐亭"
+			},
+			{
+				"cityCode": "101270404",
+				"cityName": "安县"
+			},
+			{
+				"cityCode": "101270405",
+				"cityName": "梓潼"
+			},
+			{
+				"cityCode": "101270406",
+				"cityName": "北川"
+			},
+			{
+				"cityCode": "101270407",
+				"cityName": "平武"
+			},
+			{
+				"cityCode": "101270408",
+				"cityName": "江油"
+			},
+			{
+				"cityCode": "101270501",
+				"cityName": "南充"
+			},
+			{
+				"cityCode": "101270502",
+				"cityName": "南部"
+			},
+			{
+				"cityCode": "101270503",
+				"cityName": "营山"
+			},
+			{
+				"cityCode": "101270504",
+				"cityName": "蓬安"
+			},
+			{
+				"cityCode": "101270505",
+				"cityName": "仪陇"
+			},
+			{
+				"cityCode": "101270506",
+				"cityName": "西充"
+			},
+			{
+				"cityCode": "101270507",
+				"cityName": "阆中"
+			},
+			{
+				"cityCode": "101270601",
+				"cityName": "达州"
+			},
+			{
+				"cityCode": "101270602",
+				"cityName": "宣汉"
+			},
+			{
+				"cityCode": "101270603",
+				"cityName": "开江"
+			},
+			{
+				"cityCode": "101270604",
+				"cityName": "大竹"
+			},
+			{
+				"cityCode": "101270605",
+				"cityName": "渠县"
+			},
+			{
+				"cityCode": "101270606",
+				"cityName": "万源"
+			},
+			{
+				"cityCode": "101270607",
+				"cityName": "达川"
+			},
+			{
+				"cityCode": "101270701",
+				"cityName": "遂宁"
+			},
+			{
+				"cityCode": "101270702",
+				"cityName": "蓬溪"
+			},
+			{
+				"cityCode": "101270703",
+				"cityName": "射洪"
+			},
+			{
+				"cityCode": "101270801",
+				"cityName": "广安"
+			},
+			{
+				"cityCode": "101270802",
+				"cityName": "岳池"
+			},
+			{
+				"cityCode": "101270803",
+				"cityName": "武胜"
+			},
+			{
+				"cityCode": "101270804",
+				"cityName": "邻水"
+			},
+			{
+				"cityCode": "101270805",
+				"cityName": "华蓥山"
+			},
+			{
+				"cityCode": "101270901",
+				"cityName": "巴中"
+			},
+			{
+				"cityCode": "101270902",
+				"cityName": "通江"
+			},
+			{
+				"cityCode": "101270903",
+				"cityName": "南江"
+			},
+			{
+				"cityCode": "101270904",
+				"cityName": "平昌"
+			},
+			{
+				"cityCode": "101271001",
+				"cityName": "泸州"
+			},
+			{
+				"cityCode": "101271003",
+				"cityName": "泸县"
+			},
+			{
+				"cityCode": "101271004",
+				"cityName": "合江"
+			},
+			{
+				"cityCode": "101271005",
+				"cityName": "叙永"
+			},
+			{
+				"cityCode": "101271006",
+				"cityName": "古蔺"
+			},
+			{
+				"cityCode": "101271007",
+				"cityName": "纳溪"
+			},
+			{
+				"cityCode": "101271101",
+				"cityName": "宜宾"
+			},
+			{
+				"cityCode": "101271102",
+				"cityName": "宜宾农试站"
+			},
+			{
+				"cityCode": "101271103",
+				"cityName": "宜宾县"
+			},
+			{
+				"cityCode": "101271104",
+				"cityName": "南溪"
+			},
+			{
+				"cityCode": "101271105",
+				"cityName": "江安"
+			},
+			{
+				"cityCode": "101271106",
+				"cityName": "长宁"
+			},
+			{
+				"cityCode": "101271107",
+				"cityName": "高县"
+			},
+			{
+				"cityCode": "101271108",
+				"cityName": "珙县"
+			},
+			{
+				"cityCode": "101271109",
+				"cityName": "筠连"
+			},
+			{
+				"cityCode": "101271110",
+				"cityName": "兴文"
+			},
+			{
+				"cityCode": "101271111",
+				"cityName": "屏山"
+			},
+			{
+				"cityCode": "101271201",
+				"cityName": "内江"
+			},
+			{
+				"cityCode": "101271202",
+				"cityName": "东兴"
+			},
+			{
+				"cityCode": "101271203",
+				"cityName": "威远"
+			},
+			{
+				"cityCode": "101271204",
+				"cityName": "资中"
+			},
+			{
+				"cityCode": "101271205",
+				"cityName": "隆昌"
+			},
+			{
+				"cityCode": "101271301",
+				"cityName": "资阳"
+			},
+			{
+				"cityCode": "101271302",
+				"cityName": "安岳"
+			},
+			{
+				"cityCode": "101271303",
+				"cityName": "乐至"
+			},
+			{
+				"cityCode": "101271304",
+				"cityName": "简阳"
+			},
+			{
+				"cityCode": "101271401",
+				"cityName": "乐山"
+			},
+			{
+				"cityCode": "101271402",
+				"cityName": "犍为"
+			},
+			{
+				"cityCode": "101271403",
+				"cityName": "井研"
+			},
+			{
+				"cityCode": "101271404",
+				"cityName": "夹江"
+			},
+			{
+				"cityCode": "101271405",
+				"cityName": "沐川"
+			},
+			{
+				"cityCode": "101271406",
+				"cityName": "峨边"
+			},
+			{
+				"cityCode": "101271407",
+				"cityName": "马边"
+			},
+			{
+				"cityCode": "101271408",
+				"cityName": "峨眉"
+			},
+			{
+				"cityCode": "101271409",
+				"cityName": "峨眉山"
+			},
+			{
+				"cityCode": "101271501",
+				"cityName": "眉山"
+			},
+			{
+				"cityCode": "101271502",
+				"cityName": "仁寿"
+			},
+			{
+				"cityCode": "101271503",
+				"cityName": "彭山"
+			},
+			{
+				"cityCode": "101271504",
+				"cityName": "洪雅"
+			},
+			{
+				"cityCode": "101271505",
+				"cityName": "丹棱"
+			},
+			{
+				"cityCode": "101271506",
+				"cityName": "青神"
+			},
+			{
+				"cityCode": "101271601",
+				"cityName": "凉山"
+			},
+			{
+				"cityCode": "101271603",
+				"cityName": "木里"
+			},
+			{
+				"cityCode": "101271604",
+				"cityName": "盐源"
+			},
+			{
+				"cityCode": "101271605",
+				"cityName": "德昌"
+			},
+			{
+				"cityCode": "101271606",
+				"cityName": "会理"
+			},
+			{
+				"cityCode": "101271607",
+				"cityName": "会东"
+			},
+			{
+				"cityCode": "101271608",
+				"cityName": "宁南"
+			},
+			{
+				"cityCode": "101271609",
+				"cityName": "普格"
+			},
+			{
+				"cityCode": "101271610",
+				"cityName": "西昌"
+			},
+			{
+				"cityCode": "101271611",
+				"cityName": "金阳"
+			},
+			{
+				"cityCode": "101271612",
+				"cityName": "昭觉"
+			},
+			{
+				"cityCode": "101271613",
+				"cityName": "喜德"
+			},
+			{
+				"cityCode": "101271614",
+				"cityName": "冕宁"
+			},
+			{
+				"cityCode": "101271615",
+				"cityName": "越西"
+			},
+			{
+				"cityCode": "101271616",
+				"cityName": "甘洛"
+			},
+			{
+				"cityCode": "101271617",
+				"cityName": "雷波"
+			},
+			{
+				"cityCode": "101271618",
+				"cityName": "美姑"
+			},
+			{
+				"cityCode": "101271619",
+				"cityName": "布拖"
+			},
+			{
+				"cityCode": "101271701",
+				"cityName": "雅安"
+			},
+			{
+				"cityCode": "101271702",
+				"cityName": "名山"
+			},
+			{
+				"cityCode": "101271703",
+				"cityName": "荣经"
+			},
+			{
+				"cityCode": "101271704",
+				"cityName": "汉源"
+			},
+			{
+				"cityCode": "101271705",
+				"cityName": "石棉"
+			},
+			{
+				"cityCode": "101271706",
+				"cityName": "天全"
+			},
+			{
+				"cityCode": "101271707",
+				"cityName": "芦山"
+			},
+			{
+				"cityCode": "101271708",
+				"cityName": "宝兴"
+			},
+			{
+				"cityCode": "101271801",
+				"cityName": "甘孜"
+			},
+			{
+				"cityCode": "101271802",
+				"cityName": "康定"
+			},
+			{
+				"cityCode": "101271803",
+				"cityName": "泸定"
+			},
+			{
+				"cityCode": "101271804",
+				"cityName": "丹巴"
+			},
+			{
+				"cityCode": "101271805",
+				"cityName": "九龙"
+			},
+			{
+				"cityCode": "101271806",
+				"cityName": "雅江"
+			},
+			{
+				"cityCode": "101271807",
+				"cityName": "道孚"
+			},
+			{
+				"cityCode": "101271808",
+				"cityName": "炉霍"
+			},
+			{
+				"cityCode": "101271809",
+				"cityName": "新龙"
+			},
+			{
+				"cityCode": "101271810",
+				"cityName": "德格"
+			},
+			{
+				"cityCode": "101271811",
+				"cityName": "白玉"
+			},
+			{
+				"cityCode": "101271812",
+				"cityName": "石渠"
+			},
+			{
+				"cityCode": "101271813",
+				"cityName": "色达"
+			},
+			{
+				"cityCode": "101271814",
+				"cityName": "理塘"
+			},
+			{
+				"cityCode": "101271815",
+				"cityName": "巴塘"
+			},
+			{
+				"cityCode": "101271816",
+				"cityName": "乡城"
+			},
+			{
+				"cityCode": "101271817",
+				"cityName": "稻城"
+			},
+			{
+				"cityCode": "101271818",
+				"cityName": "得荣"
+			},
+			{
+				"cityCode": "101271901",
+				"cityName": "阿坝"
+			},
+			{
+				"cityCode": "101271902",
+				"cityName": "汶川"
+			},
+			{
+				"cityCode": "101271903",
+				"cityName": "理县"
+			},
+			{
+				"cityCode": "101271904",
+				"cityName": "茂县"
+			},
+			{
+				"cityCode": "101271905",
+				"cityName": "松潘"
+			},
+			{
+				"cityCode": "101271906",
+				"cityName": "九寨沟"
+			},
+			{
+				"cityCode": "101271907",
+				"cityName": "金川"
+			},
+			{
+				"cityCode": "101271908",
+				"cityName": "小金"
+			},
+			{
+				"cityCode": "101271909",
+				"cityName": "黑水"
+			},
+			{
+				"cityCode": "101271910",
+				"cityName": "马尔康"
+			},
+			{
+				"cityCode": "101271911",
+				"cityName": "壤塘"
+			},
+			{
+				"cityCode": "101271912",
+				"cityName": "若尔盖"
+			},
+			{
+				"cityCode": "101271913",
+				"cityName": "红原"
+			},
+			{
+				"cityCode": "101271914",
+				"cityName": "南坪"
+			},
+			{
+				"cityCode": "101272001",
+				"cityName": "德阳"
+			},
+			{
+				"cityCode": "101272002",
+				"cityName": "中江"
+			},
+			{
+				"cityCode": "101272003",
+				"cityName": "广汉"
+			},
+			{
+				"cityCode": "101272004",
+				"cityName": "什邡"
+			},
+			{
+				"cityCode": "101272005",
+				"cityName": "绵竹"
+			},
+			{
+				"cityCode": "101272006",
+				"cityName": "罗江"
+			},
+			{
+				"cityCode": "101272101",
+				"cityName": "广元"
+			},
+			{
+				"cityCode": "101272102",
+				"cityName": "旺苍"
+			},
+			{
+				"cityCode": "101272103",
+				"cityName": "青川"
+			},
+			{
+				"cityCode": "101272104",
+				"cityName": "剑阁"
+			},
+			{
+				"cityCode": "101272105",
+				"cityName": "苍溪"
+			}
+		]
+	},
+	{
+		"provinceCode": "101280101",
+		"provinceName": "广州",
+		"cities": [
+			{
+				"cityCode": "101280101",
+				"cityName": "广州"
+			},
+			{
+				"cityCode": "101280102",
+				"cityName": "番禺"
+			},
+			{
+				"cityCode": "101280103",
+				"cityName": "从化"
+			},
+			{
+				"cityCode": "101280104",
+				"cityName": "增城"
+			},
+			{
+				"cityCode": "101280105",
+				"cityName": "花都"
+			},
+			{
+				"cityCode": "101280106",
+				"cityName": "天河"
+			},
+			{
+				"cityCode": "101280201",
+				"cityName": "韶关"
+			},
+			{
+				"cityCode": "101280202",
+				"cityName": "乳源"
+			},
+			{
+				"cityCode": "101280203",
+				"cityName": "始兴"
+			},
+			{
+				"cityCode": "101280204",
+				"cityName": "翁源"
+			},
+			{
+				"cityCode": "101280205",
+				"cityName": "乐昌"
+			},
+			{
+				"cityCode": "101280206",
+				"cityName": "仁化"
+			},
+			{
+				"cityCode": "101280207",
+				"cityName": "南雄"
+			},
+			{
+				"cityCode": "101280208",
+				"cityName": "新丰"
+			},
+			{
+				"cityCode": "101280209",
+				"cityName": "曲江"
+			},
+			{
+				"cityCode": "101280301",
+				"cityName": "惠州"
+			},
+			{
+				"cityCode": "101280302",
+				"cityName": "博罗"
+			},
+			{
+				"cityCode": "101280303",
+				"cityName": "惠阳"
+			},
+			{
+				"cityCode": "101280304",
+				"cityName": "惠东"
+			},
+			{
+				"cityCode": "101280305",
+				"cityName": "龙门"
+			},
+			{
+				"cityCode": "101280401",
+				"cityName": "梅州"
+			},
+			{
+				"cityCode": "101280402",
+				"cityName": "兴宁"
+			},
+			{
+				"cityCode": "101280403",
+				"cityName": "蕉岭"
+			},
+			{
+				"cityCode": "101280404",
+				"cityName": "大埔"
+			},
+			{
+				"cityCode": "101280406",
+				"cityName": "丰顺"
+			},
+			{
+				"cityCode": "101280407",
+				"cityName": "平远"
+			},
+			{
+				"cityCode": "101280408",
+				"cityName": "五华"
+			},
+			{
+				"cityCode": "101280409",
+				"cityName": "梅县"
+			},
+			{
+				"cityCode": "101280501",
+				"cityName": "汕头"
+			},
+			{
+				"cityCode": "101280502",
+				"cityName": "潮阳"
+			},
+			{
+				"cityCode": "101280503",
+				"cityName": "澄海"
+			},
+			{
+				"cityCode": "101280504",
+				"cityName": "南澳"
+			},
+			{
+				"cityCode": "101280505",
+				"cityName": "云澳"
+			},
+			{
+				"cityCode": "101280506",
+				"cityName": "南澎岛"
+			},
+			{
+				"cityCode": "101280601",
+				"cityName": "深圳"
+			},
+			{
+				"cityCode": "101280701",
+				"cityName": "珠海"
+			},
+			{
+				"cityCode": "101280702",
+				"cityName": "斗门"
+			},
+			{
+				"cityCode": "101280703",
+				"cityName": "黄茅洲"
+			},
+			{
+				"cityCode": "101280800",
+				"cityName": "佛山"
+			},
+			{
+				"cityCode": "101280801",
+				"cityName": "顺德"
+			},
+			{
+				"cityCode": "101280802",
+				"cityName": "三水"
+			},
+			{
+				"cityCode": "101280803",
+				"cityName": "南海"
+			},
+			{
+				"cityCode": "101280901",
+				"cityName": "肇庆"
+			},
+			{
+				"cityCode": "101280902",
+				"cityName": "广宁"
+			},
+			{
+				"cityCode": "101280903",
+				"cityName": "四会"
+			},
+			{
+				"cityCode": "101280905",
+				"cityName": "德庆"
+			},
+			{
+				"cityCode": "101280906",
+				"cityName": "怀集"
+			},
+			{
+				"cityCode": "101280907",
+				"cityName": "封开"
+			},
+			{
+				"cityCode": "101280908",
+				"cityName": "高要"
+			},
+			{
+				"cityCode": "101281001",
+				"cityName": "湛江"
+			},
+			{
+				"cityCode": "101281002",
+				"cityName": "吴川"
+			},
+			{
+				"cityCode": "101281003",
+				"cityName": "雷州"
+			},
+			{
+				"cityCode": "101281004",
+				"cityName": "徐闻"
+			},
+			{
+				"cityCode": "101281005",
+				"cityName": "廉江"
+			},
+			{
+				"cityCode": "101281006",
+				"cityName": "硇洲"
+			},
+			{
+				"cityCode": "101281007",
+				"cityName": "遂溪"
+			},
+			{
+				"cityCode": "101281101",
+				"cityName": "江门"
+			},
+			{
+				"cityCode": "101281103",
+				"cityName": "开平"
+			},
+			{
+				"cityCode": "101281104",
+				"cityName": "新会"
+			},
+			{
+				"cityCode": "101281105",
+				"cityName": "恩平"
+			},
+			{
+				"cityCode": "101281106",
+				"cityName": "台山"
+			},
+			{
+				"cityCode": "101281107",
+				"cityName": "上川岛"
+			},
+			{
+				"cityCode": "101281108",
+				"cityName": "鹤山"
+			},
+			{
+				"cityCode": "101281201",
+				"cityName": "河源"
+			},
+			{
+				"cityCode": "101281202",
+				"cityName": "紫金"
+			},
+			{
+				"cityCode": "101281203",
+				"cityName": "连平"
+			},
+			{
+				"cityCode": "101281204",
+				"cityName": "和平"
+			},
+			{
+				"cityCode": "101281205",
+				"cityName": "龙川"
+			},
+			{
+				"cityCode": "101281301",
+				"cityName": "清远"
+			},
+			{
+				"cityCode": "101281302",
+				"cityName": "连南"
+			},
+			{
+				"cityCode": "101281303",
+				"cityName": "连州"
+			},
+			{
+				"cityCode": "101281304",
+				"cityName": "连山"
+			},
+			{
+				"cityCode": "101281305",
+				"cityName": "阳山"
+			},
+			{
+				"cityCode": "101281306",
+				"cityName": "佛冈"
+			},
+			{
+				"cityCode": "101281307",
+				"cityName": "英德"
+			},
+			{
+				"cityCode": "101281401",
+				"cityName": "云浮"
+			},
+			{
+				"cityCode": "101281402",
+				"cityName": "罗定"
+			},
+			{
+				"cityCode": "101281403",
+				"cityName": "新兴"
+			},
+			{
+				"cityCode": "101281404",
+				"cityName": "郁南"
+			},
+			{
+				"cityCode": "101281501",
+				"cityName": "潮州"
+			},
+			{
+				"cityCode": "101281502",
+				"cityName": "饶平"
+			},
+			{
+				"cityCode": "101281601",
+				"cityName": "东莞"
+			},
+			{
+				"cityCode": "101281701",
+				"cityName": "中山"
+			},
+			{
+				"cityCode": "101281801",
+				"cityName": "阳江"
+			},
+			{
+				"cityCode": "101281802",
+				"cityName": "阳春"
+			},
+			{
+				"cityCode": "101281901",
+				"cityName": "揭阳"
+			},
+			{
+				"cityCode": "101281902",
+				"cityName": "揭西"
+			},
+			{
+				"cityCode": "101281903",
+				"cityName": "普宁"
+			},
+			{
+				"cityCode": "101281904",
+				"cityName": "惠来"
+			},
+			{
+				"cityCode": "101282001",
+				"cityName": "茂名"
+			},
+			{
+				"cityCode": "101282002",
+				"cityName": "高州"
+			},
+			{
+				"cityCode": "101282003",
+				"cityName": "化州"
+			},
+			{
+				"cityCode": "101282004",
+				"cityName": "电白"
+			},
+			{
+				"cityCode": "101282005",
+				"cityName": "信宜"
+			},
+			{
+				"cityCode": "101282101",
+				"cityName": "汕尾"
+			},
+			{
+				"cityCode": "101282102",
+				"cityName": "海丰"
+			},
+			{
+				"cityCode": "101282103",
+				"cityName": "陆丰"
+			},
+			{
+				"cityCode": "101282104",
+				"cityName": "遮浪"
+			},
+			{
+				"cityCode": "101282105",
+				"cityName": "东沙岛"
+			}
+		]
+	},
+	{
+		"provinceCode": "101290101",
+		"provinceName": "昆明",
+		"cities": [
+			{
+				"cityCode": "101290101",
+				"cityName": "昆明"
+			},
+			{
+				"cityCode": "101290102",
+				"cityName": "昆明农试站"
+			},
+			{
+				"cityCode": "101290103",
+				"cityName": "东川"
+			},
+			{
+				"cityCode": "101290104",
+				"cityName": "寻甸"
+			},
+			{
+				"cityCode": "101290105",
+				"cityName": "晋宁"
+			},
+			{
+				"cityCode": "101290106",
+				"cityName": "宜良"
+			},
+			{
+				"cityCode": "101290107",
+				"cityName": "石林"
+			},
+			{
+				"cityCode": "101290108",
+				"cityName": "呈贡"
+			},
+			{
+				"cityCode": "101290109",
+				"cityName": "富民"
+			},
+			{
+				"cityCode": "101290110",
+				"cityName": "嵩明"
+			},
+			{
+				"cityCode": "101290111",
+				"cityName": "禄劝"
+			},
+			{
+				"cityCode": "101290112",
+				"cityName": "安宁"
+			},
+			{
+				"cityCode": "101290113",
+				"cityName": "太华山"
+			},
+			{
+				"cityCode": "101290114",
+				"cityName": "河口"
+			},
+			{
+				"cityCode": "101290201",
+				"cityName": "大理"
+			},
+			{
+				"cityCode": "101290202",
+				"cityName": "云龙"
+			},
+			{
+				"cityCode": "101290203",
+				"cityName": "漾鼻"
+			},
+			{
+				"cityCode": "101290204",
+				"cityName": "永平"
+			},
+			{
+				"cityCode": "101290205",
+				"cityName": "宾川"
+			},
+			{
+				"cityCode": "101290206",
+				"cityName": "弥渡"
+			},
+			{
+				"cityCode": "101290207",
+				"cityName": "祥云"
+			},
+			{
+				"cityCode": "101290208",
+				"cityName": "魏山"
+			},
+			{
+				"cityCode": "101290209",
+				"cityName": "剑川"
+			},
+			{
+				"cityCode": "101290210",
+				"cityName": "洱源"
+			},
+			{
+				"cityCode": "101290211",
+				"cityName": "鹤庆"
+			},
+			{
+				"cityCode": "101290212",
+				"cityName": "南涧"
+			},
+			{
+				"cityCode": "101290301",
+				"cityName": "红河"
+			},
+			{
+				"cityCode": "101290302",
+				"cityName": "石屏"
+			},
+			{
+				"cityCode": "101290303",
+				"cityName": "建水"
+			},
+			{
+				"cityCode": "101290304",
+				"cityName": "弥勒"
+			},
+			{
+				"cityCode": "101290305",
+				"cityName": "元阳"
+			},
+			{
+				"cityCode": "101290306",
+				"cityName": "绿春"
+			},
+			{
+				"cityCode": "101290307",
+				"cityName": "开远"
+			},
+			{
+				"cityCode": "101290308",
+				"cityName": "个旧"
+			},
+			{
+				"cityCode": "101290309",
+				"cityName": "蒙自"
+			},
+			{
+				"cityCode": "101290310",
+				"cityName": "屏边"
+			},
+			{
+				"cityCode": "101290311",
+				"cityName": "泸西"
+			},
+			{
+				"cityCode": "101290312",
+				"cityName": "金平"
+			},
+			{
+				"cityCode": "101290401",
+				"cityName": "曲靖"
+			},
+			{
+				"cityCode": "101290402",
+				"cityName": "沾益"
+			},
+			{
+				"cityCode": "101290403",
+				"cityName": "陆良"
+			},
+			{
+				"cityCode": "101290404",
+				"cityName": "富源"
+			},
+			{
+				"cityCode": "101290405",
+				"cityName": "马龙"
+			},
+			{
+				"cityCode": "101290406",
+				"cityName": "师宗"
+			},
+			{
+				"cityCode": "101290407",
+				"cityName": "罗平"
+			},
+			{
+				"cityCode": "101290408",
+				"cityName": "会泽"
+			},
+			{
+				"cityCode": "101290409",
+				"cityName": "宣威"
+			},
+			{
+				"cityCode": "101290501",
+				"cityName": "保山"
+			},
+			{
+				"cityCode": "101290502",
+				"cityName": "富宁"
+			},
+			{
+				"cityCode": "101290503",
+				"cityName": "龙陵"
+			},
+			{
+				"cityCode": "101290504",
+				"cityName": "施甸"
+			},
+			{
+				"cityCode": "101290505",
+				"cityName": "昌宁"
+			},
+			{
+				"cityCode": "101290506",
+				"cityName": "腾冲"
+			},
+			{
+				"cityCode": "101290601",
+				"cityName": "文山"
+			},
+			{
+				"cityCode": "101290602",
+				"cityName": "西畴"
+			},
+			{
+				"cityCode": "101290603",
+				"cityName": "马关"
+			},
+			{
+				"cityCode": "101290604",
+				"cityName": "麻栗坡"
+			},
+			{
+				"cityCode": "101290605",
+				"cityName": "砚山"
+			},
+			{
+				"cityCode": "101290606",
+				"cityName": "邱北"
+			},
+			{
+				"cityCode": "101290607",
+				"cityName": "广南"
+			},
+			{
+				"cityCode": "101290701",
+				"cityName": "玉溪"
+			},
+			{
+				"cityCode": "101290702",
+				"cityName": "澄江"
+			},
+			{
+				"cityCode": "101290703",
+				"cityName": "江川"
+			},
+			{
+				"cityCode": "101290704",
+				"cityName": "通海"
+			},
+			{
+				"cityCode": "101290705",
+				"cityName": "华宁"
+			},
+			{
+				"cityCode": "101290706",
+				"cityName": "新平"
+			},
+			{
+				"cityCode": "101290707",
+				"cityName": "易门"
+			},
+			{
+				"cityCode": "101290708",
+				"cityName": "峨山"
+			},
+			{
+				"cityCode": "101290709",
+				"cityName": "元江"
+			},
+			{
+				"cityCode": "101290801",
+				"cityName": "楚雄"
+			},
+			{
+				"cityCode": "101290802",
+				"cityName": "大姚"
+			},
+			{
+				"cityCode": "101290803",
+				"cityName": "元谋"
+			},
+			{
+				"cityCode": "101290804",
+				"cityName": "姚安"
+			},
+			{
+				"cityCode": "101290805",
+				"cityName": "牟定"
+			},
+			{
+				"cityCode": "101290806",
+				"cityName": "南华"
+			},
+			{
+				"cityCode": "101290807",
+				"cityName": "武定"
+			},
+			{
+				"cityCode": "101290808",
+				"cityName": "禄丰"
+			},
+			{
+				"cityCode": "101290809",
+				"cityName": "双柏"
+			},
+			{
+				"cityCode": "101290810",
+				"cityName": "永仁"
+			},
+			{
+				"cityCode": "101290901",
+				"cityName": "普洱"
+			},
+			{
+				"cityCode": "101290902",
+				"cityName": "景谷"
+			},
+			{
+				"cityCode": "101290903",
+				"cityName": "景东"
+			},
+			{
+				"cityCode": "101290904",
+				"cityName": "澜沧"
+			},
+			{
+				"cityCode": "101290905",
+				"cityName": "普洱"
+			},
+			{
+				"cityCode": "101290906",
+				"cityName": "墨江"
+			},
+			{
+				"cityCode": "101290907",
+				"cityName": "江城"
+			},
+			{
+				"cityCode": "101290908",
+				"cityName": "孟连"
+			},
+			{
+				"cityCode": "101290909",
+				"cityName": "西盟"
+			},
+			{
+				"cityCode": "101290910",
+				"cityName": "镇源"
+			},
+			{
+				"cityCode": "101290911",
+				"cityName": "镇沅"
+			},
+			{
+				"cityCode": "101290912",
+				"cityName": "宁洱"
+			},
+			{
+				"cityCode": "101291001",
+				"cityName": "昭通"
+			},
+			{
+				"cityCode": "101291002",
+				"cityName": "鲁甸"
+			},
+			{
+				"cityCode": "101291003",
+				"cityName": "彝良"
+			},
+			{
+				"cityCode": "101291004",
+				"cityName": "镇雄"
+			},
+			{
+				"cityCode": "101291005",
+				"cityName": "威信"
+			},
+			{
+				"cityCode": "101291006",
+				"cityName": "巧家"
+			},
+			{
+				"cityCode": "101291007",
+				"cityName": "绥江"
+			},
+			{
+				"cityCode": "101291008",
+				"cityName": "永善"
+			},
+			{
+				"cityCode": "101291009",
+				"cityName": "盐津"
+			},
+			{
+				"cityCode": "101291010",
+				"cityName": "大关"
+			},
+			{
+				"cityCode": "101291101",
+				"cityName": "临沧"
+			},
+			{
+				"cityCode": "101291102",
+				"cityName": "沧源"
+			},
+			{
+				"cityCode": "101291103",
+				"cityName": "耿马"
+			},
+			{
+				"cityCode": "101291104",
+				"cityName": "双江"
+			},
+			{
+				"cityCode": "101291105",
+				"cityName": "凤庆"
+			},
+			{
+				"cityCode": "101291106",
+				"cityName": "永德"
+			},
+			{
+				"cityCode": "101291107",
+				"cityName": "云县"
+			},
+			{
+				"cityCode": "101291108",
+				"cityName": "镇康"
+			},
+			{
+				"cityCode": "101291201",
+				"cityName": "怒江"
+			},
+			{
+				"cityCode": "101291203",
+				"cityName": "福贡"
+			},
+			{
+				"cityCode": "101291204",
+				"cityName": "兰坪"
+			},
+			{
+				"cityCode": "101291205",
+				"cityName": "泸水"
+			},
+			{
+				"cityCode": "101291206",
+				"cityName": "六库"
+			},
+			{
+				"cityCode": "101291207",
+				"cityName": "贡山"
+			},
+			{
+				"cityCode": "101291301",
+				"cityName": "香格里拉"
+			},
+			{
+				"cityCode": "101291302",
+				"cityName": "德钦"
+			},
+			{
+				"cityCode": "101291303",
+				"cityName": "维西"
+			},
+			{
+				"cityCode": "101291304",
+				"cityName": "中甸"
+			},
+			{
+				"cityCode": "101291401",
+				"cityName": "丽江"
+			},
+			{
+				"cityCode": "101291402",
+				"cityName": "永胜"
+			},
+			{
+				"cityCode": "101291403",
+				"cityName": "华坪"
+			},
+			{
+				"cityCode": "101291404",
+				"cityName": "宁蒗"
+			},
+			{
+				"cityCode": "101291501",
+				"cityName": "德宏"
+			},
+			{
+				"cityCode": "101291502",
+				"cityName": "潞江坝"
+			},
+			{
+				"cityCode": "101291503",
+				"cityName": "陇川"
+			},
+			{
+				"cityCode": "101291504",
+				"cityName": "盈江"
+			},
+			{
+				"cityCode": "101291505",
+				"cityName": "畹町镇"
+			},
+			{
+				"cityCode": "101291506",
+				"cityName": "瑞丽"
+			},
+			{
+				"cityCode": "101291507",
+				"cityName": "梁河"
+			},
+			{
+				"cityCode": "101291508",
+				"cityName": "潞西"
+			},
+			{
+				"cityCode": "101291601",
+				"cityName": "景洪"
+			},
+			{
+				"cityCode": "101291602",
+				"cityName": "大勐龙"
+			},
+			{
+				"cityCode": "101291603",
+				"cityName": "勐海"
+			},
+			{
+				"cityCode": "101291604",
+				"cityName": "景洪电站"
+			},
+			{
+				"cityCode": "101291605",
+				"cityName": "勐腊"
+			}
+		]
+	},
+	{
+		"provinceCode": "101300101",
+		"provinceName": "南宁",
+		"cities": [
+			{
+				"cityCode": "101300101",
+				"cityName": "南宁"
+			},
+			{
+				"cityCode": "101300102",
+				"cityName": "南宁城区"
+			},
+			{
+				"cityCode": "101300103",
+				"cityName": "邕宁"
+			},
+			{
+				"cityCode": "101300104",
+				"cityName": "横县"
+			},
+			{
+				"cityCode": "101300105",
+				"cityName": "隆安"
+			},
+			{
+				"cityCode": "101300106",
+				"cityName": "马山"
+			},
+			{
+				"cityCode": "101300107",
+				"cityName": "上林"
+			},
+			{
+				"cityCode": "101300108",
+				"cityName": "武鸣"
+			},
+			{
+				"cityCode": "101300109",
+				"cityName": "宾阳"
+			},
+			{
+				"cityCode": "101300110",
+				"cityName": "硕龙"
+			},
+			{
+				"cityCode": "101300201",
+				"cityName": "崇左"
+			},
+			{
+				"cityCode": "101300202",
+				"cityName": "天等"
+			},
+			{
+				"cityCode": "101300203",
+				"cityName": "龙州"
+			},
+			{
+				"cityCode": "101300204",
+				"cityName": "凭祥"
+			},
+			{
+				"cityCode": "101300205",
+				"cityName": "大新"
+			},
+			{
+				"cityCode": "101300206",
+				"cityName": "扶绥"
+			},
+			{
+				"cityCode": "101300207",
+				"cityName": "宁明"
+			},
+			{
+				"cityCode": "101300208",
+				"cityName": "海渊"
+			},
+			{
+				"cityCode": "101300301",
+				"cityName": "柳州"
+			},
+			{
+				"cityCode": "101300302",
+				"cityName": "柳城"
+			},
+			{
+				"cityCode": "101300303",
+				"cityName": "沙塘"
+			},
+			{
+				"cityCode": "101300304",
+				"cityName": "鹿寨"
+			},
+			{
+				"cityCode": "101300305",
+				"cityName": "柳江"
+			},
+			{
+				"cityCode": "101300306",
+				"cityName": "融安"
+			},
+			{
+				"cityCode": "101300307",
+				"cityName": "融水"
+			},
+			{
+				"cityCode": "101300308",
+				"cityName": "三江"
+			},
+			{
+				"cityCode": "101300401",
+				"cityName": "来宾"
+			},
+			{
+				"cityCode": "101300402",
+				"cityName": "忻城"
+			},
+			{
+				"cityCode": "101300403",
+				"cityName": "金秀"
+			},
+			{
+				"cityCode": "101300404",
+				"cityName": "象州"
+			},
+			{
+				"cityCode": "101300405",
+				"cityName": "武宣"
+			},
+			{
+				"cityCode": "101300501",
+				"cityName": "桂林"
+			},
+			{
+				"cityCode": "101300502",
+				"cityName": "桂林农试站"
+			},
+			{
+				"cityCode": "101300503",
+				"cityName": "龙胜"
+			},
+			{
+				"cityCode": "101300504",
+				"cityName": "永福"
+			},
+			{
+				"cityCode": "101300505",
+				"cityName": "临桂"
+			},
+			{
+				"cityCode": "101300506",
+				"cityName": "兴安"
+			},
+			{
+				"cityCode": "101300507",
+				"cityName": "灵川"
+			},
+			{
+				"cityCode": "101300508",
+				"cityName": "全州"
+			},
+			{
+				"cityCode": "101300509",
+				"cityName": "灌阳"
+			},
+			{
+				"cityCode": "101300510",
+				"cityName": "阳朔"
+			},
+			{
+				"cityCode": "101300511",
+				"cityName": "恭城"
+			},
+			{
+				"cityCode": "101300512",
+				"cityName": "平乐"
+			},
+			{
+				"cityCode": "101300513",
+				"cityName": "荔浦"
+			},
+			{
+				"cityCode": "101300514",
+				"cityName": "资源"
+			},
+			{
+				"cityCode": "101300601",
+				"cityName": "梧州"
+			},
+			{
+				"cityCode": "101300602",
+				"cityName": "藤县"
+			},
+			{
+				"cityCode": "101300603",
+				"cityName": "太平"
+			},
+			{
+				"cityCode": "101300604",
+				"cityName": "苍梧"
+			},
+			{
+				"cityCode": "101300605",
+				"cityName": "蒙山"
+			},
+			{
+				"cityCode": "101300606",
+				"cityName": "岑溪"
+			},
+			{
+				"cityCode": "101300701",
+				"cityName": "贺州"
+			},
+			{
+				"cityCode": "101300702",
+				"cityName": "昭平"
+			},
+			{
+				"cityCode": "101300703",
+				"cityName": "富川"
+			},
+			{
+				"cityCode": "101300704",
+				"cityName": "钟山"
+			},
+			{
+				"cityCode": "101300705",
+				"cityName": "信都"
+			},
+			{
+				"cityCode": "101300801",
+				"cityName": "贵港"
+			},
+			{
+				"cityCode": "101300802",
+				"cityName": "桂平"
+			},
+			{
+				"cityCode": "101300803",
+				"cityName": "平南"
+			},
+			{
+				"cityCode": "101300901",
+				"cityName": "玉林"
+			},
+			{
+				"cityCode": "101300902",
+				"cityName": "博白"
+			},
+			{
+				"cityCode": "101300903",
+				"cityName": "北流"
+			},
+			{
+				"cityCode": "101300904",
+				"cityName": "容县"
+			},
+			{
+				"cityCode": "101300905",
+				"cityName": "陆川"
+			},
+			{
+				"cityCode": "101301001",
+				"cityName": "百色"
+			},
+			{
+				"cityCode": "101301002",
+				"cityName": "那坡"
+			},
+			{
+				"cityCode": "101301003",
+				"cityName": "田阳"
+			},
+			{
+				"cityCode": "101301004",
+				"cityName": "德保"
+			},
+			{
+				"cityCode": "101301005",
+				"cityName": "靖西"
+			},
+			{
+				"cityCode": "101301006",
+				"cityName": "田东"
+			},
+			{
+				"cityCode": "101301007",
+				"cityName": "平果"
+			},
+			{
+				"cityCode": "101301008",
+				"cityName": "隆林"
+			},
+			{
+				"cityCode": "101301009",
+				"cityName": "西林"
+			},
+			{
+				"cityCode": "101301010",
+				"cityName": "乐业"
+			},
+			{
+				"cityCode": "101301011",
+				"cityName": "凌云"
+			},
+			{
+				"cityCode": "101301012",
+				"cityName": "田林"
+			},
+			{
+				"cityCode": "101301101",
+				"cityName": "钦州"
+			},
+			{
+				"cityCode": "101301102",
+				"cityName": "浦北"
+			},
+			{
+				"cityCode": "101301103",
+				"cityName": "灵山"
+			},
+			{
+				"cityCode": "101301201",
+				"cityName": "河池"
+			},
+			{
+				"cityCode": "101301202",
+				"cityName": "天峨"
+			},
+			{
+				"cityCode": "101301203",
+				"cityName": "东兰"
+			},
+			{
+				"cityCode": "101301204",
+				"cityName": "巴马"
+			},
+			{
+				"cityCode": "101301205",
+				"cityName": "环江"
+			},
+			{
+				"cityCode": "101301206",
+				"cityName": "罗城"
+			},
+			{
+				"cityCode": "101301207",
+				"cityName": "宜州"
+			},
+			{
+				"cityCode": "101301208",
+				"cityName": "凤山"
+			},
+			{
+				"cityCode": "101301209",
+				"cityName": "南丹"
+			},
+			{
+				"cityCode": "101301210",
+				"cityName": "都安"
+			},
+			{
+				"cityCode": "101301301",
+				"cityName": "北海"
+			},
+			{
+				"cityCode": "101301302",
+				"cityName": "合浦"
+			},
+			{
+				"cityCode": "101301303",
+				"cityName": "涠洲岛"
+			},
+			{
+				"cityCode": "101301401",
+				"cityName": "防城港"
+			},
+			{
+				"cityCode": "101301402",
+				"cityName": "上思"
+			},
+			{
+				"cityCode": "101301403",
+				"cityName": "东兴"
+			},
+			{
+				"cityCode": "101301404",
+				"cityName": "板栏"
+			},
+			{
+				"cityCode": "101301405",
+				"cityName": "防城"
+			}
+		]
+	},
+	{
+		"provinceCode": "101310101",
+		"provinceName": "海口",
+		"cities": [
+			{
+				"cityCode": "101310101",
+				"cityName": "海口"
+			},
+			{
+				"cityCode": "101310102",
+				"cityName": "琼山"
+			},
+			{
+				"cityCode": "101310201",
+				"cityName": "三亚"
+			},
+			{
+				"cityCode": "101310202",
+				"cityName": "东方"
+			},
+			{
+				"cityCode": "101310203",
+				"cityName": "临高"
+			},
+			{
+				"cityCode": "101310204",
+				"cityName": "澄迈"
+			},
+			{
+				"cityCode": "101310205",
+				"cityName": "儋州"
+			},
+			{
+				"cityCode": "101310206",
+				"cityName": "昌江"
+			},
+			{
+				"cityCode": "101310207",
+				"cityName": "白沙"
+			},
+			{
+				"cityCode": "101310208",
+				"cityName": "琼中"
+			},
+			{
+				"cityCode": "101310209",
+				"cityName": "定安"
+			},
+			{
+				"cityCode": "101310210",
+				"cityName": "屯昌"
+			},
+			{
+				"cityCode": "101310211",
+				"cityName": "琼海"
+			},
+			{
+				"cityCode": "101310212",
+				"cityName": "文昌"
+			},
+			{
+				"cityCode": "101310213",
+				"cityName": "清兰"
+			},
+			{
+				"cityCode": "101310214",
+				"cityName": "保亭"
+			},
+			{
+				"cityCode": "101310215",
+				"cityName": "万宁"
+			},
+			{
+				"cityCode": "101310216",
+				"cityName": "陵水"
+			},
+			{
+				"cityCode": "101310217",
+				"cityName": "西沙"
+			},
+			{
+				"cityCode": "101310218",
+				"cityName": "珊瑚岛"
+			},
+			{
+				"cityCode": "101310219",
+				"cityName": "永署礁"
+			},
+			{
+				"cityCode": "101310220",
+				"cityName": "南沙岛"
+			},
+			{
+				"cityCode": "101310221",
+				"cityName": "乐东"
+			},
+			{
+				"cityCode": "101310222",
+				"cityName": "五指山"
+			},
+			{
+				"cityCode": "101310223",
+				"cityName": "通什"
+			}
+		]
+	},
+	{
+		"provinceCode": "101320101",
+		"provinceName": "香港",
+		"cities": [
+			{
+				"cityCode": "101320101",
+				"cityName": "香港"
+			},
+			{
+				"cityCode": "101320102",
+				"cityName": "九龙"
+			},
+			{
+				"cityCode": "101320103",
+				"cityName": "新界"
+			},
+			{
+				"cityCode": "101320104",
+				"cityName": "中环"
+			},
+			{
+				"cityCode": "101320105",
+				"cityName": "铜锣湾"
+			}
+		]
+	},
+	{
+		"provinceCode": "101330101",
+		"provinceName": "澳门",
+		"cities": [
+			{
+				"cityCode": "101330101",
+				"cityName": "澳门"
+			}
+		]
+	},
+	{
+		"provinceCode": "101340101",
+		"provinceName": "台北县",
+		"cities": [
+			{
+				"cityCode": "101340101",
+				"cityName": "台北县"
+			},
+			{
+				"cityCode": "101340102",
+				"cityName": "台北市"
+			},
+			{
+				"cityCode": "101340201",
+				"cityName": "高雄"
+			},
+			{
+				"cityCode": "101340202",
+				"cityName": "东港"
+			},
+			{
+				"cityCode": "101340203",
+				"cityName": "大武"
+			},
+			{
+				"cityCode": "101340204",
+				"cityName": "恒春"
+			},
+			{
+				"cityCode": "101340205",
+				"cityName": "兰屿"
+			},
+			{
+				"cityCode": "101340301",
+				"cityName": "台南"
+			},
+			{
+				"cityCode": "101340401",
+				"cityName": "台中"
+			},
+			{
+				"cityCode": "101340501",
+				"cityName": "桃园"
+			},
+			{
+				"cityCode": "101340601",
+				"cityName": "新竹县"
+			},
+			{
+				"cityCode": "101340602",
+				"cityName": "新竹市"
+			},
+			{
+				"cityCode": "101340603",
+				"cityName": "公馆"
+			},
+			{
+				"cityCode": "101340701",
+				"cityName": "宜兰"
+			},
+			{
+				"cityCode": "101340801",
+				"cityName": "马公"
+			},
+			{
+				"cityCode": "101340802",
+				"cityName": "东吉屿"
+			},
+			{
+				"cityCode": "101340901",
+				"cityName": "嘉义"
+			},
+			{
+				"cityCode": "101340902",
+				"cityName": "阿里山"
+			},
+			{
+				"cityCode": "101340903",
+				"cityName": "玉山"
+			},
+			{
+				"cityCode": "101340904",
+				"cityName": "新港"
+			}
+		]
+	}
+]
