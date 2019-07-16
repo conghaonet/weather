@@ -372,8 +372,8 @@
 		]
 	},
 	{
-		"provinceCode": "101050101",
-		"provinceName": "哈尔滨",
+		"provinceCode": "101050000",
+		"provinceName": "黑龙江省",
 		"cities": [
 			{
 				"cityCode": "101050101",
@@ -714,8 +714,8 @@
 		]
 	},
 	{
-		"provinceCode": "101060101",
-		"provinceName": "长春",
+		"provinceCode": "101060000",
+		"provinceName": "吉林省",
 		"cities": [
 			{
 				"cityCode": "101060101",
@@ -936,8 +936,8 @@
 		]
 	},
 	{
-		"provinceCode": "101070101",
-		"provinceName": "沈阳",
+		"provinceCode": "101070000",
+		"provinceName": "辽宁省",
 		"cities": [
 			{
 				"cityCode": "101070101",
@@ -1202,8 +1202,8 @@
 		]
 	},
 	{
-		"provinceCode": "101080101",
-		"provinceName": "呼和浩特",
+		"provinceCode": "101080000",
+		"provinceName": "内蒙古自治区",
 		"cities": [
 			{
 				"cityCode": "101080101",
@@ -1736,8 +1736,8 @@
 		]
 	},
 	{
-		"provinceCode": "101090101",
-		"provinceName": "石家庄",
+		"provinceCode": "101090000",
+		"provinceName": "河北省",
 		"cities": [
 			{
 				"cityCode": "101090101",
@@ -2334,8 +2334,8 @@
 		]
 	},
 	{
-		"provinceCode": "101100101",
-		"provinceName": "太原",
+		"provinceCode": "101100000",
+		"provinceName": "山西省",
 		"cities": [
 			{
 				"cityCode": "101100101",
@@ -2784,8 +2784,8 @@
 		]
 	},
 	{
-		"provinceCode": "101110101",
-		"provinceName": "西安",
+		"provinceCode": "101110000",
+		"provinceName": "陕西省",
 		"cities": [
 			{
 				"cityCode": "101110101",
@@ -3186,8 +3186,8 @@
 		]
 	},
 	{
-		"provinceCode": "101120101",
-		"provinceName": "济南",
+		"provinceCode": "101120000",
+		"provinceName": "山东省",
 		"cities": [
 			{
 				"cityCode": "101120101",
@@ -3700,8 +3700,8 @@
 		]
 	},
 	{
-		"provinceCode": "101130101",
-		"provinceName": "乌鲁木齐",
+		"provinceCode": "101130000",
+		"provinceName": "新疆维吾尔自治区",
 		"cities": [
 			{
 				"cityCode": "101130101",
@@ -4150,8 +4150,8 @@
 		]
 	},
 	{
-		"provinceCode": "101140101",
-		"provinceName": "拉萨",
+		"provinceCode": "101140000",
+		"provinceName": "西藏自治区",
 		"cities": [
 			{
 				"cityCode": "101140101",
@@ -4320,8 +4320,8 @@
 		]
 	},
 	{
-		"provinceCode": "101150101",
-		"provinceName": "西宁",
+		"provinceCode": "101150000",
+		"provinceName": "青海省",
 		"cities": [
 			{
 				"cityCode": "101150101",
@@ -4574,8 +4574,8 @@
 		]
 	},
 	{
-		"provinceCode": "101160101",
-		"provinceName": "兰州",
+		"provinceCode": "101160000",
+		"provinceName": "甘肃省",
 		"cities": [
 			{
 				"cityCode": "101160101",
@@ -4924,8 +4924,8 @@
 		]
 	},
 	{
-		"provinceCode": "101170101",
-		"provinceName": "银川",
+		"provinceCode": "101170000",
+		"provinceName": "宁夏回族自治区",
 		"cities": [
 			{
 				"cityCode": "101170101",
@@ -5034,8 +5034,8 @@
 		]
 	},
 	{
-		"provinceCode": "101180101",
-		"provinceName": "郑州",
+		"provinceCode": "101180000",
+		"provinceName": "河南省",
 		"cities": [
 			{
 				"cityCode": "101180101",
@@ -5536,8 +5536,8 @@
 		]
 	},
 	{
-		"provinceCode": "101190101",
-		"provinceName": "南京",
+		"provinceCode": "101190000",
+		"provinceName": "江苏省",
 		"cities": [
 			{
 				"cityCode": "101190101",
@@ -5866,8 +5866,8 @@
 		]
 	},
 	{
-		"provinceCode": "101200101",
-		"provinceName": "武汉",
+		"provinceCode": "101200000",
+		"provinceName": "湖北省",
 		"cities": [
 			{
 				"cityCode": "101200101",
@@ -6200,8 +6200,8 @@
 		]
 	},
 	{
-		"provinceCode": "101210101",
-		"provinceName": "杭州",
+		"provinceCode": "101210000",
+		"provinceName": "浙江省",
 		"cities": [
 			{
 				"cityCode": "101210101",
@@ -6518,8 +6518,8 @@
 		]
 	},
 	{
-		"provinceCode": "101220101",
-		"provinceName": "合肥",
+		"provinceCode": "101220000",
+		"provinceName": "安徽省",
 		"cities": [
 			{
 				"cityCode": "101220101",
@@ -6852,8 +6852,8 @@
 		]
 	},
 	{
-		"provinceCode": "101230101",
-		"provinceName": "福州",
+		"provinceCode": "101230000",
+		"provinceName": "福建省",
 		"cities": [
 			{
 				"cityCode": "101230101",
@@ -7150,8 +7150,8 @@
 		]
 	},
 	{
-		"provinceCode": "101240101",
-		"provinceName": "南昌",
+		"provinceCode": "101240000",
+		"provinceName": "江西省",
 		"cities": [
 			{
 				"cityCode": "101240101",
@@ -7524,8 +7524,8 @@
 		]
 	},
 	{
-		"provinceCode": "101250101",
-		"provinceName": "长沙",
+		"provinceCode": "101250000",
+		"provinceName": "湖南省",
 		"cities": [
 			{
 				"cityCode": "101250101",
@@ -7938,8 +7938,8 @@
 		]
 	},
 	{
-		"provinceCode": "101260101",
-		"provinceName": "贵阳",
+		"provinceCode": "101260000",
+		"provinceName": "贵州省",
 		"cities": [
 			{
 				"cityCode": "101260101",
@@ -8300,8 +8300,8 @@
 		]
 	},
 	{
-		"provinceCode": "101270101",
-		"provinceName": "成都",
+		"provinceCode": "101270000",
+		"provinceName": "四川省",
 		"cities": [
 			{
 				"cityCode": "101270101",
@@ -8974,8 +8974,8 @@
 		]
 	},
 	{
-		"provinceCode": "101280101",
-		"provinceName": "广州",
+		"provinceCode": "101280000",
+		"provinceName": "广东省",
 		"cities": [
 			{
 				"cityCode": "101280101",
@@ -9376,8 +9376,8 @@
 		]
 	},
 	{
-		"provinceCode": "101290101",
-		"provinceName": "昆明",
+		"provinceCode": "101290000",
+		"provinceName": "云南省",
 		"cities": [
 			{
 				"cityCode": "101290101",
@@ -9926,8 +9926,8 @@
 		]
 	},
 	{
-		"provinceCode": "101300101",
-		"provinceName": "南宁",
+		"provinceCode": "101300000",
+		"provinceName": "广西壮族自治区",
 		"cities": [
 			{
 				"cityCode": "101300101",
@@ -10320,8 +10320,8 @@
 		]
 	},
 	{
-		"provinceCode": "101310101",
-		"provinceName": "海口",
+		"provinceCode": "101310000",
+		"provinceName": "海南省",
 		"cities": [
 			{
 				"cityCode": "101310101",
@@ -10426,8 +10426,8 @@
 		]
 	},
 	{
-		"provinceCode": "101320101",
-		"provinceName": "香港",
+		"provinceCode": "101320000",
+		"provinceName": "香港特别行政区",
 		"cities": [
 			{
 				"cityCode": "101320101",
@@ -10452,8 +10452,8 @@
 		]
 	},
 	{
-		"provinceCode": "101330101",
-		"provinceName": "澳门",
+		"provinceCode": "101330000",
+		"provinceName": "澳门特别行政区",
 		"cities": [
 			{
 				"cityCode": "101330101",
@@ -10462,8 +10462,8 @@
 		]
 	},
 	{
-		"provinceCode": "101340101",
-		"provinceName": "台北县",
+		"provinceCode": "101340000",
+		"provinceName": "台湾省",
 		"cities": [
 			{
 				"cityCode": "101340101",
