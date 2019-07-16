@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
-
+import 'dart:convert';
 import '../data/province_city.dart';
 
 void main() => runApp(CityCodeApp());
@@ -37,10 +37,21 @@ class CityCodeAppState extends State<CityCodeApp> {
     });
     print(provinces.toString());
   }
+
+  Future<List<Province>> getProvincesData() async {
+    AssetBundle bundle = DefaultAssetBundle.of(context);
+    String json = await bundle.loadString('assets/cities.json');
+    List<dynamic> listDynamic = jsonDecode(json);
+    List<Province> provinces = listDynamic.map((js) =>Province.fromJson(js)).toList();
+    // print("getProvincesData ====> "+provinces.toString());
+    return provinces;
+  }
+
   @override
   void initState() {
     super.initState();
-    loadAsset();
+//    loadAsset();
+    getProvincesData();
   }
   @override
   Widget build(BuildContext context) {

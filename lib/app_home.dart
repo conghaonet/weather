@@ -4,6 +4,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'dart:convert';
 
+import 'bloc/bloc_provider.dart';
 import 'data/amap_location.dart';
 import 'translations.dart';
 import 'application.dart';
@@ -11,6 +12,8 @@ import 'strings.dart';
 import 'utils/permission_util.dart';
 import 'utils/snack_bar_util.dart';
 import 'utils/util.dart';
+import 'bloc/cities_page_bloc.dart';
+import 'data/province_city.dart';
 
 class WeatherApp extends StatefulWidget {
   @override
@@ -52,7 +55,10 @@ class _MyAppState extends State<WeatherApp> {
       onGenerateTitle: (context) {
         return Translations.of(context).getString(Strings.appName);
       },
-      home: HomePage(),
+      home: BlocProvider(
+        child: HomePage(),
+        blocs: [CitiesPageBloc()],
+      ),
     );
   }
 }
@@ -67,10 +73,12 @@ class HomePage extends StatefulWidget {
 class HomePageState extends State<HomePage> {
   //声明一个调用对象，需要把kotlin中注册的ChannelName传入构造函数
   static const _location = const MethodChannel('app2m.com/location');
+  CitiesPageBloc _bloc;
   @override
   void initState() {
     super.initState();
     _location.invokeMethod('stopLocation');
+
   }
 
   _requestLocation(BuildContext context) async {
@@ -88,6 +96,8 @@ class HomePageState extends State<HomePage> {
   }
   @override
   Widget build(BuildContext context) {
+//    _bloc = BlocProvider.of<CitiesPageBloc>(context).first;
+//    _bloc.getAllProvinces();
     return Scaffold(
       appBar: AppBar(
         title: Text('appbar title'),
@@ -109,6 +119,18 @@ class HomePageState extends State<HomePage> {
                   PermissionUtil.requestPermissions(context, [PermissionGroup.location], prompt, showPrompt: true);
                 },
                 child: Text('验证定位权限'),
+              ),
+              StreamBuilder<List<Province>>(
+                stream: BlocProvider.of<CitiesPageBloc>(context).first.provinceStream,
+                initialData: null,
+                builder: (BuildContext context, AsyncSnapshot<List<Province>> snapshot) {
+                  if(snapshot.hasData) {
+                    return Text('province count = ${snapshot.data.length}');
+                  } else {
+                    return Text('province no data');
+                  }
+                },
+
               ),
             ],
           );
