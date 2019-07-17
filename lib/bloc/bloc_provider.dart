@@ -20,10 +20,20 @@ class BlocProvider<T extends BlocBase> extends StatefulWidget {
   _BlocProviderState<T> createState() => _BlocProviderState<T>();
 
   static List<T> of<T extends BlocBase>(BuildContext context) {
-    final type = _typeOf<_BlocProviderInherited<T>>();
+//    final type = _typeOf<_BlocProviderInherited<T>>();
 //    _BlocProviderInherited<T> provider = context.ancestorInheritedElementForWidgetOfExactType(type)?.widget;
-    _BlocProviderInherited<T> provider = context.ancestorWidgetOfExactType(type);
+    final type = _typeOf<BlocProvider<T>>();
+    BlocProvider<T> provider = context.ancestorWidgetOfExactType(type);
     return provider?.blocs;
+  }
+  static K first<T extends BlocBase, K extends BlocBase>(BuildContext context) {
+    final type = _typeOf<BlocProvider<T>>();
+    BlocProvider<T> provider = context.ancestorWidgetOfExactType(type);
+    if(provider == null) {
+      return null;
+    } else {
+      return provider.blocs.firstWhere((bloc) => bloc is K) as K;
+    }
   }
 }
 
@@ -44,7 +54,7 @@ class _BlocProviderState<T extends BlocBase> extends State<BlocProvider<T>> {
   }
 }
 
-class _BlocProviderInherited<T> extends InheritedWidget {
+class _BlocProviderInherited<T extends BlocBase> extends InheritedWidget {
   final List<T> blocs;
   _BlocProviderInherited({
     Key key,

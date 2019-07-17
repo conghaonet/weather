@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'app_home.dart';
+import 'home.dart';
 
-void main() {
-  runApp(WeatherApp());
-}
 
 /*
 class MyApp extends StatelessWidget {

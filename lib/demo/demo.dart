@@ -4,23 +4,24 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'dart:convert';
 
-import 'bloc/bloc_provider.dart';
-import 'data/amap_location.dart';
-import 'translations.dart';
-import 'application.dart';
-import 'strings.dart';
-import 'utils/permission_util.dart';
-import 'utils/snack_bar_util.dart';
-import 'utils/util.dart';
-import 'bloc/cities_page_bloc.dart';
-import 'data/province_city.dart';
+import '../bloc/bloc_provider.dart';
+import '../data/amap_location.dart';
+import '../translations.dart';
+import '../application.dart';
+import '../strings.dart';
+import '../utils/permission_util.dart';
+import '../utils/snack_bar_util.dart';
+import '../utils/util.dart';
+import '../bloc/cities_page_bloc.dart';
+import '../data/province_city.dart';
 
-class WeatherApp extends StatefulWidget {
+void main() => runApp(DemoApp());
+class DemoApp extends StatefulWidget {
   @override
   _MyAppState createState() => _MyAppState();
 }
 
-class _MyAppState extends State<WeatherApp> {
+class _MyAppState extends State<DemoApp> {
   SpecificLocalizationDelegate _localeOverrideDelegate;
 
   @override
