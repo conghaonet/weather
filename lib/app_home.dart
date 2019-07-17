@@ -73,7 +73,7 @@ class HomePage extends StatefulWidget {
 class HomePageState extends State<HomePage> {
   //声明一个调用对象，需要把kotlin中注册的ChannelName传入构造函数
   static const _location = const MethodChannel('app2m.com/location');
-  CitiesPageBloc _bloc;
+  String dropdownValue = 'One';
   @override
   void initState() {
     super.initState();
@@ -132,6 +132,33 @@ class HomePageState extends State<HomePage> {
                 },
 
               ),
+              Wrap(
+                direction: Axis.horizontal,
+                children: <Widget>[
+                  DropdownButton<String>(
+                    value: dropdownValue,
+                    onChanged: (String newValue) {
+                      setState(() {
+                        dropdownValue = newValue;
+                      });
+                    },
+                    items: <String>['One', 'Twoaaaaaaaaaaaa', 'Free', 'Four','Five','Six','Seven']
+                        .map<DropdownMenuItem<String>>((String value) {
+                      return DropdownMenuItem<String>(
+                        value: value,
+                        child: Container(
+                          constraints: BoxConstraints(
+                            minWidth: 222,
+                          ),
+                          child:Text(value,
+                            textAlign: TextAlign.left,
+                            style: TextStyle(backgroundColor: Colors.red,),
+                          ),
+                        ),
+                      );
+                    }).toList(),
+                  ),
+              ],),
             ],
           );
         },
