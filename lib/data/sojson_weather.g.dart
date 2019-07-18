@@ -46,8 +46,8 @@ Map<String, dynamic> _$SojsonCityInfoToJson(SojsonCityInfo instance) =>
 SojsonData _$SojsonDataFromJson(Map<String, dynamic> json) {
   return SojsonData(
       json['shidu'] as String,
-      json['pm25'] as int,
-      json['pm10'] as int,
+      (json['pm25'] as num)?.toDouble(),
+      (json['pm10'] as num)?.toDouble(),
       json['quality'] as String,
       json['wendu'] as String,
       json['ganmao'] as String,
@@ -77,7 +77,7 @@ SojsonDetail _$SojsonDetailFromJson(Map<String, dynamic> json) {
   return SojsonDetail(
       json['date'] as String,
       json['ymd'] as String,
-      json['weak'] as String,
+      json['week'] as String,
       json['sunrise'] as String,
       json['high'] as String,
       json['low'] as String,
@@ -93,7 +93,7 @@ Map<String, dynamic> _$SojsonDetailToJson(SojsonDetail instance) =>
     <String, dynamic>{
       'date': instance.date,
       'ymd': instance.ymd,
-      'weak': instance.weak,
+      'week': instance.week,
       'sunrise': instance.sunrise,
       'high': instance.high,
       'low': instance.low,

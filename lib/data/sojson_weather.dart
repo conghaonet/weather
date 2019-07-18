@@ -57,9 +57,9 @@ class SojsonData {
   /// 湿度
   String shidu;
   /// pm2.5
-  int pm25;
+  double pm25;
   /// pm10
-  int pm10;
+  double pm10;
   /// 空气质量
   String quality;
   /// 温度
@@ -83,14 +83,14 @@ class SojsonData {
 
 @JsonSerializable()
 class SojsonDetail {
-  SojsonDetail(this.date, this.ymd, this.weak, this.sunrise, this.high, this.low, this.sunset, this.aqi, this.fx, this.fl, this.type, this.notice);
+  SojsonDetail(this.date, this.ymd, this.week, this.sunrise, this.high, this.low, this.sunset, this.aqi, this.fx, this.fl, this.type, this.notice);
 
   /// 格式：DD，例：22（表示22日）
   String date;
   /// 年月日，格式：YYYY-MM-DD
   String ymd;
   /// 星期, 例：星期六
-  String weak;
+  String week;
   /// 日出时间，格式：HHmm，例：04:58
   String sunrise;
   /// 最高温度，例：“高温 26.0℃”
@@ -115,7 +115,7 @@ class SojsonDetail {
 
   @override
   String toString() {
-    return "{\"date\":\"$date\",\"ymd\":\"$ymd\",\"weak\":\"$weak\",\"sunrise\":\"$sunrise\",\"high\":\"$high\",\"low\":\"$low\",\"sunset\":\"$sunset\",\"aqi\":$aqi,\"fx\":\"$fx\",\"fl\":\"$fl\",\"type\":\"$type\",\"notice\":\"$notice\"}";
+    return "{\"date\":\"$date\",\"ymd\":\"$ymd\",\"week\":\"$week\",\"sunrise\":\"$sunrise\",\"high\":\"$high\",\"low\":\"$low\",\"sunset\":\"$sunset\",\"aqi\":$aqi,\"fx\":\"$fx\",\"fl\":\"$fl\",\"type\":\"$type\",\"notice\":\"$notice\"}";
   }
 
 }

@@ -1,6 +1,9 @@
 import 'dart:async';
 import 'dart:convert';
 
+import 'package:dio/dio.dart';
+import 'package:weather/data/sojson_weather.dart';
+import 'package:weather/network/api_service.dart';
 import 'package:weather/utils/location_util.dart';
 
 import '../data/province_city.dart';
@@ -19,6 +22,10 @@ class LocationBloc extends BlocBase {
     AmapLocation amapLocation = AmapLocation.fromJson(locationMap);
     City city = await LocationUtil.getCityByLocation(amapLocation);
     _controller.sink.add(city);
+
+    SojsonWeather weatherA = await ApiService.getCityWeatherA('101010100');
+    print('weatherA ====> ${weatherA.toString()}');
+
   }
   void stopLocation() {
     _amapChannel.stopLocation();
