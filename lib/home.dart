@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
   LocationBloc _locationBloc;
   @override
   Widget build(BuildContext context) {
-    _locationBloc = BlocProvider.first<BlocBase, LocationBloc>(context);
+    _locationBloc = BlocProvider.first<LocationBloc>(context);
     _locationBloc.locationCity();
     return Scaffold(
       appBar: AppBar(
@@ -42,7 +42,7 @@ class HomePage extends StatelessWidget {
             MaterialButton(
               child: Text(Translations.of(context).getString(Strings.location)),
               onPressed: () {
-                BlocProvider.first<BlocBase, ApplicationBloc>(context).onChangeLocale(Locale('zh'));
+                BlocProvider.first<ApplicationBloc>(context).onChangeLocale(Locale('zh'));
 
               },
             ),

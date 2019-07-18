@@ -53,7 +53,7 @@ class MyMaterialAppState extends State<MyMaterialApp> {
   void initState() {
     super.initState();
     //.any((bloc) => bloc is ApplicationBloc)
-    _applicationBloc = BlocProvider.first<BlocBase, ApplicationBloc>(context);
+    _applicationBloc = BlocProvider.first<ApplicationBloc>(context);
     _applicationBloc.applicationStream.listen((event) {
       setState(() {});
     });

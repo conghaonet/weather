@@ -8,7 +8,7 @@ abstract class BlocBase {
 
 class BlocProvider<T extends BlocBase> extends StatefulWidget {
   final Widget child;
-  final List<T> blocs;
+  final List<BlocBase> blocs;
 
   BlocProvider({
     Key key,
@@ -19,20 +19,20 @@ class BlocProvider<T extends BlocBase> extends StatefulWidget {
   @override
   _BlocProviderState<T> createState() => _BlocProviderState<T>();
 
-  static List<T> of<T extends BlocBase>(BuildContext context) {
-//    final type = _typeOf<_BlocProviderInherited<T>>();
-//    _BlocProviderInherited<T> provider = context.ancestorInheritedElementForWidgetOfExactType(type)?.widget;
-    final type = _typeOf<BlocProvider<T>>();
-    BlocProvider<T> provider = context.ancestorWidgetOfExactType(type);
+  @deprecated
+  static List<BlocBase> of(BuildContext context) {
+    final type = _typeOf<BlocProvider<BlocBase>>();
+    BlocProvider<BlocBase> provider = context.ancestorWidgetOfExactType(type);
     return provider?.blocs;
   }
-  static K first<T extends BlocBase, K extends BlocBase>(BuildContext context) {
-    final type = _typeOf<BlocProvider<T>>();
-    BlocProvider<T> provider = context.ancestorWidgetOfExactType(type);
+
+  static T first<T extends BlocBase>(BuildContext context) {
+    final type = _typeOf<BlocProvider<BlocBase>>();
+    BlocProvider<BlocBase> provider = context.ancestorWidgetOfExactType(type);
     if(provider == null) {
       return null;
     } else {
-      return provider.blocs.firstWhere((bloc) => bloc is K) as K;
+      return provider.blocs.firstWhere((bloc) => bloc is T) as T;
     }
   }
 }
@@ -47,22 +47,6 @@ class _BlocProviderState<T extends BlocBase> extends State<BlocProvider<T>> {
   }
   @override
   Widget build(BuildContext context) {
-    return _BlocProviderInherited<T>(
-      blocs: widget.blocs,
-      child: widget.child,
-    );
+    return widget.child;
   }
-}
-
-class _BlocProviderInherited<T extends BlocBase> extends InheritedWidget {
-  final List<T> blocs;
-  _BlocProviderInherited({
-    Key key,
-    @required Widget child,
-    @required this.blocs,
-  }): super(key: key, child: child);
-
-  @override
-  bool updateShouldNotify(_BlocProviderInherited oldWidget) => false;
-
 }

@@ -122,7 +122,7 @@ class HomePageState extends State<HomePage> {
                 child: Text('验证定位权限'),
               ),
               StreamBuilder<List<Province>>(
-                stream: BlocProvider.of<CitiesPageBloc>(context).first.provinceStream,
+                stream: BlocProvider.first<CitiesPageBloc>(context).provinceStream,
                 initialData: null,
                 builder: (BuildContext context, AsyncSnapshot<List<Province>> snapshot) {
                   if(snapshot.hasData) {
