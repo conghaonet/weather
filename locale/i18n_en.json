@@ -2,6 +2,5 @@
   "app_name": "Weather",
   "app_title": "Weather",
   "location": "Location",
-  "city": "City",
-  "start_game": "Start"
+  "city": "City"
 }

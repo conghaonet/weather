@@ -121,4 +121,14 @@ class AmapLocation{
   factory AmapLocation.fromJson(Map<String, dynamic> json) => _$AmapLocationFromJson(json);
   Map<String, dynamic> toJson() => _$AmapLocationToJson(this);
 
+  @override
+  String toString() {
+    return "{\"accuracy\":$accuracy,\"adCode\":\"$adCode\",\"address\":\"$address\",\"altitude\":$altitude,\"aoiName\":\"$aoiName\","
+        "\"bearing\":$bearing,\"buildingId\":\"$buildingId\",\"city\":\"$city\",\"cityCode\":\"$cityCode\",\"conScenario\":$conScenario,"
+        "\"coordType\":\"$coordType\",\"country\":\"$country\",\"description\":\"$description\",\"district\":\"$district\",\"errorCode\":$errorCode,"
+        "\"errorInfo\":\"$errorInfo\",\"floor\":\"$floor\",\"gpsAccuracyStatus\":$gpsAccuracyStatus,\"latitude\":$latitude,\"locationDetail\":\"$locationDetail\","
+        "\"locationType\":$locationType,\"longitude\":$longitude,\"poiName\":\"$poiName\",\"provider\":\"$provider\",\"province\":\"$province\","
+        "\"satellites\":$satellites,\"speed\":$speed,\"street\":\"$street\",\"streetNum\":\"$streetNum\",\"trustedLevel\":$trustedLevel}";
+  }
+
 }

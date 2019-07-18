@@ -74,13 +74,13 @@ class MyMaterialAppState extends State<MyMaterialApp> {
       //支持的语言列表
       supportedLocales: myApplication.supportedLocales(),
       theme: ThemeData(
+        accentColor: Colors.green[500],
         brightness: Brightness.light,
         primaryColor: Colors.green[500],
-
       ),
       title: 'WEATHER',
       onGenerateTitle: (context) {
-        return Translations.of(context).getString(Strings.appName);
+        return Translations.of(context).getString(Strings.app_name);
       },
       home: HomePage(),
     );

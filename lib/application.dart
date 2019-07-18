@@ -6,7 +6,8 @@ typedef void LocaleChangeCallback(Locale locale);
 /// 这样就可以保证new EventBus()始终返回都是同一个实例，读者应该理解并掌握这种方法。
 class MyApplication {
   /// 支持的语言列表
-  final List<String> supportedLanguages = ['zh','en'];
+//  final List<String> supportedLanguages = ['zh','en'];
+  final List<String> supportedLanguages = ['zh'];
 
   ///将支持的语言列表[supportedLanguages]转为Locale列表
   Iterable<Locale> supportedLocales() => supportedLanguages.map<Locale>((lang) => Locale(lang, ''));

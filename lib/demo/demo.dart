@@ -54,7 +54,7 @@ class _MyAppState extends State<DemoApp> {
 
       title: 'Weather',
       onGenerateTitle: (context) {
-        return Translations.of(context).getString(Strings.appName);
+        return Translations.of(context).getString(Strings.app_name);
       },
       home: BlocProvider(
         child: HomePage(),
@@ -83,7 +83,7 @@ class HomePageState extends State<HomePage> {
   }
 
   _requestLocation(BuildContext context) async {
-    String prompt = Translations.of(context).getString(Strings.permissionPromptLocation);
+    String prompt = Translations.of(context).getString(Strings.permission_prompt_location);
     SnackBarAction action = AppSnackBarAction.getDefaultPermissionAction(context);
     PermissionGroup deniedPermission = await PermissionUtil.requestPermissions(context, [PermissionGroup.location], prompt, action: action);
     if(deniedPermission != PermissionGroup.location) {
@@ -116,7 +116,7 @@ class HomePageState extends State<HomePage> {
               ),
               MaterialButton(
                 onPressed: () {
-                  String prompt = Translations.of(context).getString(Strings.permissionPromptLocation);
+                  String prompt = Translations.of(context).getString(Strings.permission_prompt_location);
                   PermissionUtil.requestPermissions(context, [PermissionGroup.location], prompt, showPrompt: true);
                 },
                 child: Text('验证定位权限'),

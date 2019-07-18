@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:weather/page/home.dart';
+import 'page/location_city_page.dart';
 import 'page/settings_page.dart';
 
 class GlobalNavigator extends NavigatorObserver {
@@ -10,6 +11,7 @@ class GlobalNavigator extends NavigatorObserver {
   /// 静态路由（无参数）
   static final Map<String, WidgetBuilder> _routes = {
     SettingsPage.ROUTE_NAME: (_) => SettingsPage(),
+    LocationCityPage.ROUTE_NAME: (_) => LocationCityPage(),
   };
   Map<String, WidgetBuilder> get routes => _routes;
 

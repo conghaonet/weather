@@ -18,6 +18,8 @@ import 'package:weather/utils/util.dart';
 import 'package:weather/bloc/cities_page_bloc.dart';
 import 'package:weather/data/province_city.dart';
 
+import 'location_city_page.dart';
+
 class HomePage extends StatelessWidget {
   LocationBloc _locationBloc;
   @override
@@ -26,8 +28,14 @@ class HomePage extends StatelessWidget {
     _locationBloc.locationCity();
     return Scaffold(
       appBar: AppBar(
-        title: Text(Translations.of(context).getString(Strings.appName),),
+        title: Text(Translations.of(context).getString(Strings.app_name),),
         actions: <Widget>[
+          IconButton(
+            icon: const Icon(Icons.location_city),
+            onPressed: () {
+              Navigator.pushNamed(context, LocationCityPage.ROUTE_NAME);
+            },
+          ),
           IconButton(
             icon: const Icon(Icons.settings),
             onPressed: () {

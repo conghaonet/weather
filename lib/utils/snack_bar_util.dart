@@ -7,7 +7,7 @@ import '../translations.dart';
 
 class AppSnackBarAction {
   static SnackBarAction getDefaultPermissionAction(BuildContext context, {String label, Function onPressed}) {
-    String _strLabel = label ?? Translations.of(context).getString(Strings.permissionGotoSettings);
+    String _strLabel = label ?? Translations.of(context).getString(Strings.permission_goto_settings);
     SnackBarAction _action = SnackBarAction(
       label: _strLabel,
       onPressed: onPressed ?? () {PermissionHandler().openAppSettings();},
