@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Type _typeOf<T>() => T;
+Type _typeOf<K>() => K;
 
 abstract class BlocBase {
   void dispose();
@@ -19,6 +19,7 @@ class BlocProvider<T extends BlocBase> extends StatefulWidget {
   @override
   _BlocProviderState<T> createState() => _BlocProviderState<T>();
 
+  /// _Deprecated: Use[first] instead._
   @deprecated
   static List<BlocBase> of(BuildContext context) {
     final type = _typeOf<BlocProvider<BlocBase>>();
@@ -26,6 +27,7 @@ class BlocProvider<T extends BlocBase> extends StatefulWidget {
     return provider?.blocs;
   }
 
+  /// 供外部调用
   static T first<T extends BlocBase>(BuildContext context) {
     final type = _typeOf<BlocProvider<BlocBase>>();
     BlocProvider<BlocBase> provider = context.ancestorWidgetOfExactType(type);
