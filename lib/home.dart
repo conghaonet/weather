@@ -8,6 +8,7 @@ import 'bloc/application_bloc.dart';
 import 'bloc/bloc_provider.dart';
 import 'bloc/location_bloc.dart';
 import 'data/amap_location.dart';
+import 'page/settings_page.dart';
 import 'translations.dart';
 import 'application.dart';
 import 'strings.dart';
@@ -30,7 +31,7 @@ class HomePage extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.settings),
             onPressed: () {
-
+              Navigator.pushNamed(context, SettingsPage.ROUTE_NAME);
             },
           ),
         ],

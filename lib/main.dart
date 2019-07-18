@@ -9,6 +9,7 @@ import 'application.dart';
 import 'bloc/application_bloc.dart';
 import 'bloc/bloc_provider.dart';
 import 'bloc/location_bloc.dart';
+import 'global_navigator.dart';
 import 'home.dart';
 import 'strings.dart';
 import 'translations.dart';
@@ -61,6 +62,9 @@ class MyMaterialAppState extends State<MyMaterialApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // 定义静态路由，不能传递参数
+      routes: globalNavigator.routes,
+
       localizationsDelegates: [
         _applicationBloc.localeOverrideDelegate,
         const TranslationsDelegate(), //指向自定义个人库来处理翻译
