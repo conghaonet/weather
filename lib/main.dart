@@ -10,7 +10,7 @@ import 'bloc/application_bloc.dart';
 import 'bloc/bloc_provider.dart';
 import 'bloc/location_bloc.dart';
 import 'global_navigator.dart';
-import 'home.dart';
+import 'package:weather/page/home.dart';
 import 'strings.dart';
 import 'translations.dart';
 
@@ -53,7 +53,6 @@ class MyMaterialAppState extends State<MyMaterialApp> {
   @override
   void initState() {
     super.initState();
-    //.any((bloc) => bloc is ApplicationBloc)
     _applicationBloc = BlocProvider.first<ApplicationBloc>(context);
     _applicationBloc.applicationStream.listen((event) {
       setState(() {});
@@ -64,7 +63,8 @@ class MyMaterialAppState extends State<MyMaterialApp> {
     return MaterialApp(
       // 定义静态路由，不能传递参数
       routes: globalNavigator.routes,
-
+      //动态路由，可传递参数
+      onGenerateRoute: globalNavigator.generateRoute,
       localizationsDelegates: [
         _applicationBloc.localeOverrideDelegate,
         const TranslationsDelegate(), //指向自定义个人库来处理翻译

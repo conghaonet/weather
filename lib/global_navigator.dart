@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'home.dart';
+import 'package:weather/page/home.dart';
 import 'page/settings_page.dart';
 
 class GlobalNavigator extends NavigatorObserver {
   /// 保存单例
   static final GlobalNavigator _globalNavigator = GlobalNavigator._internal();
+  /// 静态路由（无参数）
   static final Map<String, WidgetBuilder> _routes = {
     SettingsPage.ROUTE_NAME: (_) => SettingsPage(),
   };
+  Map<String, WidgetBuilder> get routes => _routes;
+
   factory GlobalNavigator() {
     return _globalNavigator;
   }
@@ -32,7 +35,22 @@ class GlobalNavigator extends NavigatorObserver {
     }
   }
 
-  Map<String, WidgetBuilder> get routes => _routes;
+  /// 带参数路由
+  Route<dynamic> generateRoute(RouteSettings settings) {
+    MaterialPageRoute defaultPage = MaterialPageRoute(builder: (context) {return HomePage();});
+    MaterialPageRoute targetPage;
+/*
+    if(settings.name == SettingsPage.ROUTE_NAME) {
+      targetPage = MaterialPageRoute(
+        settings: settings,
+        builder: (context) {
+          return SettingsPage();
+        },
+      );
+    }
+*/
+    return targetPage ?? defaultPage;
+  }
 
   void setPreferredOrientations(String targetName) {
 /*

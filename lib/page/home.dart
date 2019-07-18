@@ -4,19 +4,19 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'dart:convert';
 
-import 'bloc/application_bloc.dart';
-import 'bloc/bloc_provider.dart';
-import 'bloc/location_bloc.dart';
-import 'data/amap_location.dart';
-import 'page/settings_page.dart';
-import 'translations.dart';
-import 'application.dart';
-import 'strings.dart';
-import 'utils/permission_util.dart';
-import 'utils/snack_bar_util.dart';
-import 'utils/util.dart';
-import 'bloc/cities_page_bloc.dart';
-import 'data/province_city.dart';
+import 'package:weather/bloc/application_bloc.dart';
+import 'package:weather/bloc/bloc_provider.dart';
+import 'package:weather/bloc/location_bloc.dart';
+import 'package:weather/data/amap_location.dart';
+import 'package:weather/page/settings_page.dart';
+import 'package:weather/translations.dart';
+import 'package:weather/application.dart';
+import 'package:weather/strings.dart';
+import 'package:weather/utils/permission_util.dart';
+import 'package:weather/utils/snack_bar_util.dart';
+import 'package:weather/utils/util.dart';
+import 'package:weather/bloc/cities_page_bloc.dart';
+import 'package:weather/data/province_city.dart';
 
 class HomePage extends StatelessWidget {
   LocationBloc _locationBloc;
