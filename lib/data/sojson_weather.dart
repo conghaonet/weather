@@ -7,7 +7,9 @@ part 'sojson_weather.g.dart';
 /// 这个标注是告诉生成器，这个类是需要生成Model类的
 @JsonSerializable()
 class SojsonWeather {
-  SojsonWeather(this.time, this.cityInfo, this.date, this.message, this.status, this.data);
+  SojsonWeather(this.isAutoLocation, this.time, this.cityInfo, this.date, this.message, this.status, this.data);
+  /// 非服务器返回数据，用于标记是否通过定位获取到的城市天气。
+  bool isAutoLocation;
   /// 系统更新时间, 格式：YYYY-MM-DD HH:mm:ss
   String time;
   SojsonCityInfo cityInfo;
@@ -25,7 +27,7 @@ class SojsonWeather {
 
   @override
   String toString() {
-    return "{\"time\":\"$time\",\"cityInfo\":${cityInfo.toString()},\"date\":\"$date\",\"message\":\"$message\",\"status\":$status,\"data\":${data.toString()}}";
+    return "{\"isAutoLocation\":$isAutoLocation,\"time\":\"$time\",\"cityInfo\":${cityInfo.toString()},\"date\":\"$date\",\"message\":\"$message\",\"status\":$status,\"data\":${data.toString()}}";
   }
 }
 

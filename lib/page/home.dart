@@ -29,7 +29,26 @@ class HomePage extends StatelessWidget {
     _locationBloc.autoLocationWeather();
     return Scaffold(
       appBar: AppBar(
-        title: Text(Translations.of(context).getString(Strings.app_name),),
+        title: StreamBuilder<SojsonWeather>(
+          stream: _locationBloc.locationStream,
+          builder: (BuildContext context, AsyncSnapshot<SojsonWeather> snapshot) {
+            if(snapshot.hasData) {
+              return Row(
+                children: <Widget>[
+                  IconButton(
+                    icon: const Icon(Icons.my_location),
+                    onPressed: () {
+                      Util.showToast("location");
+                    },
+                  ),
+                  Text(snapshot.data.cityInfo.city,),
+                ],
+              );
+            } else {
+              return Text(Translations.of(context).getString(Strings.app_name),);
+            }
+          },
+        ),
         actions: _getAppBarActions(context),
       ),
       body: Container(

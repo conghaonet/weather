@@ -8,6 +8,7 @@ part of 'sojson_weather.dart';
 
 SojsonWeather _$SojsonWeatherFromJson(Map<String, dynamic> json) {
   return SojsonWeather(
+      json['isAutoLocation'] as bool,
       json['time'] as String,
       json['cityInfo'] == null
           ? null
@@ -22,6 +23,7 @@ SojsonWeather _$SojsonWeatherFromJson(Map<String, dynamic> json) {
 
 Map<String, dynamic> _$SojsonWeatherToJson(SojsonWeather instance) =>
     <String, dynamic>{
+      'isAutoLocation': instance.isAutoLocation,
       'time': instance.time,
       'cityInfo': instance.cityInfo,
       'date': instance.date,

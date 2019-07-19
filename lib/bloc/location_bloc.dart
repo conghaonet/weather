@@ -32,11 +32,12 @@ class LocationBloc extends BlocBase {
     }).then<City>((amapLocation) {
       return LocationUtil.getCityByLocation(amapLocation);
     }).then<SojsonWeather>((city) {
-      return city != null ? ApiService.getSojsonWeather("aaa"+city.cityCode): null;
+      return city != null ? ApiService.getSojsonWeather(city.cityCode): null;
     }, onError: (e){
       throw e;
     }).then((weather) {
       if(weather != null) {
+        weather.isAutoLocation = true;
         AppLocalStorage.setAutoLocationWeather(weather);
         _controller.sink.add(weather);
       }
