@@ -10,7 +10,9 @@ class GlobalNavigator extends NavigatorObserver {
   static final GlobalNavigator _globalNavigator = GlobalNavigator._internal();
   /// 静态路由（无参数）
   static final Map<String, WidgetBuilder> _routes = {
-    SettingsPage.ROUTE_NAME: (_) => SettingsPage(),
+    SettingsPage.ROUTE_NAME: (_) {
+      return SettingsPage();
+    },
     LocationCityPage.ROUTE_NAME: (_) => LocationCityPage(),
   };
   Map<String, WidgetBuilder> get routes => _routes;

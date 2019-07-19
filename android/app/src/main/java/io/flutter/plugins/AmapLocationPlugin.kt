@@ -5,6 +5,7 @@ import android.util.Log
 import com.amap.api.location.AMapLocationClient
 import com.amap.api.location.AMapLocationClientOption
 import com.google.gson.Gson
+import com.google.gson.JsonParseException
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.PluginRegistry
@@ -32,18 +33,22 @@ class AmapLocationPlugin(context: Context): MethodChannel.MethodCallHandler {
     }
 
 
-    private fun location(result: MethodChannel.Result? = null) {
+    private fun location(result: MethodChannel.Result) {
         //设置定位回调监听
         mLocationClient.setLocationListener { location ->
             Log.d("app2m.AMAP", "onLocationChanged address====> ${location.address}")
             Log.d("app2m.AMAP", "onLocationChanged city====> ${location.city}(${location.cityCode})")
             if (location.city.isNullOrBlank()) {
-                result?.error(location.errorCode.toString(), location.errorInfo, null)
+                result.error(location.errorCode.toString(), location.errorInfo, null)
             } else {
                 //字段是首字母小写，其余单词首字母大写
-                val locationData = AmapLocationData(location)
-                val strJson = Gson().toJson(locationData)
-                result?.success(strJson)
+                try {
+                    val locationData = AmapLocationData(location)
+                    val strJson = Gson().toJson(locationData)
+                    result.success(strJson)
+                } catch (e: Exception) {
+                    result.error("0", "AmapLocation 序列化错误", null)
+                }
             }
         }
         //声明AMapLocationClientOption对象

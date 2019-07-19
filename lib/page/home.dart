@@ -8,6 +8,7 @@ import 'package:weather/bloc/application_bloc.dart';
 import 'package:weather/bloc/bloc_provider.dart';
 import 'package:weather/bloc/location_bloc.dart';
 import 'package:weather/data/amap_location.dart';
+import 'package:weather/data/sojson_weather.dart';
 import 'package:weather/page/settings_page.dart';
 import 'package:weather/translations.dart';
 import 'package:weather/application.dart';
@@ -25,24 +26,11 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     _locationBloc = BlocProvider.first<LocationBloc>(context);
-    _locationBloc.locationCity();
+    _locationBloc.autoLocationWeather();
     return Scaffold(
       appBar: AppBar(
         title: Text(Translations.of(context).getString(Strings.app_name),),
-        actions: <Widget>[
-          IconButton(
-            icon: const Icon(Icons.location_city),
-            onPressed: () {
-              Navigator.pushNamed(context, LocationCityPage.ROUTE_NAME);
-            },
-          ),
-          IconButton(
-            icon: const Icon(Icons.settings),
-            onPressed: () {
-              Navigator.pushNamed(context, SettingsPage.ROUTE_NAME);
-            },
-          ),
-        ],
+        actions: _getAppBarActions(context),
       ),
       body: Container(
         alignment: Alignment.center,
@@ -55,11 +43,13 @@ class HomePage extends StatelessWidget {
 
               },
             ),
-            StreamBuilder<City>(
+            StreamBuilder<SojsonWeather>(
               stream: _locationBloc.locationStream,
-              builder: (BuildContext context, AsyncSnapshot<City> snapshot) {
+              builder: (BuildContext context, AsyncSnapshot<SojsonWeather> snapshot) {
                 if(snapshot.hasData) {
-                  return Text('当前城市：${snapshot.data.cityName}');
+                  return Text('当前城市：${snapshot.data.cityInfo.city}');
+                } else if(snapshot.hasError) {
+                  return Text('Error: ${snapshot.error.toString()}');
                 } else {
                   return Text('未定位到所在城市');
                 }
@@ -70,5 +60,20 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
-
+ List<Widget> _getAppBarActions(BuildContext context) {
+    return <Widget>[
+      IconButton(
+        icon: const Icon(Icons.location_city),
+        onPressed: () {
+          Navigator.pushNamed(context, LocationCityPage.ROUTE_NAME);
+        },
+      ),
+      IconButton(
+        icon: const Icon(Icons.settings),
+        onPressed: () {
+          Navigator.pushNamed(context, SettingsPage.ROUTE_NAME);
+        },
+      ),
+    ];
+ }
 }
