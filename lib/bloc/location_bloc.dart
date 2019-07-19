@@ -52,35 +52,6 @@ class LocationBloc extends BlocBase {
 
   }
 
-/*
-  void locationCity() async {
-    _amapChannel.getLocation().then<AmapLocation>((amapLocation) {
-      return amapLocation;
-    }, onError: (e) {
-      throw Future(e);
-    }).then<City>((amapLocation) async {
-      City city = await LocationUtil.getCityByLocation(amapLocation);
-      _controller.sink.add(city);
-      return city;
-    }).then<bool>((city) async {
-      List<SojsonWeather> weathers = await AppLocalStorage.getWeathers();
-      print("weathers 1 ====> ${weathers.toString()}");
-      SojsonWeather weatherA = await ApiService.getSojsonWeather('101010100');
-      print('getSojsonWeather ====> ${weatherA.toString()}');
-      return AppLocalStorage.setWeathers([weatherA]);
-    }, onError: (e) {
-      print("getSojsonWeather onError ====> ${e.toString()}");
-    }).then((result) async {
-      if(result) {
-        List<SojsonWeather> weathers = await AppLocalStorage.getWeathers();
-        print("weathers 2 ====> ${weathers.toString()}");
-        SojsonWeather autoLocationWeather = await AppLocalStorage.getAutoLocationWeather();
-        print("autoLocationWeather ====> ${autoLocationWeather.toString()}");
-      }
-    });
-
-  }
-*/
   void stopLocation() {
     _amapChannel.stopLocation();
   }
