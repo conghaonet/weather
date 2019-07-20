@@ -110,38 +110,43 @@ class HomePage extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  Row(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: <Widget>[
-                      Column(
-                        mainAxisSize: MainAxisSize.max,
-                        children: <Widget>[
-                          getTodayForecastTypeImg(weather.data.forecast[0]),
-                          Padding(padding: EdgeInsets.all(4),),
-                          Text(weather.data.forecast[0].type,
-                            style: TextStyle(fontSize: 18),
-                          ),
-                        ],
-                      ),
-                      Text('${weather.data.wendu}℃',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 52),),
-                      Column(
-                        mainAxisSize: MainAxisSize.max,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Text('湿度        ：${weather.data.shidu}'),
-                          Padding(padding: EdgeInsets.all(2),),
-                          Text('pm2.5     ：${weather.data.pm25}'),
-                          Padding(padding: EdgeInsets.all(2),),
-                          Text('pm10      ：${weather.data.pm10}'),
-                          Padding(padding: EdgeInsets.all(2),),
-                          Text('空气质量：${weather.data.quality}'),
-                        ],
-                      ),
-                    ],
+                  IntrinsicHeight(
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: <Widget>[
+                        Column(
+                          mainAxisSize: MainAxisSize.max,
+                          children: <Widget>[
+                            getTodayForecastTypeImg(weather.data.forecast[0]),
+                            Text(weather.data.forecast[0].type,
+                              style: TextStyle(fontSize: 18),
+                            ),
+                          ],
+                        ),
+                        Center(
+                          child: Text('${weather.data.wendu}℃',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 52),),
+                        ),
+
+                        Column(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text('湿度        ：${weather.data.shidu}'),
+                            Text('pm2.5     ：${weather.data.pm25}'),
+                            Text('pm10      ：${weather.data.pm10}'),
+                            Text('空气质量：${weather.data.quality}'),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
+
+
                 ],
               ),
             ),
