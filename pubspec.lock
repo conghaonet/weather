@@ -276,7 +276,7 @@ packages:
     source: hosted
     version: "0.3.19"
   logging:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: logging
       url: "https://pub.flutter-io.cn"

@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:logging/logging.dart';
 import 'package:stack_trace/stack_trace.dart';
 
 import 'application.dart';
@@ -15,6 +16,14 @@ import 'strings.dart';
 import 'translations.dart';
 
 void main() {
+  Logger.root.level = Level.ALL;
+  Logger.root.onRecord.listen((LogRecord rec) {
+    String strErr = '';
+    if(rec.error != null) {
+      strErr = '\n- ERROR: ${rec.error}';
+    }
+    print('${rec.loggerName}: ${rec.level.name}: ${rec.time}: \n- MESSAGE: ${rec.message} $strErr \n${rec.stackTrace}');
+  });
   //格式化堆栈信息
   Chain.capture(() {
     runApp(MyApp());

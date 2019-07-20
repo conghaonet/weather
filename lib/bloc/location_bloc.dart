@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/services.dart';
 import 'package:dio/dio.dart';
+import 'package:logging/logging.dart';
 import 'package:weather/data/sojson_weather.dart';
 import 'package:weather/network/api_service.dart';
 import 'package:weather/utils/location_util.dart';
@@ -14,6 +15,7 @@ import '../app_channels.dart';
 import 'bloc_provider.dart';
 
 class LocationBloc extends BlocBase {
+  Logger _log = Logger('LocationBloc');
   final _controller = StreamController<SojsonWeather>.broadcast();
   Stream<SojsonWeather> get locationStream => _controller.stream;
   AmapChannel _amapChannel = AmapChannel();
@@ -38,10 +40,12 @@ class LocationBloc extends BlocBase {
     }).then((weather) {
       if(weather != null) {
         weather.isAutoLocation = true;
+        _log.info(weather);
         AppLocalStorage.setAutoLocationWeather(weather);
         _controller.sink.add(weather);
       }
-    }, onError: (e) {
+    }, onError: (e, stackTrace) {
+      _log.severe("getSojsonWeather", e, stackTrace);
       _controller.sink.addError("getSojsonWeather onError >>>>>>"+e.toString());
     }).catchError((e) {
       _controller.sink.addError("TimeoutException>>>>>>"+e.toString());

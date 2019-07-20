@@ -36,8 +36,8 @@ class AmapLocationPlugin(context: Context): MethodChannel.MethodCallHandler {
     private fun location(result: MethodChannel.Result) {
         //设置定位回调监听
         mLocationClient.setLocationListener { location ->
-            Log.d("app2m.AMAP", "onLocationChanged address====> ${location.address}")
-            Log.d("app2m.AMAP", "onLocationChanged city====> ${location.city}(${location.cityCode})")
+//            Log.d("app2m.AMAP", "onLocationChanged address====> ${location.address}")
+//            Log.d("app2m.AMAP", "onLocationChanged city====> ${location.city}(${location.cityCode})")
             if (location.city.isNullOrBlank()) {
                 result.error(location.errorCode.toString(), location.errorInfo, null)
             } else {

@@ -52,16 +52,9 @@ class HomePage extends StatelessWidget {
         actions: _getAppBarActions(context),
       ),
       body: Container(
-        alignment: Alignment.center,
         child: Column(
           children: <Widget>[
-            MaterialButton(
-              child: Text(Translations.of(context).getString(Strings.location)),
-              onPressed: () {
-                BlocProvider.first<ApplicationBloc>(context).onChangeLocale(Locale('zh'));
-
-              },
-            ),
+            _liveWeatherCard(),
             StreamBuilder<SojsonWeather>(
               stream: _locationBloc.locationStream,
               builder: (BuildContext context, AsyncSnapshot<SojsonWeather> snapshot) {
@@ -74,12 +67,20 @@ class HomePage extends StatelessWidget {
                 }
               },
             ),
+            /*
+            MaterialButton(
+              child: Text(Translations.of(context).getString(Strings.location)),
+              onPressed: () {
+                BlocProvider.first<ApplicationBloc>(context).onChangeLocale(Locale('zh'));
+              },
+            ),
+*/
           ],
         ),
       ),
     );
   }
- List<Widget> _getAppBarActions(BuildContext context) {
+  List<Widget> _getAppBarActions(BuildContext context) {
     return <Widget>[
       IconButton(
         icon: const Icon(Icons.location_city),
@@ -94,5 +95,72 @@ class HomePage extends StatelessWidget {
         },
       ),
     ];
+  }
+
+  StreamBuilder _liveWeatherCard() {
+    return StreamBuilder<SojsonWeather>(
+      stream: _locationBloc.locationStream,
+      builder: (BuildContext context, AsyncSnapshot<SojsonWeather> snapshot) {
+        if(snapshot.hasData) {
+          SojsonWeather weather = snapshot.data;
+          return Card(
+            margin: EdgeInsets.all(8),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: <Widget>[
+                      Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: <Widget>[
+                          getTodayForecastTypeImg(weather.data.forecast[0]),
+                          Padding(padding: EdgeInsets.all(4),),
+                          Text(weather.data.forecast[0].type,
+                            style: TextStyle(fontSize: 18),
+                          ),
+                        ],
+                      ),
+                      Text('${weather.data.wendu}℃',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(fontSize: 52),),
+                      Column(
+                        mainAxisSize: MainAxisSize.max,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text('湿度        ：${weather.data.shidu}'),
+                          Padding(padding: EdgeInsets.all(2),),
+                          Text('pm2.5     ：${weather.data.pm25}'),
+                          Padding(padding: EdgeInsets.all(2),),
+                          Text('pm10      ：${weather.data.pm10}'),
+                          Padding(padding: EdgeInsets.all(2),),
+                          Text('空气质量：${weather.data.quality}'),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          );
+        } else {
+          return Card(child: Image.asset('images/晴.png'),);
+        }
+      },
+    );
+  }
+
+ /// 获取当天的天气type
+ Image getTodayForecastTypeImg(SojsonDetail sojsonDetail) {
+   AssetImage assetImage = AssetImage('images/${sojsonDetail.type}.png');
+    return Image(
+      width: 80,
+      height: 80,
+      image: assetImage,
+    );
  }
 }
+
