@@ -22,10 +22,9 @@ import 'package:weather/data/province_city.dart';
 import 'location_city_page.dart';
 
 class HomePage extends StatelessWidget {
-  LocationBloc _locationBloc;
   @override
   Widget build(BuildContext context) {
-    _locationBloc = BlocProvider.first<LocationBloc>(context);
+    LocationBloc _locationBloc = BlocProvider.first<LocationBloc>(context);
     _locationBloc.autoLocationWeather();
     return Scaffold(
       appBar: AppBar(
@@ -54,7 +53,7 @@ class HomePage extends StatelessWidget {
       body: Container(
         child: Column(
           children: <Widget>[
-            _liveWeatherCard(),
+            _liveWeatherCard(_locationBloc),
             StreamBuilder<SojsonWeather>(
               stream: _locationBloc.locationStream,
               builder: (BuildContext context, AsyncSnapshot<SojsonWeather> snapshot) {
@@ -97,7 +96,7 @@ class HomePage extends StatelessWidget {
     ];
   }
 
-  StreamBuilder _liveWeatherCard() {
+  StreamBuilder _liveWeatherCard(LocationBloc _locationBloc) {
     return StreamBuilder<SojsonWeather>(
       stream: _locationBloc.locationStream,
       builder: (BuildContext context, AsyncSnapshot<SojsonWeather> snapshot) {
@@ -113,40 +112,55 @@ class HomePage extends StatelessWidget {
                   IntrinsicHeight(
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: <Widget>[
+                        //天气图标、天气类型名称（晴、阴、小雨。。。）
                         Column(
                           mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            getTodayForecastTypeImg(weather.data.forecast[0]),
+                            _getTodayForecastTypeImg(weather.data.forecast[0]),
                             Text(weather.data.forecast[0].type,
                               style: TextStyle(fontSize: 18),
                             ),
                           ],
                         ),
+                        // 温度
                         Center(
                           child: Text('${weather.data.wendu}℃',
                             textAlign: TextAlign.center,
                             style: TextStyle(fontSize: 52),),
                         ),
-
-                        Column(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            Text('湿度        ：${weather.data.shidu}'),
-                            Text('pm2.5     ：${weather.data.pm25}'),
-                            Text('pm10      ：${weather.data.pm10}'),
-                            Text('空气质量：${weather.data.quality}'),
-                          ],
+                        IntrinsicWidth(
+                          // 湿度、pm2.5、pm10、空气质量
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Row(children: <Widget>[
+                                  Expanded(flex: 1, child: Text('湿度：'),),
+                                  Expanded(flex: 1, child: Text(weather.data.shidu),),
+                              ],),
+                              Row(children: [
+                                Expanded(flex: 1, child: Text('pm2.5：'),),
+                                Expanded(flex: 1, child: Text('${weather.data.pm25}'),),
+                              ],),
+                              Row(children: [
+                                Expanded(flex: 1, child: Text('pm10：'),),
+                                Expanded(flex: 1, child: Text('${weather.data.pm10}'),),
+                              ],),
+                              Row(children: [
+                                Expanded(flex: 1, child: Text('空气质量：'),),
+                                Expanded(flex: 1, child: Text(weather.data.quality),),
+                              ],),
+                            ],
+                          ),
                         ),
                       ],
                     ),
                   ),
-
-
                 ],
               ),
             ),
@@ -158,8 +172,8 @@ class HomePage extends StatelessWidget {
     );
   }
 
- /// 获取当天的天气type
- Image getTodayForecastTypeImg(SojsonDetail sojsonDetail) {
+ /// 获取天气图标
+ Image _getTodayForecastTypeImg(SojsonDetail sojsonDetail) {
    AssetImage assetImage = AssetImage('images/${sojsonDetail.type}.png');
     return Image(
       width: 80,
