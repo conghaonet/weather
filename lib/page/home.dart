@@ -164,7 +164,7 @@ class HomePage extends StatelessWidget {
                   Padding(padding: EdgeInsets.only(top: 8, bottom: 6,),
                     child: Text('温馨提示：${weather.data.ganmao}', style: TextStyle(fontSize: 14),),
                   ),
-                  Text('更新时间：${weather.cityInfo.updateTime}', style: TextStyle(fontSize: 14),),
+                  Text('更新时间：${weather.cityInfo.updateTime}', style: TextStyle(fontSize: 12),),
                 ],
               ),
             ),
