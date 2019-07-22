@@ -18,6 +18,7 @@ import 'package:weather/utils/snack_bar_util.dart';
 import 'package:weather/utils/util.dart';
 import 'package:weather/bloc/cities_page_bloc.dart';
 import 'package:weather/data/province_city.dart';
+import 'package:weather/widget/home_forecast.dart';
 
 import 'location_city_page.dart';
 
@@ -51,9 +52,11 @@ class HomePage extends StatelessWidget {
         actions: _getAppBarActions(context),
       ),
       body: Container(
+        color: Theme.of(context).primaryColor,
         child: Column(
           children: <Widget>[
             _liveWeatherCard(_locationBloc),
+            HomeForecast(),
             StreamBuilder<SojsonWeather>(
               stream: _locationBloc.locationStream,
               builder: (BuildContext context, AsyncSnapshot<SojsonWeather> snapshot) {
@@ -103,6 +106,7 @@ class HomePage extends StatelessWidget {
         if(snapshot.hasData) {
           SojsonWeather weather = snapshot.data;
           return Card(
+            color: Colors.green[400],
             margin: EdgeInsets.all(8),
             child: Padding(
               padding: const EdgeInsets.all(8.0),
