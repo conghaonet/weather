@@ -86,6 +86,10 @@ class MyMaterialAppState extends State<MyMaterialApp> {
         accentColor: Colors.green[500],
         brightness: Brightness.light,
         primaryColor: Colors.green[500],
+        textTheme: TextTheme(
+          body1: TextStyle(color: Colors.white,),
+
+        ),
       ),
       title: 'WEATHER',
       onGenerateTitle: (context) {

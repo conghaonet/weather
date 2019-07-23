@@ -76,6 +76,8 @@ class SojsonData {
   factory SojsonData.fromJson(Map<String, dynamic> json) => _$SojsonDataFromJson(json);
   Map<String, dynamic> toJson() => _$SojsonDataToJson(this);
 
+  List<SojsonDetail> get allWeathers => [yesterday]..addAll(forecast);
+
   @override
   String toString() {
     return "{\"shidu\":\"$shidu\",\"pm25\":$pm25,\"pm10\":$pm10,\"quality\":\"$quality\",\"wendu\":\"$wendu\",\"ganmao\":\"$ganmao\",\"yesterday\":${yesterday.toString()},\"forecast\":${forecast.toString()}}";
@@ -115,6 +117,14 @@ class SojsonDetail {
   factory SojsonDetail.fromJson(Map<String, dynamic> json) => _$SojsonDetailFromJson(json);
   Map<String, dynamic> toJson() => _$SojsonDetailToJson(this);
 
+  int get highNum {
+    String strHigh = high.replaceAll('高温', '').replaceAll('℃', '').trim();
+    return double.parse(strHigh).toInt();
+  }
+  int get lowNum {
+    String strLow = low.replaceAll('低温', '').replaceAll('℃', '').trim();
+    return double.parse(strLow).toInt();
+  }
   @override
   String toString() {
     return "{\"date\":\"$date\",\"ymd\":\"$ymd\",\"week\":\"$week\",\"sunrise\":\"$sunrise\",\"high\":\"$high\",\"low\":\"$low\",\"sunset\":\"$sunset\",\"aqi\":$aqi,\"fx\":\"$fx\",\"fl\":\"$fl\",\"type\":\"$type\",\"notice\":\"$notice\"}";
