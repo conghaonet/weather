@@ -1,8 +1,5 @@
 import 'dart:async';
-import 'dart:convert';
-import 'dart:math';
 import 'package:flutter/services.dart';
-import 'package:dio/dio.dart';
 import 'package:logging/logging.dart';
 import 'package:weather/data/sojson_weather.dart';
 import 'package:weather/network/api_service.dart';

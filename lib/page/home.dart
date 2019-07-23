@@ -1,23 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:permission_handler/permission_handler.dart';
-import 'dart:convert';
 
-import 'package:weather/bloc/application_bloc.dart';
 import 'package:weather/bloc/bloc_provider.dart';
 import 'package:weather/bloc/location_bloc.dart';
-import 'package:weather/data/amap_location.dart';
 import 'package:weather/data/sojson_weather.dart';
 import 'package:weather/page/settings_page.dart';
 import 'package:weather/translations.dart';
-import 'package:weather/application.dart';
 import 'package:weather/strings.dart';
-import 'package:weather/utils/permission_util.dart';
-import 'package:weather/utils/snack_bar_util.dart';
 import 'package:weather/utils/util.dart';
-import 'package:weather/bloc/cities_page_bloc.dart';
-import 'package:weather/data/province_city.dart';
 import 'package:weather/widget/home_forecast.dart';
 
 import 'location_city_page.dart';
@@ -52,32 +41,22 @@ class HomePage extends StatelessWidget {
         actions: _getAppBarActions(context),
       ),
       body: Container(
+        width: double.infinity,
+        height: double.infinity,
         color: Theme.of(context).primaryColor,
-        child: Column(
-          children: <Widget>[
-            _liveWeatherCard(_locationBloc),
-            HomeForecast(),
-            StreamBuilder<SojsonWeather>(
-              stream: _locationBloc.locationStream,
-              builder: (BuildContext context, AsyncSnapshot<SojsonWeather> snapshot) {
-                if(snapshot.hasData) {
-                  return Text('当前城市：${snapshot.data.cityInfo.city}');
-                } else if(snapshot.hasError) {
-                  return Text('Error: ${snapshot.error.toString()}');
-                } else {
-                  return Text('未定位到所在城市');
-                }
-              },
-            ),
-            /*
-            MaterialButton(
-              child: Text(Translations.of(context).getString(Strings.location)),
-              onPressed: () {
-                BlocProvider.first<ApplicationBloc>(context).onChangeLocale(Locale('zh'));
-              },
-            ),
-*/
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              _liveWeatherCard(_locationBloc),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: HomeForecast(),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
