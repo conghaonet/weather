@@ -31,7 +31,7 @@ void main() {
   if(Platform.isAndroid) {
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
-        statusBarColor: Colors.green[800], //状态栏背景色
+        statusBarColor: Colors.green[500], //状态栏背景色
         statusBarIconBrightness: Brightness.light, //状态栏图标：黑色
         systemNavigationBarColor: Colors.green[800], //系统导航栏（虚拟按键）背景色
         systemNavigationBarIconBrightness: Brightness.light, //系统导航栏按键（虚拟按键）：黑色

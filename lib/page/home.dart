@@ -9,10 +9,11 @@ import 'package:weather/translations.dart';
 import 'package:weather/strings.dart';
 import 'package:weather/utils/permission_util.dart';
 import 'package:weather/utils/snack_bar_util.dart';
-import 'package:weather/utils/util.dart';
 import 'package:weather/widget/home_forecast.dart';
 
 import 'location_city_page.dart';
+
+final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 
 class HomePage extends StatelessWidget {
   @override
@@ -20,6 +21,7 @@ class HomePage extends StatelessWidget {
     LocationBloc _locationBloc = BlocProvider.first<LocationBloc>(context);
 //    _requestLocation(context);
     return Scaffold(
+      key: _scaffoldKey,
       appBar: AppBar(
         title: StreamBuilder<SojsonWeather>(
           stream: _locationBloc.locationStream,
@@ -74,7 +76,14 @@ class HomePageBody extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: double.infinity,
-      color: Theme.of(context).primaryColor,
+//      color: Theme.of(context).primaryColor,
+      decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.green[500],Colors.green[400],Colors.green[300],],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ),
+      ),
       child: SingleChildScrollView(
         child: Column(
           children: <Widget>[
@@ -187,7 +196,7 @@ _requestLocation(BuildContext context) async {
   LocationBloc _locationBloc = BlocProvider.first<LocationBloc>(context);
   String prompt = Translations.of(context).getString(Strings.permission_prompt_location);
   SnackBarAction action = AppSnackBarAction.getDefaultPermissionAction(context);
-  PermissionGroup deniedPermission = await PermissionUtil.requestPermissions(context, [PermissionGroup.location, PermissionGroup.storage], prompt, action: action);
+  PermissionGroup deniedPermission = await PermissionUtil.requestPermissions(_scaffoldKey.currentState, [PermissionGroup.location, PermissionGroup.storage], prompt, action: action);
   if(deniedPermission != PermissionGroup.location) {
     _locationBloc.autoLocationWeather();
   } else {
@@ -195,9 +204,16 @@ _requestLocation(BuildContext context) async {
     if(isShown) {
       SnackBarAction _action = SnackBarAction(
         label: 'ok',
-        onPressed: _requestLocation(context),
+        onPressed: () {
+          _requestLocation(context);
+        },
       );
-      Util.showSnackBar(context, strContent: prompt, action: _action);
+      _scaffoldKey.currentState.showSnackBar(
+        SnackBar(
+          content: Text(prompt),
+          action: _action,
+        )
+      );
     }
   }
 }

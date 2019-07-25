@@ -3,13 +3,13 @@ import 'package:fluttertoast/fluttertoast.dart';
 
 
 class Util {
-  static void showSnackBar(BuildContext context, {String strContent , Widget content, SnackBarAction action}) {
+  static void showSnackBar(ScaffoldState scaffoldState, {String strContent , Widget content, SnackBarAction action}) {
     if(strContent == null && content == null) {
       return;
     }
     try {
       Widget msgContent = content ?? Text(strContent);
-      Scaffold.of(context).showSnackBar(
+      scaffoldState.showSnackBar(
         SnackBar(content: msgContent, action: action,),
       );
     } on FlutterError catch(e) {

@@ -85,7 +85,7 @@ class HomePageState extends State<HomePage> {
   _requestLocation(BuildContext context) async {
     String prompt = Translations.of(context).getString(Strings.permission_prompt_location);
     SnackBarAction action = AppSnackBarAction.getDefaultPermissionAction(context);
-    PermissionGroup deniedPermission = await PermissionUtil.requestPermissions(context, [PermissionGroup.location], prompt, action: action);
+    PermissionGroup deniedPermission = await PermissionUtil.requestPermissions(Scaffold.of(context), [PermissionGroup.location], prompt, action: action);
     if(deniedPermission != PermissionGroup.location) {
       String result = await _location.invokeMethod('getLocation');
       Map locationMap = jsonDecode(result);
@@ -117,7 +117,7 @@ class HomePageState extends State<HomePage> {
               MaterialButton(
                 onPressed: () {
                   String prompt = Translations.of(context).getString(Strings.permission_prompt_location);
-                  PermissionUtil.requestPermissions(context, [PermissionGroup.location], prompt, showPrompt: true);
+                  PermissionUtil.requestPermissions(Scaffold.of(context), [PermissionGroup.location], prompt, showPrompt: true);
                 },
                 child: Text('验证定位权限'),
               ),
