@@ -5,6 +5,7 @@ import 'package:weather/data/sojson_weather.dart';
 import 'package:weather/network/api_service.dart';
 import 'package:weather/utils/location_util.dart';
 import 'package:connectivity/connectivity.dart';
+import 'package:weather/utils/util.dart';
 
 import '../app_local_storage.dart';
 import '../data/province_city.dart';
@@ -27,10 +28,8 @@ class LocationBloc extends BlocBase {
         _log.fine(weather);
         _controller.sink.add(weather);
       }
-    }).then<ConnectivityResult>((_) {
-      return Connectivity().checkConnectivity();
-    }).then<AmapLocation>((connectivityResult) {
-      if(connectivityResult == ConnectivityResult.mobile || connectivityResult == ConnectivityResult.wifi) {
+    }).then<AmapLocation>((_) async {
+      if(await Util.networkIsConnective() != null) {
         return _amapChannel.getLocation();
       } else {
         throw MyNetworkException("无网络链接，定位失败！");

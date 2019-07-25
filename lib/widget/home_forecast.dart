@@ -8,10 +8,9 @@ class HomeForecast extends StatelessWidget {
   static const _TEMPERATURE_SHAPE_UNIT = 8 ;
   @override
   Widget build(BuildContext context) {
-    LocationBloc _locationBloc = BlocProvider.first<LocationBloc>(context);
     List<Widget> columns = List();
     return StreamBuilder<SojsonWeather>(
-      stream: _locationBloc.locationStream,
+      stream: BlocProvider.first<LocationBloc>(context).locationStream,
       builder: (BuildContext context, AsyncSnapshot<SojsonWeather> snapshot) {
         if(snapshot.hasData) {
           columns.clear();

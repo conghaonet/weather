@@ -18,28 +18,24 @@ import 'location_city_page.dart';
 final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 
 class HomePage extends StatelessWidget {
-  static LocationBloc _locationBloc;
   @override
   Widget build(BuildContext context) {
-    if(_locationBloc == null) {
-      _locationBloc = BlocProvider.first<LocationBloc>(context);
-      _locationBloc.errorStream.listen((e) {
-        if(e is MyBaseException) {
-          _scaffoldKey.currentState.showSnackBar(SnackBar(
-            content: Text(e.message),
-            action: SnackBarAction(label: 'ok', onPressed: (){}),
-          ));
-        } else {
-          Util.showToast(e.toString());
-        }
-      });
-      _requestLocation(context);
-    }
+    BlocProvider.first<LocationBloc>(context).errorStream.listen((e) {
+      if(e is MyBaseException) {
+        _scaffoldKey.currentState.showSnackBar(SnackBar(
+          content: Text(e.message),
+          action: SnackBarAction(label: 'ok', onPressed: (){}),
+        ));
+      } else {
+        Util.showToast(e.toString());
+      }
+    });
+    _requestLocation(context);
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
         title: StreamBuilder<SojsonWeather>(
-          stream: _locationBloc.locationStream,
+          stream: BlocProvider.first<LocationBloc>(context).locationStream,
           builder: (BuildContext context, AsyncSnapshot<SojsonWeather> snapshot) {
             if(snapshot.hasData) {
               return Row(
@@ -84,7 +80,6 @@ class HomePage extends StatelessWidget {
 class HomePageBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    LocationBloc _locationBloc = BlocProvider.first<LocationBloc>(context);
     return Container(
       width: double.infinity,
       height: double.infinity,
@@ -99,7 +94,7 @@ class HomePageBody extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            _liveWeatherCard(_locationBloc),
+            _liveWeatherCard(context),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Padding(
@@ -112,10 +107,10 @@ class HomePageBody extends StatelessWidget {
       ),
     );
   }
-  StreamBuilder _liveWeatherCard(LocationBloc _locationBloc) {
+  StreamBuilder _liveWeatherCard(BuildContext context) {
     Card _card;
     return StreamBuilder<SojsonWeather>(
-      stream: _locationBloc.locationStream,
+      stream: BlocProvider.first<LocationBloc>(context).locationStream,
       builder: (BuildContext context, AsyncSnapshot<SojsonWeather> snapshot) {
         SojsonWeather weather;
         if(snapshot.hasData) {
@@ -213,12 +208,11 @@ class HomePageBody extends StatelessWidget {
 }
 
 _requestLocation(BuildContext context) async {
-  LocationBloc _locationBloc = BlocProvider.first<LocationBloc>(context);
   String prompt = Translations.of(context).getString(Strings.permission_prompt_location);
   SnackBarAction action = AppSnackBarAction.getDefaultPermissionAction(context);
   PermissionGroup deniedPermission = await PermissionUtil.requestPermissions(_scaffoldKey.currentState, [PermissionGroup.location, PermissionGroup.storage], prompt, action: action);
   if(deniedPermission != PermissionGroup.location) {
-    _locationBloc.autoLocationWeather();
+    BlocProvider.first<LocationBloc>(context).autoLocationWeather();
   } else {
     bool isShown = await PermissionHandler().shouldShowRequestPermissionRationale(deniedPermission);
     if(isShown) {

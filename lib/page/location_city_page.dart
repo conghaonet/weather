@@ -41,11 +41,10 @@ class _Scaffold extends StatelessWidget {
 class _PageBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    CitiesWeatherBloc _bloc = BlocProvider.first<CitiesWeatherBloc>(context);
-    _bloc.errorStream.listen((e){
+    BlocProvider.first<CitiesWeatherBloc>(context).errorStream.listen((e){
       Util.showToast(e.toString());
     });
-    _bloc.allCitesWeather();
+    BlocProvider.first<CitiesWeatherBloc>(context).allCitesWeather();
     return Container(
       width: double.infinity,
       height: double.infinity,
@@ -57,24 +56,8 @@ class _PageBody extends StatelessWidget {
         ),
       ),
       child: StreamBuilder<List<SojsonWeather>>(
-        stream: _bloc.citiesStream,
+        stream: BlocProvider.first<CitiesWeatherBloc>(context).citiesStream,
         builder: (BuildContext context, AsyncSnapshot<List<SojsonWeather>> snapshot) {
-/*
-          switch (snapshot.connectionState) {
-            case ConnectionState.none:
-              return Center(child: Text('Press button to start.'),);
-            case ConnectionState.active:
-            case ConnectionState.waiting:
-              return Center(child: Text('Awaiting result...'),);
-            case ConnectionState.done:
-              if (snapshot.hasError) {
-                return Center(child: Text('Error: ${snapshot.error}'),);
-              } else {
-                return Text('${snapshot.data}');
-              }
-          }
-          return null; // unreachable
-*/
           if(snapshot.hasData) {
              return ListView.builder(
               itemCount: snapshot.data.length,
