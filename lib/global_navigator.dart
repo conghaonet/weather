@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:weather/page/home.dart';
+import 'page/error_route_page.dart';
 import 'page/location_city_page.dart';
 import 'page/settings_page.dart';
 
@@ -40,7 +41,6 @@ class GlobalNavigator extends NavigatorObserver {
 
   /// 带参数路由
   Route<dynamic> generateRoute(RouteSettings settings) {
-    MaterialPageRoute defaultPage = MaterialPageRoute(builder: (context) {return HomePage();});
     MaterialPageRoute targetPage;
 /*
     if(settings.name == SettingsPage.ROUTE_NAME) {
@@ -52,7 +52,7 @@ class GlobalNavigator extends NavigatorObserver {
       );
     }
 */
-    return targetPage ?? defaultPage;
+    return targetPage ?? MaterialPageRoute(builder: (context) {return ErrorRoutePage(route: settings.name);});
   }
 
   void setPreferredOrientations(String targetName) {

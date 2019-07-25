@@ -18,14 +18,20 @@ import 'location_city_page.dart';
 final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 
 class HomePage extends StatelessWidget {
+  static LocationBloc _locationBloc;
   @override
   Widget build(BuildContext context) {
-    LocationBloc _locationBloc;
     if(_locationBloc == null) {
       _locationBloc = BlocProvider.first<LocationBloc>(context);
       _locationBloc.errorStream.listen((e) {
-        String message = (e is MyBaseException) ? e.message : e.toString();
-        Util.showToast(message);
+        if(e is MyBaseException) {
+          _scaffoldKey.currentState.showSnackBar(SnackBar(
+            content: Text(e.message),
+            action: SnackBarAction(label: 'ok', onPressed: (){}),
+          ));
+        } else {
+          Util.showToast(e.toString());
+        }
       });
       _requestLocation(context);
     }
