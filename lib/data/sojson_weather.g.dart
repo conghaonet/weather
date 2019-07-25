@@ -33,14 +33,14 @@ Map<String, dynamic> _$SojsonWeatherToJson(SojsonWeather instance) =>
     };
 
 SojsonCityInfo _$SojsonCityInfoFromJson(Map<String, dynamic> json) {
-  return SojsonCityInfo(json['city'] as String, json['cityId'] as String,
+  return SojsonCityInfo(json['city'] as String, json['citykey'] as String,
       json['parent'] as String, json['updateTime'] as String);
 }
 
 Map<String, dynamic> _$SojsonCityInfoToJson(SojsonCityInfo instance) =>
     <String, dynamic>{
       'city': instance.city,
-      'cityId': instance.cityId,
+      'citykey': instance.citykey,
       'parent': instance.parent,
       'updateTime': instance.updateTime
     };

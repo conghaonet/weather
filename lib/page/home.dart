@@ -9,8 +9,10 @@ import 'package:weather/translations.dart';
 import 'package:weather/strings.dart';
 import 'package:weather/utils/permission_util.dart';
 import 'package:weather/utils/snack_bar_util.dart';
+import 'package:weather/utils/util.dart';
 import 'package:weather/widget/home_forecast.dart';
 
+import '../exceptions.dart';
 import 'location_city_page.dart';
 
 final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
@@ -18,8 +20,15 @@ final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    LocationBloc _locationBloc = BlocProvider.first<LocationBloc>(context);
-//    _requestLocation(context);
+    LocationBloc _locationBloc;
+    if(_locationBloc == null) {
+      _locationBloc = BlocProvider.first<LocationBloc>(context);
+      _locationBloc.errorStream.listen((e) {
+        String message = (e is MyBaseException) ? e.message : e.toString();
+        Util.showToast(message);
+      });
+      _requestLocation(context);
+    }
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
@@ -72,7 +81,6 @@ class HomePageBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     LocationBloc _locationBloc = BlocProvider.first<LocationBloc>(context);
-    _requestLocation(context);
     return Container(
       width: double.infinity,
       height: double.infinity,
@@ -101,12 +109,14 @@ class HomePageBody extends StatelessWidget {
     );
   }
   StreamBuilder _liveWeatherCard(LocationBloc _locationBloc) {
+    Card _card;
     return StreamBuilder<SojsonWeather>(
       stream: _locationBloc.locationStream,
       builder: (BuildContext context, AsyncSnapshot<SojsonWeather> snapshot) {
+        SojsonWeather weather;
         if(snapshot.hasData) {
-          SojsonWeather weather = snapshot.data;
-          return Card(
+          weather = snapshot.data;
+          _card = Card(
             color: Colors.green[400],
             margin: EdgeInsets.all(8),
             child: Padding(
@@ -174,8 +184,14 @@ class HomePageBody extends StatelessWidget {
               ),
             ),
           );
+        }
+        if(snapshot.hasError) {
+          Util.showToast(snapshot.error.toString());
+        }
+        if(_card != null) {
+          return _card;
         } else {
-          return Container();
+          return Text('nothing...');
         }
       },
     );

@@ -9,13 +9,14 @@ class HomeForecast extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     LocationBloc _locationBloc = BlocProvider.first<LocationBloc>(context);
+    List<Widget> columns = List();
     return StreamBuilder<SojsonWeather>(
       stream: _locationBloc.locationStream,
       builder: (BuildContext context, AsyncSnapshot<SojsonWeather> snapshot) {
         if(snapshot.hasData) {
+          columns.clear();
           SojsonWeather _weather = snapshot.data;
           List<int> temperatureRange = _getTemperatureRange(_weather);
-          List<Widget> columns = List();
           for(int index=0; index< _weather.data.allWeathers.length; index++) {
             columns.add(
               Padding(padding: EdgeInsets.only(left: 6, right: 6), child:
@@ -24,7 +25,11 @@ class HomeForecast extends StatelessWidget {
           }
           return Row(children: columns,);
         } else {
-          return Container(child: Text('no data'),);
+          if(columns.isNotEmpty) {
+            return Row(children: columns,);
+          } else{
+            return Container(child: Text('no data'),);
+          }
         }
       },
     );

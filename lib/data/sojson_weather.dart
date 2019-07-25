@@ -33,11 +33,11 @@ class SojsonWeather {
 
 @JsonSerializable()
 class SojsonCityInfo {
-  SojsonCityInfo(this.city, this.cityId, this.parent, this.updateTime);
+  SojsonCityInfo(this.city, this.citykey, this.parent, this.updateTime);
   /// 请求城市
   String city;
   /// 请求城市ID
-  String cityId;
+  String citykey;
   /// 所属地区，一般是省份或直辖市
   String parent;
   /// 天气更新时间，格式：hh:mm，例：12:32
@@ -48,7 +48,7 @@ class SojsonCityInfo {
 
   @override
   String toString() {
-    return "{\"city\":\"$city\",\"cityId\":\"$cityId\",\"parent\":\"$parent\",\"updateTime\":\"$updateTime\"}";
+    return "{\"city\":\"$city\",\"citykey\":\"$citykey\",\"parent\":\"$parent\",\"updateTime\":\"$updateTime\"}";
   }
 
 }
