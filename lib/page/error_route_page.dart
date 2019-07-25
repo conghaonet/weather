@@ -17,6 +17,13 @@ class _ErrorRoutePageState extends State<ErrorRoutePage> {
         title: Text('路由错误页面'),
       ),
       body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.green[500],Colors.green[400],Colors.green[300],],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ),
+        ),
         child: Center(
           child: Text('错误路由：${this.widget.route}'),
         ),

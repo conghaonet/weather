@@ -1,3 +1,4 @@
+import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
@@ -23,5 +24,14 @@ class Util {
       return false;
     }
     return await Fluttertoast.showToast(msg: message.toString(), toastLength: length, );
+  }
+
+  static Future<ConnectivityResult> networkIsConnective() async {
+    ConnectivityResult connectivityResult = await Connectivity().checkConnectivity();
+    if(connectivityResult == ConnectivityResult.mobile || connectivityResult == ConnectivityResult.wifi) {
+      return connectivityResult;
+    } else {
+      return null;
+    }
   }
 }

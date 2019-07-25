@@ -9,7 +9,7 @@ part 'sojson_weather.g.dart';
 class SojsonWeather {
   SojsonWeather(this.isAutoLocation, this.time, this.cityInfo, this.date, this.message, this.status, this.data);
   /// 非服务器返回数据，用于标记是否通过定位获取到的城市天气。
-  bool isAutoLocation;
+  bool isAutoLocation = false;
   /// 系统更新时间, 格式：YYYY-MM-DD HH:mm:ss
   String time;
   SojsonCityInfo cityInfo;

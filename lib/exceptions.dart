@@ -2,7 +2,7 @@ class MyBaseException implements Exception {
   final String message;
   const MyBaseException(this.message);
   String toString({String tag}) {
-    String report = tag;
+    String report = tag ?? 'MyBaseException';
     if (message != null && "" != message) {
       report = "$report: $message";
     }

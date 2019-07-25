@@ -9,6 +9,7 @@ class AppLocalStorage {
     List<SojsonWeather> list = await getWeathers();
     if(list.isEmpty) {
       list.add(weather);
+      return setWeathers(list);
     } else {
       for(SojsonWeather _weather in list) {
         if(_weather.isAutoLocation) {
@@ -16,9 +17,8 @@ class AppLocalStorage {
           break;
         }
       }
-      list.add(weather);
+      return setWeathers([weather]..addAll(list));
     }
-    return setWeathers(list);
   }
   static Future<SojsonWeather> getAutoLocationWeather() async {
     List<SojsonWeather> list = await getWeathers();
