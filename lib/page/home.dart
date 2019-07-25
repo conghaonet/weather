@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 import 'package:weather/bloc/bloc_provider.dart';
 import 'package:weather/bloc/location_bloc.dart';
@@ -6,6 +7,8 @@ import 'package:weather/data/sojson_weather.dart';
 import 'package:weather/page/settings_page.dart';
 import 'package:weather/translations.dart';
 import 'package:weather/strings.dart';
+import 'package:weather/utils/permission_util.dart';
+import 'package:weather/utils/snack_bar_util.dart';
 import 'package:weather/utils/util.dart';
 import 'package:weather/widget/home_forecast.dart';
 
@@ -15,7 +18,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     LocationBloc _locationBloc = BlocProvider.first<LocationBloc>(context);
-    _locationBloc.autoLocationWeather();
+//    _requestLocation(context);
     return Scaffold(
       appBar: AppBar(
         title: StreamBuilder<SojsonWeather>(
@@ -27,7 +30,7 @@ class HomePage extends StatelessWidget {
                   IconButton(
                     icon: const Icon(Icons.my_location),
                     onPressed: () {
-                      Util.showToast("location");
+                      _requestLocation(context);
                     },
                   ),
                   Text(snapshot.data.cityInfo.city,),
@@ -40,25 +43,7 @@ class HomePage extends StatelessWidget {
         ),
         actions: _getAppBarActions(context),
       ),
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        color: Theme.of(context).primaryColor,
-        child: SingleChildScrollView(
-          child: Column(
-            children: <Widget>[
-              _liveWeatherCard(_locationBloc),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: HomeForecast(),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
+      body: HomePageBody(),
     );
   }
   List<Widget> _getAppBarActions(BuildContext context) {
@@ -78,6 +63,34 @@ class HomePage extends StatelessWidget {
     ];
   }
 
+
+}
+
+class HomePageBody extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    LocationBloc _locationBloc = BlocProvider.first<LocationBloc>(context);
+    _requestLocation(context);
+    return Container(
+      width: double.infinity,
+      height: double.infinity,
+      color: Theme.of(context).primaryColor,
+      child: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            _liveWeatherCard(_locationBloc),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: HomeForecast(),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
   StreamBuilder _liveWeatherCard(LocationBloc _locationBloc) {
     return StreamBuilder<SojsonWeather>(
       stream: _locationBloc.locationStream,
@@ -123,8 +136,8 @@ class HomePage extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Row(children: <Widget>[
-                                  Expanded(flex: 1, child: Text('湿度：'),),
-                                  Expanded(flex: 1, child: Text(weather.data.shidu),),
+                                Expanded(flex: 1, child: Text('湿度：'),),
+                                Expanded(flex: 1, child: Text(weather.data.shidu),),
                               ],),
                               Row(children: [
                                 Expanded(flex: 1, child: Text('pm2.5：'),),
@@ -153,20 +166,38 @@ class HomePage extends StatelessWidget {
             ),
           );
         } else {
-          return Card(child: Image.asset('images/晴.png'),);
+          return Container();
         }
       },
     );
   }
-
- /// 获取天气图标
- Image _getTodayForecastTypeImg(SojsonDetail sojsonDetail) {
-   AssetImage assetImage = AssetImage('images/${sojsonDetail.type}.png');
+  /// 获取天气图标
+  Image _getTodayForecastTypeImg(SojsonDetail sojsonDetail) {
+    AssetImage assetImage = AssetImage('images/${sojsonDetail.type}.png');
     return Image(
       width: 80,
       height: 80,
       image: assetImage,
     );
- }
+  }
+
 }
 
+_requestLocation(BuildContext context) async {
+  LocationBloc _locationBloc = BlocProvider.first<LocationBloc>(context);
+  String prompt = Translations.of(context).getString(Strings.permission_prompt_location);
+  SnackBarAction action = AppSnackBarAction.getDefaultPermissionAction(context);
+  PermissionGroup deniedPermission = await PermissionUtil.requestPermissions(context, [PermissionGroup.location, PermissionGroup.storage], prompt, action: action);
+  if(deniedPermission != PermissionGroup.location) {
+    _locationBloc.autoLocationWeather();
+  } else {
+    bool isShown = await PermissionHandler().shouldShowRequestPermissionRationale(deniedPermission);
+    if(isShown) {
+      SnackBarAction _action = SnackBarAction(
+        label: 'ok',
+        onPressed: _requestLocation(context),
+      );
+      Util.showSnackBar(context, strContent: prompt, action: _action);
+    }
+  }
+}

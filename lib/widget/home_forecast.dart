@@ -24,7 +24,7 @@ class HomeForecast extends StatelessWidget {
           }
           return Row(children: columns,);
         } else {
-          return Text('no data');
+          return Container(child: Text('no data'),);
         }
       },
     );
