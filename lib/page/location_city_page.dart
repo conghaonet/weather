@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:weather/bloc/bloc_provider.dart';
 import 'package:weather/bloc/cities_weather_bloc.dart';
+import 'package:weather/data/province_city.dart';
 import 'package:weather/data/sojson_weather.dart';
+import 'package:weather/utils/location_util.dart';
 import 'package:weather/utils/util.dart';
 
 import '../strings.dart';
@@ -17,21 +19,77 @@ class LocationCityPage extends StatelessWidget {
       blocs: [CitiesWeatherBloc()],
       child: Builder(
         builder: (BuildContext context){
-          return Scaffold(
-            appBar: AppBar(
-              title: Text(Translations.of(context).getString(Strings.location_city_title)),
-            ),
-            floatingActionButton: FloatingActionButton(
-              child: Icon(Icons.add),
-              onPressed: () {
-//          BlocProvider.first<CitiesWeatherBloc>(context).addCity("101010300");
-                BlocProvider.first<CitiesWeatherBloc>(context).delCity("101010900");
-              },
-            ),
-            body: _PageBody(),
-          );
+          return _Scaffold();
         },
       ),
+    );
+  }
+}
+
+class _Scaffold extends StatefulWidget {
+  @override
+  __ScaffoldState createState() => __ScaffoldState();
+}
+
+class __ScaffoldState extends State<_Scaffold> {
+  Province _newProvince;
+  City _newCity;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(Translations.of(context).getString(Strings.location_city_title)),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+//          BlocProvider.first<CitiesWeatherBloc>(context).addCity("101010300");
+          showDialog<void>(context: context, barrierDismissible: true, builder: (BuildContext context){
+            return AlertDialog(
+              title: Text("添加城市", style: TextStyle(fontSize: 16),),
+              content: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  Text("添加城市a"),
+                  FutureBuilder<List<Province>>(
+                    future: LocationUtil.getProvincesData(context),
+                    builder: (context, snapshot){
+                      List<DropdownMenuItem<Province>> dropdownItems = List();
+                      if(snapshot.hasData) {
+                        dropdownItems.clear();
+                        dropdownItems = snapshot.data.map<DropdownMenuItem<Province>>((province) {
+                          return DropdownMenuItem<Province>(value: province, child: Text(province.provinceName),);
+                        }).toList();
+                        _newProvince = snapshot.data[0];
+                      }
+                      return DropdownButton<Province>(
+                        value: _newProvince,
+                        items: dropdownItems,
+                        onChanged: (selected) {
+                          setState(() {
+                            _newProvince = selected;
+                          });
+                        },
+
+                      );
+                    },
+                  ),
+                ],
+              ),
+              actions: <Widget>[
+                FlatButton(
+                  child: Text('添加'),
+                  onPressed: () {
+//                          BlocProvider.first<CitiesWeatherBloc>(context).delCity("101010900");
+                  },
+                )
+              ],
+            );
+          },);
+        },
+      ),
+      body: _PageBody(),
     );
   }
 }

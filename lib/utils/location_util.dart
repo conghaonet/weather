@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../data/amap_location.dart';
@@ -18,5 +19,14 @@ class LocationUtil {
       }
     }
     return null;
+  }
+
+  static Future<List<Province>> getProvincesData(BuildContext context) async {
+    AssetBundle bundle = DefaultAssetBundle.of(context);
+    String json = await bundle.loadString('assets/cities.json');
+    List<dynamic> listDynamic = jsonDecode(json);
+    List<Province> provinces = listDynamic.map((js) =>Province.fromJson(js)).toList();
+    // print("getProvincesData ====> "+provinces.toString());
+    return provinces;
   }
 }
