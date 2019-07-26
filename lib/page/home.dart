@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:logging/logging.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 import 'package:weather/bloc/bloc_provider.dart';
@@ -17,25 +18,41 @@ import 'location_city_page.dart';
 
 final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  Logger _log = Logger("_HomePageState");
+  LocationBloc _locationBloc;
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _log.severe("didChangeDependencies");
+    if(_locationBloc == null) {
+      _locationBloc = BlocProvider.first<LocationBloc>(context);
+      _locationBloc.errorStream.listen((value) {
+      }, onError: (e) {
+        if(e is MyBaseException) {
+          _scaffoldKey.currentState.showSnackBar(SnackBar(
+            content: Text(e.message),
+            action: SnackBarAction(label: 'ok', onPressed: (){}),
+          ));
+        } else {
+          Util.showToast(e.toString());
+        }
+      }, cancelOnError: false);
+      _requestLocation(context);
+    }
+  }
   @override
   Widget build(BuildContext context) {
-    BlocProvider.first<LocationBloc>(context).errorStream.listen((e) {
-      if(e is MyBaseException) {
-        _scaffoldKey.currentState.showSnackBar(SnackBar(
-          content: Text(e.message),
-          action: SnackBarAction(label: 'ok', onPressed: (){}),
-        ));
-      } else {
-        Util.showToast(e.toString());
-      }
-    });
-    _requestLocation(context);
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
         title: StreamBuilder<SojsonWeather>(
-          stream: BlocProvider.first<LocationBloc>(context).locationStream,
+          stream: _locationBloc.locationStream,
           builder: (BuildContext context, AsyncSnapshot<SojsonWeather> snapshot) {
             if(snapshot.hasData) {
               return Row(
@@ -59,6 +76,7 @@ class HomePage extends StatelessWidget {
       body: HomePageBody(),
     );
   }
+
   List<Widget> _getAppBarActions(BuildContext context) {
     return <Widget>[
       IconButton(

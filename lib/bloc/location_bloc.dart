@@ -51,9 +51,9 @@ class LocationBloc extends BlocBase {
         _controller.sink.add(weather);
       }
     }).catchError((e){
-      _errController.sink.add(e);
+      _errController.sink.addError(e);
     }, test: (e) => e is PlatformException || e is MyBaseException).catchError((e){
-      _errController.sink.add(e);
+      _errController.sink.addError(e);
     });
   }
 

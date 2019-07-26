@@ -1,8 +1,10 @@
 class MyBaseException implements Exception {
   final String message;
   const MyBaseException(this.message);
-  String toString({String tag}) {
-    String report = tag ?? 'MyBaseException';
+
+  @override
+  String toString() {
+    String report = 'MyBaseException';
     if (message != null && "" != message) {
       report = "$report: $message";
     }
@@ -13,16 +15,24 @@ class MyBaseException implements Exception {
 class MyNetworkException extends MyBaseException {
   const MyNetworkException(String message): super(message);
   @override
-  String toString({String tag="MyNetworkException"}) {
-    return this.toString(tag: tag);
+  String toString() {
+    String report = 'MyNetworkException';
+    if (this.message != null && "" != message) {
+      report = "$report: $message";
+    }
+    return report;
   }
 }
 
 class MyCityConvertException extends MyBaseException {
   const MyCityConvertException(String message): super(message);
   @override
-  String toString({String tag="MyCityConvertException"}) {
-    return this.toString(tag: tag);
+  String toString() {
+    String report = 'MyCityConvertException';
+    if (this.message != null && "" != message) {
+      report = "$report: $message";
+    }
+    return report;
   }
 }
 /*

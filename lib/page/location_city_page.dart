@@ -41,7 +41,9 @@ class _Scaffold extends StatelessWidget {
 class _PageBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    BlocProvider.first<CitiesWeatherBloc>(context).errorStream.listen((e){
+    BlocProvider.first<CitiesWeatherBloc>(context).errorStream.listen((value){
+      Util.showToast(value.toString());
+    }, onError: (e) {
       Util.showToast(e.toString());
     });
     BlocProvider.first<CitiesWeatherBloc>(context).allCitesWeather();

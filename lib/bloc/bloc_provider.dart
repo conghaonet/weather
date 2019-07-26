@@ -41,14 +41,8 @@ class BlocProvider<T extends BlocBase> extends StatefulWidget {
 }
 
 class _BlocProviderState<T extends BlocBase> extends State<BlocProvider<T>> {
-  Logger _log = Logger('_BlocProviderState');
   @override
   void dispose() {
-    if(widget.blocs != null) {
-      for(dynamic bloc in widget.blocs){
-        _log.severe("dispose bloc type is "+bloc.runtimeType.toString());
-      }
-    }
     widget.blocs.map((bloc) {
       bloc.dispose();
     });
