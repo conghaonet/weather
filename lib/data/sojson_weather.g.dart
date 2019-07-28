@@ -8,17 +8,18 @@ part of 'sojson_weather.dart';
 
 SojsonWeather _$SojsonWeatherFromJson(Map<String, dynamic> json) {
   return SojsonWeather(
-      json['isAutoLocation'] as bool,
-      json['time'] as String,
-      json['cityInfo'] == null
-          ? null
-          : SojsonCityInfo.fromJson(json['cityInfo'] as Map<String, dynamic>),
-      json['date'] as String,
-      json['message'] as String,
-      json['status'] as int,
-      json['data'] == null
-          ? null
-          : SojsonData.fromJson(json['data'] as Map<String, dynamic>));
+    isAutoLocation: json['isAutoLocation'] as bool,
+    time: json['time'] as String,
+    cityInfo: json['cityInfo'] == null
+        ? null
+        : SojsonCityInfo.fromJson(json['cityInfo'] as Map<String, dynamic>),
+    date: json['date'] as String,
+    message: json['message'] as String,
+    status: json['status'] as int,
+    data: json['data'] == null
+        ? null
+        : SojsonData.fromJson(json['data'] as Map<String, dynamic>),
+  );
 }
 
 Map<String, dynamic> _$SojsonWeatherToJson(SojsonWeather instance) =>
@@ -29,12 +30,16 @@ Map<String, dynamic> _$SojsonWeatherToJson(SojsonWeather instance) =>
       'date': instance.date,
       'message': instance.message,
       'status': instance.status,
-      'data': instance.data
+      'data': instance.data,
     };
 
 SojsonCityInfo _$SojsonCityInfoFromJson(Map<String, dynamic> json) {
-  return SojsonCityInfo(json['city'] as String, json['citykey'] as String,
-      json['parent'] as String, json['updateTime'] as String);
+  return SojsonCityInfo(
+    json['city'] as String,
+    json['citykey'] as String,
+    json['parent'] as String,
+    json['updateTime'] as String,
+  );
 }
 
 Map<String, dynamic> _$SojsonCityInfoToJson(SojsonCityInfo instance) =>
@@ -42,25 +47,25 @@ Map<String, dynamic> _$SojsonCityInfoToJson(SojsonCityInfo instance) =>
       'city': instance.city,
       'citykey': instance.citykey,
       'parent': instance.parent,
-      'updateTime': instance.updateTime
+      'updateTime': instance.updateTime,
     };
 
 SojsonData _$SojsonDataFromJson(Map<String, dynamic> json) {
   return SojsonData(
-      json['shidu'] as String,
-      (json['pm25'] as num)?.toDouble(),
-      (json['pm10'] as num)?.toDouble(),
-      json['quality'] as String,
-      json['wendu'] as String,
-      json['ganmao'] as String,
-      json['yesterday'] == null
-          ? null
-          : SojsonDetail.fromJson(json['yesterday'] as Map<String, dynamic>),
-      (json['forecast'] as List)
-          ?.map((e) => e == null
-              ? null
-              : SojsonDetail.fromJson(e as Map<String, dynamic>))
-          ?.toList());
+    json['shidu'] as String,
+    (json['pm25'] as num)?.toDouble(),
+    (json['pm10'] as num)?.toDouble(),
+    json['quality'] as String,
+    json['wendu'] as String,
+    json['ganmao'] as String,
+    json['yesterday'] == null
+        ? null
+        : SojsonDetail.fromJson(json['yesterday'] as Map<String, dynamic>),
+    (json['forecast'] as List)
+        ?.map((e) =>
+            e == null ? null : SojsonDetail.fromJson(e as Map<String, dynamic>))
+        ?.toList(),
+  );
 }
 
 Map<String, dynamic> _$SojsonDataToJson(SojsonData instance) =>
@@ -72,23 +77,24 @@ Map<String, dynamic> _$SojsonDataToJson(SojsonData instance) =>
       'wendu': instance.wendu,
       'ganmao': instance.ganmao,
       'yesterday': instance.yesterday,
-      'forecast': instance.forecast
+      'forecast': instance.forecast,
     };
 
 SojsonDetail _$SojsonDetailFromJson(Map<String, dynamic> json) {
   return SojsonDetail(
-      json['date'] as String,
-      json['ymd'] as String,
-      json['week'] as String,
-      json['sunrise'] as String,
-      json['high'] as String,
-      json['low'] as String,
-      json['sunset'] as String,
-      (json['aqi'] as num)?.toDouble(),
-      json['fx'] as String,
-      json['fl'] as String,
-      json['type'] as String,
-      json['notice'] as String);
+    json['date'] as String,
+    json['ymd'] as String,
+    json['week'] as String,
+    json['sunrise'] as String,
+    json['high'] as String,
+    json['low'] as String,
+    json['sunset'] as String,
+    (json['aqi'] as num)?.toDouble(),
+    json['fx'] as String,
+    json['fl'] as String,
+    json['type'] as String,
+    json['notice'] as String,
+  );
 }
 
 Map<String, dynamic> _$SojsonDetailToJson(SojsonDetail instance) =>
@@ -104,17 +110,20 @@ Map<String, dynamic> _$SojsonDetailToJson(SojsonDetail instance) =>
       'fx': instance.fx,
       'fl': instance.fl,
       'type': instance.type,
-      'notice': instance.notice
+      'notice': instance.notice,
     };
 
 SojsonError _$SojsonErrorFromJson(Map<String, dynamic> json) {
   return SojsonError(
-      json['time'] as String, json['message'] as String, json['status'] as int);
+    json['time'] as String,
+    json['message'] as String,
+    json['status'] as int,
+  );
 }
 
 Map<String, dynamic> _$SojsonErrorToJson(SojsonError instance) =>
     <String, dynamic>{
       'time': instance.time,
       'message': instance.message,
-      'status': instance.status
+      'status': instance.status,
     };
