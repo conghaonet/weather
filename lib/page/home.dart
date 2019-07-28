@@ -11,7 +11,7 @@ import 'package:weather/strings.dart';
 import 'package:weather/utils/permission_util.dart';
 import 'package:weather/utils/snack_bar_util.dart';
 import 'package:weather/utils/util.dart';
-import 'package:weather/widget/home_forecast.dart';
+import 'package:weather/widgets/home_forecast.dart';
 
 import '../exceptions.dart';
 import 'location_city_page.dart';

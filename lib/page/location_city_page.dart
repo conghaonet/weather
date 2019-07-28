@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather/bloc/bloc_provider.dart';
 import 'package:weather/bloc/cities_weather_bloc.dart';
+import 'package:weather/common/my_visibility.dart';
 import 'package:weather/data/province_city.dart';
 import 'package:weather/data/sojson_weather.dart';
 import 'package:weather/utils/location_util.dart';
@@ -13,6 +14,7 @@ class Model {
   String cityCode;
   int provinceIndex;
   List<Province> provinces;
+  List<SojsonWeather> weathers;
 }
 
 class LocationCityPage extends StatelessWidget {
@@ -37,11 +39,20 @@ class _Scaffold extends StatefulWidget {
 
 class _ScaffoldState extends State<_Scaffold> {
   final Model _model = Model();
+  @override
+  void initState() {
+    super.initState();
+    BlocProvider.first<CitiesWeatherBloc>(context).citiesStream.listen((value){
+      _model.weathers = value;
+    });  }
   void onAddCity() {
-    Util.showToast("selected city：= ${_model.cityCode}");
-//                  BlocProvider.first<CitiesWeatherBloc>(context).addCity("101010300");
-//                  BlocProvider.first<CitiesWeatherBloc>(context).delCity("101010900");
-
+    for(SojsonWeather weather in _model.weathers) {
+      if(weather.cityInfo.citykey == _model.cityCode) {
+        Util.showToast("【${weather.cityInfo.city}】已存在，不可重复添加。");
+        return;
+      }
+    }
+    BlocProvider.first<CitiesWeatherBloc>(context).addCity(_model.cityCode);
   }
   @override
   Widget build(BuildContext context) {
@@ -145,18 +156,38 @@ class _ProvinceDropdownState extends State<ProvinceDropdown> {
 
 class _PageBody extends StatefulWidget {
   @override
-  __PageBodyState createState() => __PageBodyState();
+  _PageBodyState createState() => _PageBodyState();
 }
 
-class __PageBodyState extends State<_PageBody> {
-  final GlobalKey<RefreshIndicatorState> _refreshIndicatorKey = new GlobalKey<RefreshIndicatorState>();
+class _PageBodyState extends State<_PageBody> {
   CitiesWeatherBloc _citiesWeatherBloc;
+  List<SojsonWeather> _allWeathers;
   bool _offstage = false;
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
   }
+  _init() {
+    if(_citiesWeatherBloc == null) {
+      _citiesWeatherBloc = BlocProvider.first<CitiesWeatherBloc>(context);
+      _citiesWeatherBloc.citiesStream.listen((value){
+        setState(() {
+          _offstage = true;
+        });
+      });
+      _citiesWeatherBloc.errorStream.listen((value){
+        setState(() {
+          _offstage = true;
+        });
+        Util.showToast(value.toString());
+      }, onError: (e) {
+        Util.showToast(e.toString());
+      });
+      _onRefresh();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     if(_citiesWeatherBloc == null) {
@@ -179,15 +210,17 @@ class __PageBodyState extends State<_PageBody> {
             stream: _citiesWeatherBloc.citiesStream,
             builder: (BuildContext context, AsyncSnapshot<List<SojsonWeather>> snapshot) {
               if(snapshot.hasData) {
+                _allWeathers = snapshot.data;
                 return RefreshIndicator(
-                  key: _refreshIndicatorKey,
-                  color: Colors.white,
                   onRefresh: _onRefresh,
-                  child: ListView.builder(
-                    itemCount: snapshot.data.length,
-                    itemBuilder: (BuildContext context, int index) {
-                      return getItem(snapshot.data[index]);
-                    },
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ListView.builder(
+                      itemCount: snapshot.data.length,
+                      itemBuilder: (BuildContext context, int index) {
+                        return getItem(index, snapshot.data[index]);
+                      },
+                    ),
                   ),
                 );
               } else {
@@ -197,36 +230,69 @@ class __PageBodyState extends State<_PageBody> {
           ),
           Offstage(
             offstage: _offstage,
-            child: CircularProgressIndicator(),
+            child: CircularProgressIndicator(
+              valueColor: AlwaysStoppedAnimation<Color>(Colors.white70),
+            ),
           ),
         ],
       ),
     );
   }
 
-  _init() {
-    if(_citiesWeatherBloc == null) {
-      _citiesWeatherBloc = BlocProvider.first<CitiesWeatherBloc>(context);
-      _citiesWeatherBloc.citiesStream.listen((value){
-        setState(() {
-          _offstage = true;
-        });
-      });
-      _citiesWeatherBloc.errorStream.listen((value){
-        setState(() {
-          _offstage = true;
-        });
-        Util.showToast(value.toString());
-      }, onError: (e) {
-        Util.showToast(e.toString());
-      });
-      _onRefresh();
-    }
-  }
-
-  Widget getItem(SojsonWeather _weather) {
-    return Container(
-      child: Text(_weather.cityInfo.city),
+  Widget getItem(int index, SojsonWeather _weather) {
+    Widget itemWidget = Container(
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          children: <Widget>[
+            Container(
+              color: Colors.white70,
+              height: index == 0 ? 0 : 1,
+              width: double.infinity,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 8, bottom: 8,),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  MyVisibility(
+                    flag: _weather.isAutoLocation ? MyVisibilityFlag.VISIBLE : MyVisibilityFlag.INVISIBLE,
+                    child: const Icon(Icons.location_on, color: Colors.white70, size: 24,),
+                  ),
+                  Text(_weather.cityInfo.city, style: TextStyle(fontSize: 24),),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 24.0, top: 8,),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Text('${_weather.data.wendu}℃', style: TextStyle(fontSize: 24),),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+    if(_weather.isAutoLocation) return itemWidget; //通过自动定位添加的城市不可删除
+    else return Dismissible(
+      key: Key(_weather.cityInfo.citykey),
+      background: Container(
+        color: Colors.red,
+        child: FlatButton(
+          onPressed: () {
+            Util.showToast("删除了");
+          },
+          child: Text('删除'),
+        ),
+      ),
+      onDismissed: (direction) {
+        _allWeathers.remove(index);
+        BlocProvider.first<CitiesWeatherBloc>(context).delCity(_weather.cityInfo.citykey);
+      },
+      child: itemWidget,
     );
   }
 
