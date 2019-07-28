@@ -93,6 +93,7 @@ class _ProvinceDropdownState extends State<ProvinceDropdown> {
   Widget build(BuildContext context) {
     return Column(
       mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         FutureBuilder<List<Province>>(
           future: LocationUtil.getProvincesData(context),
@@ -104,9 +105,10 @@ class _ProvinceDropdownState extends State<ProvinceDropdown> {
                 return DropdownMenuItem<int>(value: index, child: Text(snapshot.data[index].provinceName),);
               });
             }
-            return AbsorbPointer(
-              absorbing: false,
+            return Padding(
+              padding: EdgeInsets.only(left: 16, right: 16),
               child: DropdownButton<int>(
+                isExpanded: true,
                 value: widget.model.provinceIndex,
                 hint: Text('——请选择省——'),
                 items: dropdownItems,
@@ -122,15 +124,19 @@ class _ProvinceDropdownState extends State<ProvinceDropdown> {
             );
           },
         ),
-        DropdownButton<String>(
-          value: widget.model.cityCode,
-          hint: Text('——请选择市——'),
-          items: getCities(),
-          onChanged: (selected) {
-            setState(() {
-              widget.model.cityCode = selected;
-            });
-          },
+        Padding(
+          padding: const EdgeInsets.only(left: 16, top: 16, right: 16),
+          child: DropdownButton<String>(
+            isExpanded: true,
+            value: widget.model.cityCode,
+            hint: Text('——请选择市——'),
+            items: getCities(),
+            onChanged: (selected) {
+              setState(() {
+                widget.model.cityCode = selected;
+              });
+            },
+          ),
         ),
       ],
     );
