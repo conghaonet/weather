@@ -278,16 +278,27 @@ class _PageBodyState extends State<_PageBody> {
     );
     if(_weather.isAutoLocation) return itemWidget; //通过自动定位添加的城市不可删除
     else return Dismissible(
+      //如果Dismissible是一个列表项 它必须有一个key 用来区别其他项
       key: Key(_weather.cityInfo.citykey),
       background: Container(
         color: Colors.red,
-        child: FlatButton(
-          onPressed: () {
-            Util.showToast("删除了");
-          },
-          child: Text('删除'),
+        alignment: Alignment.centerLeft,
+        child: Padding(
+          padding: const EdgeInsets.all(32.0),
+          child: Text('删除...', style: TextStyle(color: Colors.white, fontSize: 20),),
         ),
       ),
+      // 返回true时，执行删除动作。
+      confirmDismiss: (direction) async {
+        bool isDel = await showConfirmDeleteDialog(_weather);
+        if(isDel) {
+          _allWeathers.remove(index);
+          BlocProvider.first<CitiesWeatherBloc>(context).delCity(_weather.cityInfo.citykey);
+          return true;
+        } else {
+          return false;
+        }
+      },
       onDismissed: (direction) {
         _allWeathers.remove(index);
         BlocProvider.first<CitiesWeatherBloc>(context).delCity(_weather.cityInfo.citykey);
@@ -296,6 +307,30 @@ class _PageBodyState extends State<_PageBody> {
     );
   }
 
+  /// 弹出确认删除的对话框
+  Future<bool> showConfirmDeleteDialog(SojsonWeather _weather) async {
+    bool isConfirm = await showDialog(context: context, builder: (BuildContext context) {
+      return SimpleDialog(
+        title: Text('确认删除【${_weather.cityInfo.city}】?'),
+        children: <Widget>[
+          SimpleDialogOption(
+            onPressed: () {
+              Navigator.pop<bool>(context, false);
+            },
+            child: const Text('取消', style: TextStyle(color: Colors.black),),
+          ),
+          SimpleDialogOption(
+            onPressed: () {
+              Navigator.pop<bool>(context, true);
+            },
+            child: const Text('删除', style: TextStyle(color: Colors.black),),
+          ),
+        ],
+      );
+    });
+    // isConfirm是bool类型，dart中bool可为null。isConfirm如为null，则返回false；
+    return isConfirm ?? false;
+  }
   Future<void> _onRefresh() async {
     setState(() {
       _offstage = false;
