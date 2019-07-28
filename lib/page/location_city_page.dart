@@ -9,10 +9,14 @@ import 'package:weather/utils/util.dart';
 import '../strings.dart';
 import '../translations.dart';
 
+class Model {
+  String cityCode;
+  int provinceIndex;
+  List<Province> provinces;
+}
 
 class LocationCityPage extends StatelessWidget {
   static const ROUTE_NAME = "/location_city";
-
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
@@ -28,13 +32,17 @@ class LocationCityPage extends StatelessWidget {
 
 class _Scaffold extends StatefulWidget {
   @override
-  __ScaffoldState createState() => __ScaffoldState();
+  _ScaffoldState createState() => _ScaffoldState();
 }
 
-class __ScaffoldState extends State<_Scaffold> {
-  Province _newProvince;
-  City _newCity;
+class _ScaffoldState extends State<_Scaffold> {
+  final Model _model = Model();
+  void onAddCity() {
+    Util.showToast("selected city：= ${_model.cityCode}");
+//                  BlocProvider.first<CitiesWeatherBloc>(context).addCity("101010300");
+//                  BlocProvider.first<CitiesWeatherBloc>(context).delCity("101010900");
 
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,52 +52,87 @@ class __ScaffoldState extends State<_Scaffold> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () {
-//          BlocProvider.first<CitiesWeatherBloc>(context).addCity("101010300");
           showDialog<void>(context: context, barrierDismissible: true, builder: (BuildContext context){
             return AlertDialog(
               title: Text("添加城市", style: TextStyle(fontSize: 16),),
-              content: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  Text("添加城市a"),
-                  FutureBuilder<List<Province>>(
-                    future: LocationUtil.getProvincesData(context),
-                    builder: (context, snapshot){
-                      List<DropdownMenuItem<Province>> dropdownItems = List();
-                      if(snapshot.hasData) {
-                        dropdownItems.clear();
-                        dropdownItems = snapshot.data.map<DropdownMenuItem<Province>>((province) {
-                          return DropdownMenuItem<Province>(value: province, child: Text(province.provinceName),);
-                        }).toList();
-                        _newProvince = snapshot.data[0];
-                      }
-                      return DropdownButton<Province>(
-                        value: _newProvince,
-                        items: dropdownItems,
-                        onChanged: (selected) {
-                          setState(() {
-                            _newProvince = selected;
-                          });
-                        },
-
-                      );
-                    },
-                  ),
-                ],
-              ),
+              content: ProvinceDropdown(model: _model,),
               actions: <Widget>[
                 FlatButton(
                   child: Text('添加'),
                   onPressed: () {
-//                          BlocProvider.first<CitiesWeatherBloc>(context).delCity("101010900");
+                    onAddCity();
+                    Navigator.of(context).pop();
                   },
-                )
+                ),
               ],
             );
           },);
         },
       ),
       body: _PageBody(),
+    );
+  }
+}
+
+class ProvinceDropdown extends StatefulWidget {
+  final Model model;
+  ProvinceDropdown({Key key, this.model}): super(key: key);
+  @override
+  _ProvinceDropdownState createState() => _ProvinceDropdownState();
+}
+class _ProvinceDropdownState extends State<ProvinceDropdown> {
+  List<DropdownMenuItem<String>> getCities() {
+    if(widget.model == null || widget.model.provinceIndex == null) return null;
+    else {
+      return widget.model.provinces[widget.model.provinceIndex ].cities.map(
+              (city) => DropdownMenuItem<String>(value: city.cityCode, child: Text(city.cityName),)
+      ).toList();
+    }
+  }
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: <Widget>[
+        FutureBuilder<List<Province>>(
+          future: LocationUtil.getProvincesData(context),
+          builder: (context, snapshot){
+            List<DropdownMenuItem<int>> dropdownItems = [];
+            if(snapshot.hasData) {
+              widget.model.provinces = snapshot.data;
+              dropdownItems = List.generate(snapshot.data.length, (index){
+                return DropdownMenuItem<int>(value: index, child: Text(snapshot.data[index].provinceName),);
+              });
+            }
+            return AbsorbPointer(
+              absorbing: false,
+              child: DropdownButton<int>(
+                value: widget.model.provinceIndex,
+                hint: Text('——请选择省——'),
+                items: dropdownItems,
+                onChanged: (selected) {
+                  setState(() {
+                    if(widget.model.provinceIndex != selected) {
+                      widget.model.cityCode = null;
+                      widget.model.provinceIndex = selected;
+                    }
+                  });
+                },
+              ),
+            );
+          },
+        ),
+        DropdownButton<String>(
+          value: widget.model.cityCode,
+          hint: Text('——请选择市——'),
+          items: getCities(),
+          onChanged: (selected) {
+            setState(() {
+              widget.model.cityCode = selected;
+            });
+          },
+        ),
+      ],
     );
   }
 }
@@ -104,20 +147,6 @@ class __PageBodyState extends State<_PageBody> {
   CitiesWeatherBloc _citiesWeatherBloc;
   bool _offstage = false;
 
-  @override
-  void initState() {
-    super.initState();
-/*
-    WidgetsBinding.instance.addPostFrameCallback( ( Duration duration ) {
-      this._refreshIndicatorKey.currentState.show();
-    } );
-*/
-/*
-    Future.delayed(Duration(milliseconds: 200)).then((_) {
-      _refreshIndicatorKey.currentState?.show();
-    });
-*/
-  }
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();

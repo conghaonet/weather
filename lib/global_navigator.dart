@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:weather/page/home.dart';
 import 'page/error_route_page.dart';
 import 'page/location_city_page.dart';
 import 'page/settings_page.dart';
