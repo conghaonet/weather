@@ -29,6 +29,7 @@ class _HomePageState extends State<HomePage> {
   Logger _log = Logger("_HomePageState");
   final List<SojsonWeather> _weathers = [];
   int currentPageIndex;
+  bool isLoading = false;
   LocationBloc _locationBloc;
   PageController _pageController;
   CitiesWeatherBloc _citiesWeatherBloc;
@@ -43,25 +44,17 @@ class _HomePageState extends State<HomePage> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    if(_citiesWeatherBloc == null) {
-      _citiesWeatherBloc = BlocProvider.first<CitiesWeatherBloc>(context);
-      _citiesWeatherBloc.citiesStream.listen((weathers){
-        setState(() {
-          _weathers.clear();
-          _weathers.addAll(weathers);
-          if(currentPageIndex == null && _weathers.isNotEmpty) {
-            currentPageIndex = 0;
-          }
-        });
-      });
-      _citiesWeatherBloc.allCitesWeather();
-    }
 
     if(_locationBloc == null) {
       _locationBloc = BlocProvider.first<LocationBloc>(context);
-/*
-      _locationBloc.errorStream.listen((value) {
+      _locationBloc.locationStream.listen((event){
+        if(event != null) {
+          _citiesWeatherBloc.allCitesWeather();
+        }
       }, onError: (e) {
+        setState(() {
+          isLoading = false;
+        });
         if(e is MyBaseException) {
           _scaffoldKey.currentState.showSnackBar(SnackBar(
             content: Text(e.message),
@@ -70,9 +63,48 @@ class _HomePageState extends State<HomePage> {
         } else {
           Util.showToast(e.toString());
         }
-      }, cancelOnError: false);
-      _requestLocation(context);
-*/
+      });
+    }
+
+    if(_citiesWeatherBloc == null) {
+      _citiesWeatherBloc = BlocProvider.first<CitiesWeatherBloc>(context);
+      _citiesWeatherBloc.citiesStream.listen((weathers){
+        setState(() {
+          _weathers.clear();
+          _weathers.addAll(weathers);
+          if(currentPageIndex == null) {
+            if(_weathers.isNotEmpty) currentPageIndex = 0;
+          } else {
+            if(_weathers.isEmpty) {
+              currentPageIndex = null;
+            } else {
+              if(currentPageIndex >= _weathers.length) {
+                currentPageIndex = _weathers.length-1;
+              }
+            }
+          }
+
+          var locationWeather;
+          if(_weathers.isNotEmpty) {
+            locationWeather = _weathers.singleWhere((weather) {
+              return weather.isAutoLocation;
+            }, orElse: null);
+          }
+          if(locationWeather == null) {
+            //更新当前位置的天气预报
+            _requestLocation(context);
+          } else {
+            isLoading =false;
+          }
+        });
+      }, onError: (e) {
+        Util.showToast(e.toString());
+        setState(() {
+          isLoading = false;
+        });
+      });
+      _citiesWeatherBloc.allCitesWeather();
+      isLoading = true;
     }
   }
   void updateAppBar(int pageIndex) {
@@ -107,16 +139,59 @@ class _HomePageState extends State<HomePage> {
         ),
         actions: _getAppBarActions(context),
       ),
-      body: Container(
-        child: PageView(
-          onPageChanged: (pageIndex) {
-            updateAppBar(pageIndex);
-          },
-          controller: _pageController,
-          children: _weathers.map((weather) {
-            return WeatherDetail(weather);
-          }).toList(),
-        ),
+      body: Stack(
+        children: <Widget>[
+          Container(
+            decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [Colors.grey, Colors.grey[400], Colors.grey[300],],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+            ),
+            child: Center(
+              child: FlatButton(
+                onPressed: () {
+                  _citiesWeatherBloc.allCitesWeather();
+                  setState(() {
+                    isLoading = true;
+                  });
+                },
+                child: Text('重试'),),
+            ),
+          ),
+          Offstage(
+            offstage: !isLoading,
+            child: Container(
+              width: double.infinity,
+              height: double.infinity,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [Colors.green[500], Colors.green[400], Colors.green[300]],
+                ),
+              ),
+              child: Center(
+                child: CircularProgressIndicator(
+                  valueColor: AlwaysStoppedAnimation<Color>(Colors.white70),
+                ),
+              ),
+            ),
+          ),
+          Offstage(
+            offstage: _weathers == null || _weathers.isEmpty,
+            child: PageView(
+              onPageChanged: (pageIndex) {
+                updateAppBar(pageIndex);
+              },
+              controller: _pageController,
+              children: _weathers.map((weather) {
+                return WeatherDetail(weather);
+              }).toList(),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -148,7 +223,7 @@ _requestLocation(BuildContext context) async {
   SnackBarAction action = AppSnackBarAction.getDefaultPermissionAction(context);
   PermissionGroup deniedPermission = await PermissionUtil.requestPermissions(_scaffoldKey.currentState, [PermissionGroup.location, PermissionGroup.storage], prompt, action: action);
   if(deniedPermission != PermissionGroup.location) {
-    BlocProvider.first<LocationBloc>(context).autoLocationWeather();
+    BlocProvider.first<LocationBloc>(context).myLocationWeather();
   } else {
     bool isShown = await PermissionHandler().shouldShowRequestPermissionRationale(deniedPermission);
     if(isShown) {
