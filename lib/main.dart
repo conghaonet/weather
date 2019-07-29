@@ -9,6 +9,7 @@ import 'package:stack_trace/stack_trace.dart';
 import 'application.dart';
 import 'bloc/application_bloc.dart';
 import 'bloc/bloc_provider.dart';
+import 'bloc/cities_weather_bloc.dart';
 import 'bloc/location_bloc.dart';
 import 'global_navigator.dart';
 import 'package:weather/page/home.dart';
@@ -44,7 +45,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      blocs: [ApplicationBloc(), LocationBloc()],
+      blocs: [ApplicationBloc(), LocationBloc(), CitiesWeatherBloc(),],
       child: MyMaterialApp(),
     );
   }

@@ -17,27 +17,13 @@ class Model {
   List<SojsonWeather> weathers;
 }
 
-class LocationCityPage extends StatelessWidget {
+class LocationCityPage extends StatefulWidget {
   static const ROUTE_NAME = "/location_city";
   @override
-  Widget build(BuildContext context) {
-    return BlocProvider(
-      blocs: [CitiesWeatherBloc()],
-      child: Builder(
-        builder: (BuildContext context){
-          return _Scaffold();
-        },
-      ),
-    );
-  }
+  _LocationCityPageState createState() => _LocationCityPageState();
 }
 
-class _Scaffold extends StatefulWidget {
-  @override
-  _ScaffoldState createState() => _ScaffoldState();
-}
-
-class _ScaffoldState extends State<_Scaffold> {
+class _LocationCityPageState extends State<LocationCityPage> {
   final Model _model = Model();
   @override
   void initState() {
@@ -172,9 +158,11 @@ class _PageBodyState extends State<_PageBody> {
     if(_citiesWeatherBloc == null) {
       _citiesWeatherBloc = BlocProvider.first<CitiesWeatherBloc>(context);
       _citiesWeatherBloc.citiesStream.listen((value){
-        setState(() {
-          _offstage = true;
-        });
+        if(mounted) {
+          setState(() {
+            _offstage = true;
+          });
+        }
       });
       _citiesWeatherBloc.errorStream.listen((value){
         setState(() {
