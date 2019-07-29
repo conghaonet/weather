@@ -6,9 +6,22 @@ import 'package:weather/data/sojson_weather.dart';
 
 class HomeForecast extends StatelessWidget {
   static const _TEMPERATURE_SHAPE_UNIT = 8 ;
+  final SojsonWeather weather;
+  HomeForecast({Key key,@required this.weather}): super(key: key);
   @override
   Widget build(BuildContext context) {
     List<Widget> columns = List();
+    List<int> temperatureRange = _getTemperatureRange();
+    for(int index=0; index< weather.data.allWeathers.length; index++) {
+      columns.add(
+          Padding(padding: EdgeInsets.only(left: 6, right: 6), child:
+          _getColumn(temperatureRange, index),)
+      );
+    }
+    return Row(children: columns,);
+
+
+/*
     return StreamBuilder<SojsonWeather>(
       stream: BlocProvider.first<LocationBloc>(context).locationStream,
       builder: (BuildContext context, AsyncSnapshot<SojsonWeather> snapshot) {
@@ -32,43 +45,44 @@ class HomeForecast extends StatelessWidget {
         }
       },
     );
+*/
   }
 
-  Column _getColumn(List<int> temperatureRange, int index, SojsonWeather _weather) {
+  Column _getColumn(List<int> temperatureRange, int index) {
     return Column(
       children: <Widget>[
-        _getWeek(index, _weather),
-        _getDate(index, _weather),
+        _getWeek(index),
+        _getDate(index),
         Padding(padding: EdgeInsets.only(top: 16),),
-        _getTypeImage(index, _weather),
+        _getTypeImage(index),
         Padding(padding: EdgeInsets.only(top: 4),),
-        Text(_weather.data.allWeathers[index].type),
+        Text(weather.data.allWeathers[index].type),
         Padding(padding: EdgeInsets.only(top: 16),),
-        Text('${_weather.data.allWeathers[index].highNum}℃'),
+        Text('${weather.data.allWeathers[index].highNum}℃'),
         Padding(padding: EdgeInsets.only(top: 4),),
-        _drawTemperatureShape(temperatureRange, index, _weather),
+        _drawTemperatureShape(temperatureRange, index),
         Padding(padding: EdgeInsets.only(top: 4),),
-        Text('${_weather.data.allWeathers[index].lowNum}℃'),
+        Text('${weather.data.allWeathers[index].lowNum}℃'),
         Padding(padding: EdgeInsets.only(top: 16),),
-        Text(_weather.data.allWeathers[index].fx),
+        Text(weather.data.allWeathers[index].fx),
         Padding(padding: EdgeInsets.only(top: 4),),
-        Text(_weather.data.allWeathers[index].fl),
+        Text(weather.data.allWeathers[index].fl),
         Padding(padding: EdgeInsets.only(top: 8),),
         Image.asset('images/日出.png', width: 30, height: 30,),
-        Text(_weather.data.allWeathers[index].sunrise),
+        Text(weather.data.allWeathers[index].sunrise),
         Padding(padding: EdgeInsets.only(top: 8),),
         Image.asset('images/日落.png', width: 30, height: 30,),
-        Text(_weather.data.allWeathers[index].sunset),
+        Text(weather.data.allWeathers[index].sunset),
       ],
     );
   }
 
-  List<int> _getTemperatureRange(SojsonWeather _weather) {
+  List<int> _getTemperatureRange() {
     int highestTemp;
     int lowestTemp;
-    for(int i=0; i<_weather.data.allWeathers.length; i++) {
-      int intHigh = _weather.data.allWeathers[i].highNum;
-      int intLow = _weather.data.allWeathers[i].lowNum;
+    for(int i=0; i<weather.data.allWeathers.length; i++) {
+      int intHigh = weather.data.allWeathers[i].highNum;
+      int intLow = weather.data.allWeathers[i].lowNum;
       if(i == 0) {
         highestTemp = intHigh;
         lowestTemp = intLow;
@@ -79,19 +93,19 @@ class HomeForecast extends StatelessWidget {
     }
     return [highestTemp, lowestTemp];
   }
-  Text _getWeek(int index, SojsonWeather _weather) {
+  Text _getWeek(int index) {
     if(index == 0) {
       return Text('昨天');
     } else if(index == 1) {
       return Text('今天', style: TextStyle(fontWeight: FontWeight.w900),);
     } else {
-      return Text(_weather.data.allWeathers[index].week,);
+      return Text(weather.data.allWeathers[index].week,);
     }
   }
-  Text _getDate(int index, SojsonWeather _weather) {
+  Text _getDate(int index) {
     DateFormat parseDateFormat = DateFormat('yyyy-MM-dd');
     DateFormat formatDateFormat = DateFormat('M月dd日');
-    DateTime dateTime = parseDateFormat.parse(_weather.data.allWeathers[index].ymd);
+    DateTime dateTime = parseDateFormat.parse(weather.data.allWeathers[index].ymd);
     String formattedDate = formatDateFormat.format(dateTime);
     if(index == 1){
       return Text(formattedDate, style: TextStyle(fontWeight: FontWeight.w900),);
@@ -99,19 +113,19 @@ class HomeForecast extends StatelessWidget {
       return Text(formattedDate);
     }
   }
-  Image _getTypeImage(int index, SojsonWeather _weather) {
-    String type = _weather.data.allWeathers[index].type;
+  Image _getTypeImage(int index) {
+    String type = weather.data.allWeathers[index].type;
     return Image(
       width: 30,
       height: 30,
       image: AssetImage('images/$type.png'),
     );
   }
-  Widget _drawTemperatureShape(List<int> range, int index, SojsonWeather _weather) {
+  Widget _drawTemperatureShape(List<int> range, int index) {
     const borderRadius = const BorderRadius.all(const Radius.circular(30.0));
-    int topPadding = (range[0] - _weather.data.allWeathers[index].highNum) * _TEMPERATURE_SHAPE_UNIT;
-    int bottomPadding = (_weather.data.allWeathers[index].lowNum - range[1]) * _TEMPERATURE_SHAPE_UNIT;
-    int shapeHeight = (_weather.data.allWeathers[index].highNum - _weather.data.allWeathers[index].lowNum) * _TEMPERATURE_SHAPE_UNIT;
+    int topPadding = (range[0] - weather.data.allWeathers[index].highNum) * _TEMPERATURE_SHAPE_UNIT;
+    int bottomPadding = (weather.data.allWeathers[index].lowNum - range[1]) * _TEMPERATURE_SHAPE_UNIT;
+    int shapeHeight = (weather.data.allWeathers[index].highNum - weather.data.allWeathers[index].lowNum) * _TEMPERATURE_SHAPE_UNIT;
     int totalHeight = (range[0] - range[1]) * _TEMPERATURE_SHAPE_UNIT;
     return ClipRRect(
       borderRadius: borderRadius,

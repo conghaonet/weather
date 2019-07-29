@@ -200,7 +200,7 @@ class _PageBodyState extends State<_PageBody> {
               if(snapshot.hasData) {
                 _allWeathers = snapshot.data;
                 return RefreshIndicator(
-                  onRefresh: _onRefresh,
+                  onRefresh: () => _onRefresh(),
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: ListView.builder(
