@@ -218,7 +218,12 @@ class _PageBodyState extends State<_PageBody> {
                     child: ListView.builder(
                       itemCount: snapshot.data.length,
                       itemBuilder: (BuildContext context, int index) {
-                        return getItem(index, snapshot.data[index]);
+                        return GestureDetector(
+                          onTap: () {
+                            Util.showToast(snapshot.data[index].cityInfo.city);
+                            print('点击事件：${snapshot.data[index].cityInfo.city}');
+                          },
+                          child: getItem(index, snapshot.data[index]),);
                       },
                     ),
                   ),
@@ -240,62 +245,66 @@ class _PageBodyState extends State<_PageBody> {
   }
 
   Widget getItem(int index, SojsonWeather _weather) {
-    Widget itemWidget = Container(
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          children: <Widget>[
-            Container(
-              color: Colors.white70,
-              height: index == 0 ? 0 : 1,
-              width: double.infinity,
+    var itemWidget = Container(
+      padding: EdgeInsets.all(8.0),
+      child: Column(
+        children: <Widget>[
+          Container(
+            color: Colors.white70,
+            height: index == 0 ? 0 : 1,
+            width: double.infinity,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 8, bottom: 8,),
+            child: Row(
+              mainAxisSize: MainAxisSize.max,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                MyVisibility(
+                  flag: _weather.isAutoLocation ? MyVisibilityFlag.VISIBLE : MyVisibilityFlag.INVISIBLE,
+                  child: const Icon(Icons.location_on, color: Colors.white70, size: 24,),
+                ),
+                Text(_weather.cityInfo.city, style: TextStyle(fontSize: 24),),
+              ],
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 8, bottom: 8,),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  MyVisibility(
-                    flag: _weather.isAutoLocation ? MyVisibilityFlag.VISIBLE : MyVisibilityFlag.INVISIBLE,
-                    child: const Icon(Icons.location_on, color: Colors.white70, size: 24,),
-                  ),
-                  Text(_weather.cityInfo.city, style: TextStyle(fontSize: 24),),
-                ],
-              ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 24.0, top: 8,),
+            child: Row(
+              mainAxisSize: MainAxisSize.max,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Text('${_weather.data.wendu}℃', style: TextStyle(fontSize: 24),),
+              ],
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 24.0, top: 8,),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Text('${_weather.data.wendu}℃', style: TextStyle(fontSize: 24),),
-                ],
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
-    if(_weather.isAutoLocation) return itemWidget; //通过自动定位添加的城市不可删除
-    else return Dismissible(
+    return Dismissible(
       //如果Dismissible是一个列表项 它必须有一个key 用来区别其他项
       key: Key(_weather.cityInfo.citykey),
+      child: itemWidget,
       background: Container(
         color: Colors.red,
         alignment: Alignment.centerLeft,
         child: Padding(
           padding: const EdgeInsets.all(32.0),
-          child: Text('删除...', style: TextStyle(color: Colors.white, fontSize: 20),),
         ),
       ),
       // 返回true时，执行删除动作。
       confirmDismiss: (direction) async {
-        bool isDel = await showConfirmDeleteDialog(_weather);
-        if(isDel) {
-          _allWeathers.remove(index);
-          BlocProvider.first<CitiesWeatherBloc>(context).delCity(_weather.cityInfo.citykey);
-          return true;
+        if(index >0) {
+          bool isDel = await showConfirmDeleteDialog(_weather);
+          if(isDel) {
+            _allWeathers.remove(index);
+            BlocProvider.first<CitiesWeatherBloc>(context).delCity(_weather.cityInfo.citykey);
+            return true;
+          } else {
+            return false;
+          }
         } else {
+          Util.showToast('自动定位的城市，无法手动删除');
           return false;
         }
       },
@@ -303,7 +312,6 @@ class _PageBodyState extends State<_PageBody> {
         _allWeathers.remove(index);
         BlocProvider.first<CitiesWeatherBloc>(context).delCity(_weather.cityInfo.citykey);
       },
-      child: itemWidget,
     );
   }
 
