@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:weather/bloc/bloc_provider.dart';
-import 'package:weather/bloc/location_bloc.dart';
 import 'package:weather/data/sojson_weather.dart';
 
 class HomeForecast extends StatelessWidget {
@@ -19,35 +17,7 @@ class HomeForecast extends StatelessWidget {
       );
     }
     return Row(children: columns,);
-
-
-/*
-    return StreamBuilder<SojsonWeather>(
-      stream: BlocProvider.first<LocationBloc>(context).locationStream,
-      builder: (BuildContext context, AsyncSnapshot<SojsonWeather> snapshot) {
-        if(snapshot.hasData) {
-          columns.clear();
-          SojsonWeather _weather = snapshot.data;
-          List<int> temperatureRange = _getTemperatureRange(_weather);
-          for(int index=0; index< _weather.data.allWeathers.length; index++) {
-            columns.add(
-              Padding(padding: EdgeInsets.only(left: 6, right: 6), child:
-                _getColumn(temperatureRange, index, _weather),)
-            );
-          }
-          return Row(children: columns,);
-        } else {
-          if(columns.isNotEmpty) {
-            return Row(children: columns,);
-          } else{
-            return Container(child: Text('no data'),);
-          }
-        }
-      },
-    );
-*/
   }
-
   Column _getColumn(List<int> temperatureRange, int index) {
     return Column(
       children: <Widget>[
