@@ -23,7 +23,7 @@ void main() {
     if(rec.error != null) {
       strErr = '\n- ERROR: ${rec.error}';
     }
-    print('${rec.loggerName}: ${rec.level.name}: ${rec.time}: \n- MESSAGE: ${rec.message} $strErr \n${rec.stackTrace ?? ''}');
+    print('${rec.loggerName}: ${rec.level.name}: ${rec.time}: - MESSAGE: ${rec.message} $strErr \n${rec.stackTrace ?? ''}');
   });
   //格式化堆栈信息
   Chain.capture(() {
