@@ -75,6 +75,9 @@ class MyMaterialAppState extends State<MyMaterialApp> {
       routes: globalNavigator.routes,
       //动态路由，可传递参数
       onGenerateRoute: globalNavigator.generateRoute,
+      navigatorObservers: [
+        globalNavigator,
+      ],
       localizationsDelegates: [
         _applicationBloc.localeOverrideDelegate,
         const TranslationsDelegate(), //指向自定义个人库来处理翻译

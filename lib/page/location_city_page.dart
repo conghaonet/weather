@@ -7,6 +7,7 @@ import 'package:weather/data/sojson_weather.dart';
 import 'package:weather/utils/location_util.dart';
 import 'package:weather/utils/util.dart';
 
+import '../event_bus.dart';
 import '../strings.dart';
 import '../translations.dart';
 
@@ -19,6 +20,7 @@ class Model {
 
 class LocationCityPage extends StatefulWidget {
   static const ROUTE_NAME = "/location_city";
+  static const EVENT_NAME_CHANGE_CITY = 'change_city';
   @override
   _LocationCityPageState createState() => _LocationCityPageState();
 }
@@ -208,8 +210,9 @@ class _PageBodyState extends State<_PageBody> {
                       itemBuilder: (BuildContext context, int index) {
                         return GestureDetector(
                           onTap: () {
-                            Util.showToast(snapshot.data[index].cityInfo.city);
-                            print('点击事件：${snapshot.data[index].cityInfo.city}');
+                            //触发点击城市事件
+                            bus.emit(LocationCityPage.EVENT_NAME_CHANGE_CITY, index);
+                            Navigator.pop(context);
                           },
                           child: getItem(index, snapshot.data[index]),);
                       },

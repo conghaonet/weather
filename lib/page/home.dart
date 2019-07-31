@@ -15,6 +15,7 @@ import 'package:weather/utils/snack_bar_util.dart';
 import 'package:weather/utils/util.dart';
 import 'package:weather/widgets/weather_detail.dart';
 
+import '../event_bus.dart';
 import '../exceptions.dart';
 import 'location_city_page.dart';
 
@@ -25,7 +26,7 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   Logger _log = Logger("_HomePageState");
   final List<SojsonWeather> _weathers = [];
   int currentPageIndex;
@@ -36,9 +37,15 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
+    //注册widget监听，复写时要在super之后
+    WidgetsBinding.instance.addObserver(this);
     _pageController = PageController(
       initialPage: 0,
     );
+    //监听点击城市事件
+    bus.on(LocationCityPage.EVENT_NAME_CHANGE_CITY, (dynamic pageIndex) {
+      _pageController.jumpToPage(pageIndex);
+    });
   }
   @override
   void didChangeDependencies() {
@@ -108,6 +115,26 @@ class _HomePageState extends State<HomePage> {
       currentPageIndex = pageIndex;
     });
   }
+  /// Widget状态变更监听方法
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    switch (state) {
+      case AppLifecycleState.inactive:
+        print('Observer--可见没有响应inactive');
+        break;
+      case AppLifecycleState.paused:
+        print('Observer--不可见不响应paused');
+        break;
+      case AppLifecycleState.resumed:
+        print('Observer--可见可交互resumed');
+        break;
+      case AppLifecycleState.suspending:
+        print('Observer--申请暂停suspending');
+        break;
+    }
+    super.didChangeAppLifecycleState(state);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -210,6 +237,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void dispose() {
     _pageController.dispose();
+    bus.off(LocationCityPage.EVENT_NAME_CHANGE_CITY);
     super.dispose();
   }
 }
