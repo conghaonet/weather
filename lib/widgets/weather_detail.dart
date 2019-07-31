@@ -1,15 +1,34 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:logging/logging.dart';
 import 'package:weather/data/sojson_weather.dart';
 
 import 'home_forecast.dart';
 class WeatherDetail extends StatefulWidget {
   final SojsonWeather weather;
-  WeatherDetail(this.weather, {Key key}): super(key: key);
+  final PageController _pageController;
+  WeatherDetail(this.weather, this._pageController, {Key key}): super(key: key);
   @override
   _WeatherDetailState createState() => _WeatherDetailState();
 }
 
 class _WeatherDetailState extends State<WeatherDetail> {
+  final _log = Logger('_WeatherDetailState');
+  var ignoreScroll;
+  var _scrollController = ScrollController(initialScrollOffset: 1);
+  @override
+  void initState() {
+    super.initState();
+    _scrollController.addListener((){
+      if(_scrollController.position.pixels == _scrollController.position.maxScrollExtent) {
+        ignoreScroll = IgnoreScrollFlag.right;
+      } else if(_scrollController.position.pixels == 0) {
+        ignoreScroll = IgnoreScrollFlag.left;
+      } else {
+        ignoreScroll = null;
+      }
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -26,11 +45,27 @@ class _WeatherDetailState extends State<WeatherDetail> {
         child: Column(
           children: <Widget>[
             _liveWeatherCard(widget.weather),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: HomeForecast(weather: widget.weather),
+            // [Pointer事件处理](https://book.flutterchina.club/chapter8/listener.html)
+            Listener(
+              behavior: HitTestBehavior.opaque,
+              onPointerMove: (PointerMoveEvent event){
+//                _log.severe('PointerMoveEvent localDelta.dx: ${event.localDelta.dx}');
+                if(ignoreScroll != null) {
+                  //滚动到最右或最左边时，自动调用外层PageView的下一页或上一页
+                  if(ignoreScroll == IgnoreScrollFlag.right && event.localDelta.dx < 0) {
+                    widget._pageController.nextPage(duration: Duration(milliseconds: 500), curve: Curves.linear);
+                  } else if(ignoreScroll == IgnoreScrollFlag.left && event.localDelta.dx > 0) {
+                    widget._pageController.previousPage(duration: Duration(milliseconds: 500), curve: Curves.linear);
+                  }
+                }
+              },
+              child: SingleChildScrollView(
+                controller: _scrollController,
+                scrollDirection: Axis.horizontal,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: HomeForecast(weather: widget.weather),
+                ),
               ),
             ),
           ],
@@ -118,5 +153,8 @@ class _WeatherDetailState extends State<WeatherDetail> {
       image: assetImage,
     );
   }
+}
 
+enum IgnoreScrollFlag {
+  left, right, both,
 }

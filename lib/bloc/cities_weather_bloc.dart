@@ -4,6 +4,7 @@ import 'package:connectivity/connectivity.dart';
 import 'package:logging/logging.dart';
 import 'package:weather/data/sojson_weather.dart';
 import 'package:weather/network/api_service.dart';
+import 'package:weather/network/dio_client.dart';
 import 'package:weather/utils/util.dart';
 
 import '../app_local_storage.dart';
@@ -19,33 +20,38 @@ class CitiesWeatherBloc extends BlocBase {
   final _errorController = StreamController<Exception>.broadcast();
   Stream<Exception> get errorStream => _errorController.stream;
 
-  void allCitesWeather() async {
+  void allCitesWeather({bool isReload=false}) async {
     _allWeathers.clear();
     _allWeathers.addAll(await AppLocalStorage.getWeathers());
     _controller.sink.add(_allWeathers);
-    ConnectivityResult connectivityResult = await Connectivity().checkConnectivity();
-    if(connectivityResult == ConnectivityResult.mobile || connectivityResult == ConnectivityResult.wifi) {
-      try {
-        for(SojsonWeather _weather in _allWeathers) {
-          try {
-            SojsonWeather newWeather = await ApiService.getSojsonWeather(_weather.cityInfo.citykey);
-            if(_weather.isAutoLocation != null && _weather.isAutoLocation) {
-              newWeather.isAutoLocation = true;
+    if(isReload) {
+      ConnectivityResult connectivityResult = await Connectivity().checkConnectivity();
+      if(connectivityResult == ConnectivityResult.mobile || connectivityResult == ConnectivityResult.wifi) {
+        try {
+          for(SojsonWeather _weather in _allWeathers) {
+            try {
+              SojsonWeather newWeather = await ApiService.getSojsonWeather(_weather.cityInfo.citykey);
+//            Response<Map<String, dynamic>> response = await dioClient.dio.get("/city/${_weather.cityInfo.citykey}");
+//            SojsonWeather newWeather = SojsonWeather.fromJson(response.data);
+
+              if(_weather.isAutoLocation != null && _weather.isAutoLocation) {
+                newWeather.isAutoLocation = true;
+              }
+              _weather = newWeather;
+            } on DioError catch(e, stack) {
+              _log.severe("allCitesWeather DioError", e, stack);
             }
-            _weather = newWeather;
-          } on DioError catch(e, stack) {
-            _log.severe("allCitesWeather DioError", e, stack);
           }
+        } catch(e, stack) {
+          _errorController.sink.addError(e);
+          _log.severe("allCitesWeather Exception", e, stack);
         }
-      } catch(e, stack) {
-        _errorController.sink.addError(e);
-        _log.severe("allCitesWeather Exception", e, stack);
+      } else {
+        _errorController.sink.addError(MyNetworkException('无网络链接，数据更新失败！'));
       }
-    } else {
-      _errorController.sink.addError(MyNetworkException('无网络链接，数据更新失败！'));
+      AppLocalStorage.setWeathers(_allWeathers);
+      _controller.sink.add(_allWeathers);
     }
-    AppLocalStorage.setWeathers(_allWeathers);
-    _controller.sink.add(_allWeathers);
   }
 
   void addCity(String citykey) async {

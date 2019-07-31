@@ -36,7 +36,6 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-
     _pageController = PageController(
       initialPage: 0,
     );
@@ -44,7 +43,6 @@ class _HomePageState extends State<HomePage> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-
     if(_locationBloc == null) {
       _locationBloc = BlocProvider.first<LocationBloc>(context);
       _locationBloc.locationStream.listen((event){
@@ -65,7 +63,6 @@ class _HomePageState extends State<HomePage> {
         }
       });
     }
-
     if(_citiesWeatherBloc == null) {
       _citiesWeatherBloc = BlocProvider.first<CitiesWeatherBloc>(context);
       _citiesWeatherBloc.citiesStream.listen((weathers){
@@ -83,7 +80,6 @@ class _HomePageState extends State<HomePage> {
               }
             }
           }
-
           var locationWeather;
           if(_weathers.isNotEmpty) {
             locationWeather = _weathers.singleWhere((weather) {
@@ -187,7 +183,7 @@ class _HomePageState extends State<HomePage> {
               },
               controller: _pageController,
               children: _weathers.map((weather) {
-                return WeatherDetail(weather);
+                return WeatherDetail(weather, _pageController);
               }).toList(),
             ),
           ),

@@ -200,7 +200,7 @@ class _PageBodyState extends State<_PageBody> {
               if(snapshot.hasData) {
                 _allWeathers = snapshot.data;
                 return RefreshIndicator(
-                  onRefresh: () => _onRefresh(),
+                  onRefresh: () => _onRefresh(isReload: true),
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: ListView.builder(
@@ -327,10 +327,10 @@ class _PageBodyState extends State<_PageBody> {
     // isConfirm是bool类型，dart中bool可为null。isConfirm如为null，则返回false；
     return isConfirm ?? false;
   }
-  Future<void> _onRefresh() async {
+  Future<void> _onRefresh({bool isReload=false}) async {
     setState(() {
       _offstage = false;
     });
-    _citiesWeatherBloc.allCitesWeather();
+    _citiesWeatherBloc.allCitesWeather(isReload: isReload);
   }
 }

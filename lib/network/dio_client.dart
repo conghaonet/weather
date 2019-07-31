@@ -10,9 +10,11 @@ class DioClient {
     return _dioClient;
   }
   DioClient._internal() {
-    _dio.options.receiveTimeout = 10000;
-    _dio.options.connectTimeout = 15000;
-    _dio.options.baseUrl = BASE_API;
+    _dio.options..receiveTimeout = 10000
+    ..connectTimeout = 15000
+    ..baseUrl = BASE_API;
+//    ..headers['Content-Type'] = 'application/json';
+
   }
 }
 
