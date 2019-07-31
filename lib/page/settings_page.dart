@@ -3,7 +3,7 @@ import 'package:logging/logging.dart';
 
 class SettingsPage extends StatelessWidget {
   static const ROUTE_NAME = "/settings";
-  var _log = Logger('SettingsPage');
+  final _log = Logger('SettingsPage');
   @override
   Widget build(BuildContext context) {
     return Scaffold(

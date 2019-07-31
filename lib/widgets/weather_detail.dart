@@ -1,6 +1,5 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:logging/logging.dart';
 import 'package:weather/data/sojson_weather.dart';
 
 import 'home_forecast.dart';
@@ -13,7 +12,6 @@ class WeatherDetail extends StatefulWidget {
 }
 
 class _WeatherDetailState extends State<WeatherDetail> {
-  final _log = Logger('_WeatherDetailState');
   var ignoreScroll;
   var _scrollController = ScrollController(initialScrollOffset: 1);
   @override

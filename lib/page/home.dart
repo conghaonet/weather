@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:logging/logging.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 import 'package:weather/bloc/bloc_provider.dart';
@@ -27,7 +26,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
-  Logger _log = Logger("_HomePageState");
   final List<SojsonWeather> _weathers = [];
   int currentPageIndex;
   bool isLoading = false;

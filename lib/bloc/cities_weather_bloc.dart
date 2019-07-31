@@ -4,7 +4,6 @@ import 'package:connectivity/connectivity.dart';
 import 'package:logging/logging.dart';
 import 'package:weather/data/sojson_weather.dart';
 import 'package:weather/network/api_service.dart';
-import 'package:weather/network/dio_client.dart';
 import 'package:weather/utils/util.dart';
 
 import '../app_local_storage.dart';
