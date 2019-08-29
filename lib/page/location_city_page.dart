@@ -47,6 +47,14 @@ class _LocationCityPageState extends State<LocationCityPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(Translations.of(context).getString(Strings.location_city_title)),
+        automaticallyImplyLeading: false,
+        leading: InkWell(
+          onTap: () {
+            bus.emit(LocationCityPage.EVENT_NAME_CHANGE_CITY, -1);
+            Navigator.pop(context);
+          },
+          child: Icon(Icons.arrow_back),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
@@ -68,7 +76,13 @@ class _LocationCityPageState extends State<LocationCityPage> {
           },);
         },
       ),
-      body: _PageBody(),
+      body: WillPopScope(
+        onWillPop: () async {
+          bus.emit(LocationCityPage.EVENT_NAME_CHANGE_CITY, -1);
+          return true;
+        },
+        child: _PageBody(),
+      ),
     );
   }
 }
@@ -285,7 +299,6 @@ class _PageBodyState extends State<_PageBody> {
       ),
       // 返回true时，执行删除动作。
       confirmDismiss: (direction) async {
-        if(index >0) {
           bool isDel = await showConfirmDeleteDialog(_weather);
           if(isDel) {
             _allWeathers.remove(index);
@@ -294,10 +307,6 @@ class _PageBodyState extends State<_PageBody> {
           } else {
             return false;
           }
-        } else {
-          Util.showToast('自动定位的城市，无法手动删除');
-          return false;
-        }
       },
       onDismissed: (direction) {
         _allWeathers.remove(index);
