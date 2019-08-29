@@ -57,8 +57,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+<!--
         <meta-data
-            android:name="com.amap.api.v2.apikey"
-            android:value="b61de7b087b8a7bd0af5eb723b9b8d08"/>
+            android:name=YOUR_AMAP_KEY_NAME
+            android:value=YOUR_AMAP_KEY_VALUE/>
+-->
     </application>
 </manifest>
