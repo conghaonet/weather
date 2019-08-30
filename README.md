@@ -9,6 +9,9 @@
 
 技术难点：SingleChildScrollView（横向滑动）与PageView的联动，这个交互我在网上没有找到代码样例，自己写了一个，应该还有可改进空间。
 
+## 数据源
+[https://www.sojson.com/blog/305.html](https://www.sojson.com/blog/305.html)
+
 ## Dependencies
 ```
 dependencies:
