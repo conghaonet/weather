@@ -16,8 +16,7 @@ class DioClient {
     ..connectTimeout = 15000
     ..baseUrl = BASE_API;
     //TODO：设置代理
-    setProxy("192.168.2.100", 8888);
-//    ..headers['Content-Type'] = 'application/json';
+//    setProxy("192.168.2.100", 8888);
 
   }
   void setProxy(String proxyServer, int port) {
