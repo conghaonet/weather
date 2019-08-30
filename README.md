@@ -1,19 +1,11 @@
 # weather
 
-一个用Flutter开发的简单天气预报应用
+## 介绍
+一个用Flutter开发的简单天气预报应用。
+主要使用Bloc改变widget状态，刷新页面。
+主界面框架：PageView+SingleChildScrollView（纵向滚动）+SingleChildScrollView（横向滚动）。
+技术难点：SingleChildScrollView（横向滑动）与PageView的联动，这个交互我在网上没有找到代码样例，自己写了一个，应该还有可改进空间。
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
 ## Dependencies
 ```
 dependencies:
