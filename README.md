@@ -16,4 +16,6 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 ## Screenshots
-<img height="480px" src="screenshots/weather1.gif"><img height="480px" src="screenshots/weather2.gif"><img height="480px" src="screenshots/weather3.gif">
+<img src="screenshots/weather1.gif">
+<img height="480px" src="screenshots/weather2.gif">
+<img height="480px" src="screenshots/weather3.gif">
