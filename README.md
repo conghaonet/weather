@@ -1,6 +1,6 @@
 # weather
 
-A Weather application.
+一个用Flutter开发的简单天气预报应用
 
 ## Getting Started
 
