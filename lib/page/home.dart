@@ -6,7 +6,6 @@ import 'package:weather/bloc/cities_weather_bloc.dart';
 import 'package:weather/bloc/location_bloc.dart';
 import 'package:weather/common/my_visibility.dart';
 import 'package:weather/data/sojson_weather.dart';
-import 'package:weather/page/settings_page.dart';
 import 'package:weather/translations.dart';
 import 'package:weather/strings.dart';
 import 'package:weather/utils/permission_util.dart';
@@ -15,7 +14,6 @@ import 'package:weather/utils/util.dart';
 import 'package:weather/widgets/weather_detail.dart';
 
 import '../event_bus.dart';
-import '../exceptions.dart';
 import 'location_city_page.dart';
 
 final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
@@ -29,7 +27,6 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   final List<SojsonWeather> _weathers = [];
   int currentPageIndex;
   bool isLoading = false;
-  LocationBloc _locationBloc;
   PageController _pageController;
   CitiesWeatherBloc _citiesWeatherBloc;
   @override
@@ -101,32 +98,6 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     });
   }
 
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-/*
-    if(_locationBloc == null) {
-      _locationBloc = BlocProvider.first<LocationBloc>(context);
-      _locationBloc.locationStream.listen((event){
-        if(event != null) {
-          _citiesWeatherBloc.allCitesWeather();
-        }
-      }, onError: (e) {
-        setState(() {
-          isLoading = false;
-        });
-        if(e is MyBaseException) {
-          _scaffoldKey.currentState.showSnackBar(SnackBar(
-            content: Text(e.message),
-            action: SnackBarAction(label: 'ok', onPressed: (){}),
-          ));
-        } else {
-          Util.showToast(e.toString());
-        }
-      });
-    }
-*/
-  }
   void updateAppBar(int pageIndex) {
     setState(() {
       currentPageIndex = pageIndex;
