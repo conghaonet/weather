@@ -22,21 +22,19 @@ class CitiesWeatherBloc extends BlocBase {
   void allCitesWeather({bool isReload=false}) async {
     _allWeathers.clear();
     _allWeathers.addAll(await AppLocalStorage.getWeathers());
-    _controller.sink.add(_allWeathers);
     if(isReload) {
       ConnectivityResult connectivityResult = await Connectivity().checkConnectivity();
       if(connectivityResult == ConnectivityResult.mobile || connectivityResult == ConnectivityResult.wifi) {
         try {
-          for(SojsonWeather _weather in _allWeathers) {
+          for(int i=0; i<_allWeathers.length; i++) {
+            var _weather = _allWeathers[i];
             try {
               SojsonWeather newWeather = await ApiService.getSojsonWeather(_weather.cityInfo.citykey);
-//            Response<Map<String, dynamic>> response = await dioClient.dio.get("/city/${_weather.cityInfo.citykey}");
-//            SojsonWeather newWeather = SojsonWeather.fromJson(response.data);
-
               if(_weather.isAutoLocation != null && _weather.isAutoLocation) {
                 newWeather.isAutoLocation = true;
               }
-              _weather = newWeather;
+              _allWeathers.removeAt(i);
+              _allWeathers.insert(i, newWeather);
             } on DioError catch(e, stack) {
               _log.severe("allCitesWeather DioError", e, stack);
             }
@@ -49,6 +47,8 @@ class CitiesWeatherBloc extends BlocBase {
         _errorController.sink.addError(MyNetworkException('无网络链接，数据更新失败！'));
       }
       AppLocalStorage.setWeathers(_allWeathers);
+      _controller.sink.add(_allWeathers);
+    } else {
       _controller.sink.add(_allWeathers);
     }
   }

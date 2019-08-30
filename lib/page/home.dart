@@ -42,12 +42,69 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     );
     //监听点击城市事件
     bus.on(LocationCityPage.EVENT_NAME_CHANGE_CITY, (dynamic pageIndex) {
-      _pageController.jumpToPage(pageIndex);
+      if(pageIndex >= 0) {
+        currentPageIndex = pageIndex;
+      }
+      _citiesWeatherBloc.allCitesWeather();
+    });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if(mounted) {
+        if(_citiesWeatherBloc == null) {
+          _citiesWeatherBloc = BlocProvider.first<CitiesWeatherBloc>(context);
+          _citiesWeatherBloc.citiesStream.listen((weathers){
+            setState(() {
+              _weathers.clear();
+              _weathers.addAll(weathers);
+              if(currentPageIndex == null) {
+                if(_weathers.isNotEmpty) currentPageIndex = 0;
+              } else {
+                if(_weathers.isEmpty) {
+                  currentPageIndex = null;
+                } else {
+                  if(currentPageIndex >= _weathers.length) {
+                    currentPageIndex = _weathers.length-1;
+                  }
+                }
+              }
+              var locationWeather;
+              if(_weathers.isNotEmpty) {
+                try{
+                  locationWeather = _weathers.singleWhere((weather) {
+                    return weather.isAutoLocation;
+                  }, orElse: null);
+                } on StateError catch (e) {
+                  print("没有自动定位的城市，StateError：${e.toString()}");
+                  locationWeather = null;
+                }
+                _pageController.jumpToPage(currentPageIndex);
+              }
+              if(locationWeather == null) {
+                //屏蔽自动定位功能
+                //更新当前位置的天气预报
+//            _requestLocation(context);
+                isLoading =false;
+              } else {
+                isLoading =false;
+              }
+            });
+          }, onError: (e) {
+            Util.showToast(e.toString());
+            setState(() {
+              isLoading = false;
+            });
+          });
+          _citiesWeatherBloc.allCitesWeather();
+          isLoading = true;
+        }
+      }
     });
   }
+
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
+/*
     if(_locationBloc == null) {
       _locationBloc = BlocProvider.first<LocationBloc>(context);
       _locationBloc.locationStream.listen((event){
@@ -68,45 +125,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
         }
       });
     }
-    if(_citiesWeatherBloc == null) {
-      _citiesWeatherBloc = BlocProvider.first<CitiesWeatherBloc>(context);
-      _citiesWeatherBloc.citiesStream.listen((weathers){
-        setState(() {
-          _weathers.clear();
-          _weathers.addAll(weathers);
-          if(currentPageIndex == null) {
-            if(_weathers.isNotEmpty) currentPageIndex = 0;
-          } else {
-            if(_weathers.isEmpty) {
-              currentPageIndex = null;
-            } else {
-              if(currentPageIndex >= _weathers.length) {
-                currentPageIndex = _weathers.length-1;
-              }
-            }
-          }
-          var locationWeather;
-          if(_weathers.isNotEmpty) {
-            locationWeather = _weathers.singleWhere((weather) {
-              return weather.isAutoLocation;
-            }, orElse: null);
-          }
-          if(locationWeather == null) {
-            //更新当前位置的天气预报
-            _requestLocation(context);
-          } else {
-            isLoading =false;
-          }
-        });
-      }, onError: (e) {
-        Util.showToast(e.toString());
-        setState(() {
-          isLoading = false;
-        });
-      });
-      _citiesWeatherBloc.allCitesWeather();
-      isLoading = true;
-    }
+*/
   }
   void updateAppBar(int pageIndex) {
     setState(() {
@@ -138,31 +157,27 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        title: Row(
-          children: <Widget>[
-            MyVisibility(
-              flag: this.currentPageIndex != null
-                  ? (_weathers[currentPageIndex].isAutoLocation ? MyVisibilityFlag.VISIBLE: MyVisibilityFlag.INVISIBLE)
-                  : MyVisibilityFlag.INVISIBLE,
-              child: IconButton(
-                icon: const Icon(Icons.my_location),
-                onPressed: () {
-                  _requestLocation(context);
-                },
-              ),
-            ),
-            Text(
-                this.currentPageIndex != null
-                    ? _weathers[currentPageIndex].cityInfo.city
-                    : Translations.of(context).getString(Strings.app_name)
-            ),
-          ],
+        title: Text(this.currentPageIndex != null
+            ? _weathers[currentPageIndex].cityInfo.city
+            : Translations.of(context).getString(Strings.app_name)),
+        leading: MyVisibility(
+          flag: this.currentPageIndex != null
+              ? (_weathers[currentPageIndex].isAutoLocation ? MyVisibilityFlag.VISIBLE: MyVisibilityFlag.INVISIBLE)
+              : MyVisibilityFlag.INVISIBLE,
+          child: IconButton(
+            icon: const Icon(Icons.my_location),
+            onPressed: () {
+              _requestLocation(context);
+            },
+          ),
         ),
+        automaticallyImplyLeading: false,
         actions: _getAppBarActions(context),
       ),
       body: Stack(
         children: <Widget>[
           Container(
+/*
             decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [Colors.grey, Colors.grey[400], Colors.grey[300],],
@@ -170,6 +185,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                   end: Alignment.bottomRight,
                 ),
             ),
+*/
             child: Center(
               child: FlatButton(
                 onPressed: () {
@@ -179,6 +195,19 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                   });
                 },
                 child: Text('重试'),),
+            ),
+          ),
+          Offstage(
+            offstage: _weathers != null && _weathers.isNotEmpty,
+            child: Container(
+              child: Center(
+                child: FloatingActionButton(
+                  child: Icon(Icons.add),
+                  onPressed: () {
+                    Navigator.pushNamed(context, LocationCityPage.ROUTE_NAME);
+                  },
+                ),
+              ),
             ),
           ),
           Offstage(
@@ -224,12 +253,14 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
           Navigator.pushNamed(context, LocationCityPage.ROUTE_NAME);
         },
       ),
+/*
       IconButton(
         icon: const Icon(Icons.settings),
         onPressed: () {
           Navigator.pushNamed(context, SettingsPage.ROUTE_NAME);
         },
       ),
+*/
     ];
   }
   @override
