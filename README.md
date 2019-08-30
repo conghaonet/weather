@@ -2,8 +2,11 @@
 
 ## 介绍
 一个用Flutter开发的简单天气预报应用。
+
 主要使用Bloc改变widget状态，刷新页面。
+
 主界面框架：PageView+SingleChildScrollView（纵向滚动）+SingleChildScrollView（横向滚动）。
+
 技术难点：SingleChildScrollView（横向滑动）与PageView的联动，这个交互我在网上没有找到代码样例，自己写了一个，应该还有可改进空间。
 
 ## Dependencies
